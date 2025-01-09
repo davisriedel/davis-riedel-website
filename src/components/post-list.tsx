@@ -30,7 +30,7 @@ export default function PostList({ posts, tags, pagination }: Props) {
           pages={pagination.pages}
           link={{
             href: (page) => (page === 1 ? "/en/posts" : "/en/posts/[page]"),
-            as: (page) => (page === 1 ? "" : "/posts/" + page),
+            as: (page) => (page === 1 ? "" : "/en/posts/" + page),
           }}
         />
       </div>

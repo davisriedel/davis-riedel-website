@@ -8,9 +8,10 @@ import Link from "next/link";
 type Props = {
 	navBar: ReactNode;
 	image?: ReactNode;
+  lang: "en" | "de";
 };
 
-export function Header({ navBar, image }: Props) {
+export function Header({ navBar, image, lang }: Props) {
 	return (
 		<header className={cn(image && "relative h-svh max-h-[1000px]")}>
 			{image && (
@@ -25,7 +26,7 @@ export function Header({ navBar, image }: Props) {
 				)}
 			>
 				<h1 className={`${headingFont.className} text-4xl`}>
-					<Link href="/">Davis Riedel</Link>
+					<Link href={`/${lang}`}>Davis Riedel</Link>
 				</h1>
 				<div>{navBar}</div>
 				<div className="mt-4 w-full flex gap-4 justify-center text-indigo-950 dark:text-white">
