@@ -1,6 +1,6 @@
 import { AnimatedLink } from "@/components/animated-link";
-import { Footer } from "@/components/en/footer";
-import { NavBar } from "@/components/en/navbar";
+import { Footer } from "@/components/de/footer";
+import { NavBar } from "@/components/de/navbar";
 import { Header } from "@/components/header";
 import RouterScrollWorkaround from "@/components/router-scroll-workaround";
 import HeaderImage from "@/images/header.jpg";
@@ -12,33 +12,34 @@ export default function HomeLayout({ children }: PropsWithChildren<{}>) {
 	return (
 		<RouterScrollWorkaround>
 			<Header
+        lang="de"
 				navBar={
           <>
 					<p className="mt-2 text-lg">
 						<AnimatedLink
 							className="text-white after:bg-white dark:text-white dark:after:bg-white"
-							href="/en#developer"
+							href="/de#programmierer"
 						>
-							Developer
+							Programmierer
 						</AnimatedLink>
 						,{" "}
 						<AnimatedLink
 							className="text-white after:bg-white dark:text-white dark:after:bg-white"
-							href="/en#politician"
+							href="/de#politiker"
 						>
-							Politician
+							Politiker
 						</AnimatedLink>
 						,{" "}
 						<AnimatedLink
 							className="text-white after:bg-white dark:text-white dark:after:bg-white"
-							href="/en#writer"
+							href="/de#autor"
 						>
-							Writer
-						</AnimatedLink>
-						, and{" "}
+							Schriftsteller
+						</AnimatedLink>{" "}
+						und{" "}
 						<AnimatedLink
 							className="text-white after:bg-white dark:text-white dark:after:bg-white"
-							href="/en#student"
+							href="/de#student"
 						>
 							Student
 						</AnimatedLink>
@@ -49,7 +50,7 @@ export default function HomeLayout({ children }: PropsWithChildren<{}>) {
 				image={
 					<Image
 						src={HeaderImage}
-						alt="Davis Riedel in front of the European Parliament in Brussels"
+						alt="Davis Riedel vor dem Europäischen Parlament in Brüssel"
             className="object-cover h-full"
 					/>
 				}
