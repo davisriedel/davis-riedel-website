@@ -1,0 +1,3214 @@
+<style>
+    .LinLibertineT-tlf-t1-x-x-109 {
+      font-size: 90%;
+      font-style: italic;
+    }
+    .fvmr8t-x-x-93 {
+      font-family: "Source Code Pro", monospace;
+    }
+    .LinLibertineTB-tlf-t1-x-x-120 {
+      font-weight: bold;
+    }
+    .LinLibertineTI-tlf-t1-x-x-120 {
+      font-style: italic;
+    }
+    .LinLibertineTI-tlf-t1-x-x-120 {
+      font-style: italic;
+    }
+    .LinLibertineTBI-tlf-t1-x-x-120 {
+      font-weight: bold;
+      font-style: italic;
+    }
+    .fvmr8t-x-x-85 {
+      font-family: "Source Code Pro", monospace;
+    }
+    .LinLibertineT-tlf-sc-t1-x-x-120 {
+      font-variant: small-caps;
+    }
+    .fvmb8t-x-x-93 {
+      font-size: 77%;
+    }
+    .fvmro8t-x-x-93 {
+      font-size: 77%;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    p.indent {
+      text-indent: 0;
+    }
+    p + p {
+      margin-top: 1em;
+    }
+    p + div,
+    p + pre {
+      margin-top: 1em;
+    }
+    div + p,
+    pre + p {
+      margin-top: 1em;
+    }
+    a {
+      display: inline-block;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-word;
+      hyphens: auto;
+    }
+    @media print {
+      div.crosslinks {
+        visibility: hidden;
+      }
+    }
+    table.tabular {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    a img {
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+    }
+    center {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+    td center {
+      margin-top: 0em;
+      margin-bottom: 0em;
+    }
+    .Canvas {
+      position: relative;
+    }
+    img.math {
+      vertical-align: middle;
+    }
+    div.par-math-display,
+    div.math-display {
+      text-align: center;
+    }
+    li p.indent {
+      text-indent: 0em;
+    }
+    li p:first-child {
+      margin-top: 0em;
+    }
+    li p:last-child,
+    li div:last-child {
+      margin-bottom: 0.5em;
+    }
+    li p:first-child {
+      margin-bottom: 0;
+    }
+    li p ~ ul:last-child,
+    li p ~ ol:last-child {
+      margin-bottom: 0.5em;
+    }
+    .enumerate1 {
+      list-style-type: decimal;
+    }
+    .enumerate2 {
+      list-style-type: lower-alpha;
+    }
+    .enumerate3 {
+      list-style-type: lower-roman;
+    }
+    .enumerate4 {
+      list-style-type: upper-alpha;
+    }
+    div.newtheorem {
+      margin-bottom: 2em;
+      margin-top: 2em;
+    }
+    div.newtheorem .head {
+      font-weight: bold;
+    }
+    .obeylines-h,
+    .obeylines-v {
+      white-space: nowrap;
+    }
+    div.obeylines-v p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .overline {
+      text-decoration: overline;
+    }
+    .overline img {
+      border-top: 1px solid black;
+    }
+    td.displaylines {
+      text-align: center;
+      white-space: nowrap;
+    }
+    .centerline {
+      text-align: center;
+    }
+    .rightline {
+      text-align: right;
+    }
+    pre.verbatim {
+      font-family: "Source Code Pro", monospace;
+      text-align: left;
+      clear: both;
+    }
+    .fbox {
+      padding-left: 3pt;
+      padding-right: 3pt;
+      text-indent: 0pt;
+      border: solid black 0.4pt;
+    }
+    div.fbox {
+      display: table;
+    }
+    div.center div.fbox {
+      text-align: center;
+      clear: both;
+      padding-left: 3pt;
+      padding-right: 3pt;
+      text-indent: 0pt;
+      border: solid black 0.4pt;
+    }
+    div.minipage {
+      width: 100%;
+    }
+    div.center,
+    div.center div.center {
+      text-align: center;
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+    div.center div {
+      text-align: left;
+    }
+    div.flushright,
+    div.flushright div.flushright {
+      text-align: right;
+    }
+    div.flushright div {
+      text-align: left;
+    }
+    div.flushleft {
+      text-align: left;
+    }
+    .underline {
+      text-decoration: underline;
+    }
+    .underline img {
+      border-bottom: 1px solid black;
+      margin-bottom: 1pt;
+    }
+    .framebox-c,
+    .framebox-l,
+    .framebox-r {
+      padding-left: 3pt;
+      padding-right: 3pt;
+      text-indent: 0pt;
+      border: solid black 0.4pt;
+    }
+    .framebox-c {
+      text-align: center;
+    }
+    .framebox-l {
+      text-align: left;
+    }
+    .framebox-r {
+      text-align: right;
+    }
+    span.thank-mark {
+      vertical-align: super;
+    }
+    span.footnote-mark sup.textsuperscript,
+    span.footnote-mark a sup.textsuperscript {
+      font-size: 80%;
+    }
+    div.tabular,
+    div.center div.tabular {
+      text-align: center;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+    table.tabular td p {
+      margin-top: 0em;
+    }
+    table.tabular {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    td p:first-child {
+      margin-top: 0em;
+    }
+    td p:last-child {
+      margin-bottom: 0em;
+    }
+    div.td00 {
+      margin-left: 0pt;
+      margin-right: 0pt;
+    }
+    div.td01 {
+      margin-left: 0pt;
+      margin-right: 5pt;
+    }
+    div.td10 {
+      margin-left: 5pt;
+      margin-right: 0pt;
+    }
+    div.td11 {
+      margin-left: 5pt;
+      margin-right: 5pt;
+    }
+    table[rules] {
+      border-left: solid black 0.4pt;
+      border-right: solid black 0.4pt;
+    }
+    td.td00 {
+      padding-left: 0pt;
+      padding-right: 0pt;
+    }
+    td.td01 {
+      padding-left: 0pt;
+      padding-right: 5pt;
+    }
+    td.td10 {
+      padding-left: 5pt;
+      padding-right: 0pt;
+    }
+    td.td11 {
+      padding-left: 5pt;
+      padding-right: 5pt;
+    }
+    table[rules] {
+      border-left: solid black 0.4pt;
+      border-right: solid black 0.4pt;
+    }
+    .hline hr,
+    .cline hr {
+      height: 0px;
+      margin: 0px;
+    }
+    .hline td,
+    .cline td {
+      padding: 0;
+    }
+    .hline hr,
+    .cline hr {
+      border: none;
+      border-top: 1px solid black;
+    }
+    .hline {
+      border-top: 1px solid black;
+    }
+    .tabbing-right {
+      text-align: right;
+    }
+    div.float,
+    div.figure {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    div.float img {
+      text-align: center;
+    }
+    div.figure img {
+      text-align: center;
+    }
+    .marginpar,
+    .reversemarginpar {
+      width: 20%;
+      float: right;
+      text-align: left;
+      margin-left: auto;
+      margin-top: 0.5em;
+      font-size: 85%;
+      text-decoration: underline;
+    }
+    .marginpar p,
+    .reversemarginpar p {
+      margin-top: 0.4em;
+      margin-bottom: 0.4em;
+    }
+    .reversemarginpar {
+      float: left;
+    }
+    table.equation {
+      width: 100%;
+    }
+    .equation td {
+      text-align: center;
+    }
+    td.equation {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+    td.equation-label {
+      width: 5%;
+      text-align: center;
+    }
+    td.eqnarray4 {
+      width: 5%;
+      white-space: normal;
+    }
+    td.eqnarray2 {
+      width: 5%;
+    }
+    table.eqnarray-star,
+    table.eqnarray {
+      width: 100%;
+    }
+    div.eqnarray {
+      text-align: center;
+    }
+    div.array {
+      text-align: center;
+    }
+    div.pmatrix {
+      text-align: center;
+    }
+    table.pmatrix {
+      width: 100%;
+    }
+    span.pmatrix img {
+      vertical-align: middle;
+    }
+    div.pmatrix {
+      text-align: center;
+    }
+    table.pmatrix {
+      width: 100%;
+    }
+    span.bar-css {
+      text-decoration: overline;
+    }
+    img.cdots {
+      vertical-align: middle;
+    }
+    .partToc a,
+    .partToc,
+    .likepartToc a,
+    .likepartToc {
+      line-height: 200%;
+      font-weight: bold;
+      font-size: 110%;
+    }
+    .chapterToc a,
+    .chapterToc,
+    .likechapterToc a,
+    .likechapterToc,
+    .appendixToc a,
+    .appendixToc {
+      line-height: 200%;
+      font-weight: bold;
+    }
+    .index-item,
+    .index-subitem,
+    .index-subsubitem {
+      display: block;
+    }
+    div.caption {
+      text-indent: -2em;
+      margin-left: 3em;
+      margin-right: 1em;
+      text-align: left;
+    }
+    div.caption span.id {
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    h1.partHead {
+      text-align: center;
+    }
+    p.bibitem {
+      text-indent: -2em;
+      margin-left: 2em;
+      margin-top: 0.6em;
+      margin-bottom: 0.6em;
+    }
+    p.bibitem-p {
+      text-indent: 0em;
+      margin-left: 2em;
+      margin-top: 0.6em;
+      margin-bottom: 0.6em;
+    }
+    .paragraphHead,
+    .likeparagraphHead {
+      margin-top: 2em;
+      font-weight: bold;
+    }
+    .subparagraphHead,
+    .likesubparagraphHead {
+      font-weight: bold;
+    }
+    .verse {
+      white-space: nowrap;
+      margin-left: 2em;
+    }
+    div.maketitle {
+      text-align: center;
+    }
+    h2.titleHead {
+      text-align: center;
+    }
+    div.maketitle {
+      margin-bottom: 2em;
+    }
+    div.author,
+    div.date {
+      text-align: center;
+    }
+    div.thanks {
+      text-align: left;
+      margin-left: 10%;
+      font-size: 85%;
+      font-style: italic;
+    }
+    div.author {
+      white-space: nowrap;
+    }
+    div.abstract p {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    div.abstract {
+      width: 100%;
+    }
+    .abstracttitle {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    figure.float,
+    div.figure {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    figure.figure {
+      text-align: center;
+    }
+    figcaption.caption {
+      text-indent: -2em;
+      margin-left: 3em;
+      margin-right: 1em;
+      text-align: center;
+    }
+    figcaption.caption span.id {
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    p + figcaption,
+    img + figcaption {
+      margin-top: 1em;
+    }
+    .abstract {
+      margin: 1em;
+    }
+    span.footnote-mark sup.textsuperscript,
+    span.footnote-mark a sup.textsuperscript {
+      font-size: 80%;
+    }
+    figure.float,
+    div.figure {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    figure.figure {
+      text-align: center;
+    }
+    figcaption.caption {
+      text-indent: -2em;
+      margin-left: 3em;
+      margin-right: 1em;
+      text-align: center;
+    }
+    figcaption.caption span.id {
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    p + figcaption,
+    img + figcaption {
+      margin-top: 1em;
+    }
+    .equation td {
+      text-align: center;
+    }
+    .equation-star td {
+      text-align: center;
+    }
+    table.equation-star {
+      width: 100%;
+    }
+    table.equation {
+      width: 100%;
+    }
+    table.align,
+    table.alignat,
+    table.xalignat,
+    table.xxalignat,
+    table.flalign {
+      width: 95%;
+      margin-left: 5%;
+      white-space: nowrap;
+    }
+    table.align-star,
+    table.alignat-star,
+    table.xalignat-star,
+    table.flalign-star {
+      margin-left: auto;
+      margin-right: auto;
+      white-space: nowrap;
+    }
+    td.align-label {
+      width: 5%;
+      text-align: center;
+    }
+    td.align-odd {
+      text-align: right;
+      padding-right: 0.3em;
+    }
+    td.align-even {
+      text-align: left;
+      padding-right: 0.6em;
+    }
+    table.multline,
+    table.multline-star {
+      width: 100%;
+    }
+    td.gather {
+      text-align: center;
+    }
+    table.gather {
+      width: 100%;
+    }
+    div.gather-star {
+      text-align: center;
+    }
+    dl.enumerate-enumitem {
+      display: grid;
+      grid-template-columns: 3ch 1fr;
+      align-items: top;
+      row-gap: 1ch;
+    }
+    .rotatebox {
+      display: inline-block;
+    }
+    table[rules] {
+      border-left: solid black 0.4pt;
+      border-right: solid black 0.4pt;
+    }
+    table.longtable {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    div.longtable {
+      text-align: center;
+    }
+    table.longtable {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    caption.longtable .id {
+      font-weight: bold;
+    }
+    div.tabular,
+    div.center div.tabular {
+      text-align: center;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+    table.tabular td p {
+      margin-top: 0em;
+    }
+    table.tabular {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    td p:first-child {
+      margin-top: 0em;
+    }
+    td p:last-child {
+      margin-bottom: 0em;
+    }
+    div.td00 {
+      margin-left: 0pt;
+      margin-right: 0pt;
+    }
+    div.td01 {
+      margin-left: 0pt;
+      margin-right: 5pt;
+    }
+    div.td10 {
+      margin-left: 5pt;
+      margin-right: 0pt;
+    }
+    div.td11 {
+      margin-left: 5pt;
+      margin-right: 5pt;
+    }
+    table[rules] {
+      border-left: solid black 0.4pt;
+      border-right: solid black 0.4pt;
+    }
+    td.td00 {
+      padding-left: 0pt;
+      padding-right: 0pt;
+    }
+    td.td01 {
+      padding-left: 0pt;
+      padding-right: 5pt;
+    }
+    td.td10 {
+      padding-left: 5pt;
+      padding-right: 0pt;
+    }
+    td.td11 {
+      padding-left: 5pt;
+      padding-right: 5pt;
+    }
+    table[rules] {
+      border-left: solid black 0.4pt;
+      border-right: solid black 0.4pt;
+    }
+    .hline hr,
+    .cline hr {
+      height: 0px;
+      margin: 0px;
+    }
+    .hline td,
+    .cline td {
+      padding: 0;
+    }
+    .hline hr,
+    .cline hr {
+      border: none;
+      border-top: 1px solid black;
+    }
+    .hline {
+      border-top: 1px solid black;
+    }
+    div.array {
+      text-align: center;
+    }
+    .caption span.id {
+      font-weight: bold;
+    }
+    .wrapfig-r,
+    .wrapfig-ri,
+    .wrapfig-ir,
+    .wrapfig-ro,
+    .wrapfig-or {
+      float: right;
+      text-align: left;
+      margin-left: auto;
+      margin-top: 0.5em;
+    }
+    .wrapfig-l,
+    .wrapfig-li,
+    .wrapfig-il,
+    .wrapfig-lo,
+    .wrapfig-ol {
+      float: left;
+      text-align: left;
+      margin-right: auto;
+      margin-top: 0.5em;
+    }
+    .wrapfig-r .caption td.content,
+    .wrapfig-ri .caption td.content,
+    .wrapfig-ir .caption td.content,
+    .wrapfig-ro .caption td.content,
+    .wrapfig-or .caption td.content,
+    .wrapfig-l .caption td.content,
+    .wrapfig-li .caption td.content,
+    .wrapfig-il .caption td.content,
+    .wrapfig-lo .caption td.content,
+    .wrapfig-ol .caption td.content {
+      white-space: normal;
+    }
+    .wrapfig-r .caption,
+    .wrapfig-ri .caption,
+    .wrapfig-ir .caption,
+    .wrapfig-ro .caption,
+    .wrapfig-or .caption,
+    .wrapfig-l .caption,
+    .wrapfig-li .caption,
+    .wrapfig-il .caption,
+    .wrapfig-lo .caption,
+    .wrapfig-ol .caption {
+      width: 30%;
+    }
+    .tcolorbox {
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+    .tcolorbox .lowerbox {
+      margin-top: 0pt;
+    }
+    div.verbatiminput {
+      font-family: "Source Code Pro", monospace;
+      white-space: nowrap;
+    }
+    dt.printshorthands {
+      float: left;
+      clear: left;
+      margin-right: 1em;
+    }
+    dd.thebibliography {
+      margin-left: 2.5em;
+    }
+    dt.thebibliography {
+      float: left;
+      clear: left;
+      margin-right: 1em;
+    }
+</style>
+
+<div class="maketitle">
+  <h2 class="titleHead">Software Sabotage in Open Source Projects</h2>
+  <div class="subtitle">
+    <span class="SourceSansPro-Bold-tlf-t1-x-x-132"
+      >Proseminar Thesis of</span
+    >
+  </div>
+  <div class="author">
+    <span class="LinLibertineT-tlf-t1-x-x-172">Davis Riedel</span>
+  </div>
+  <br />
+  <div class="date"></div>
+  Institute of Information Security and Dependability (KASTEL)<br />
+  Advisor: M.Sc. Jan Wittler
+</div>
+<section class="abstract" role="doc-abstract">
+  <a id="x1-1doc"></a>
+  <!-- l. 7 -->
+  <p class="indent">
+    <span class="LinLibertineTB-tlf-t1-x-x-120">Abstract.</span> Recent
+    incidents in the <span class="fvmr8t-x-x-93">npm </span>ecosystem,
+    concerning the packages <span class="fvmr8t-x-x-93">colors.js</span>,
+    <span class="fvmr8t-x-x-93">faker.js</span>, and
+    <span class="fvmr8t-x-x-93">node-ipc</span>, gained a lot of attention
+    because they were each sabotaged by their own maintainer. Due to the
+    heavy use of open source dependencies and their recursive nature, such
+    supply chain attacks can spread to thousands of other packages. These
+    attacks are increasingly frequent and belong to the greatest
+    cybersecurity risks nowadays. We explain how supply chain attacks work
+    and discuss mitigation strategies. Furthermore, we ask ourselves,
+    whether open source maintainers are responsible for the integrity of
+    their projects, and if one can rationally trust open source software.
+    Afterward, we come back to these recent incidents and analyze if the
+    maintainers acted morally wrong and why they might have acted this way.
+  </p>
+</section>
+
+<h3 class="sectionHead">
+  <span class="titlemark">1 </span> <a id="x1-10001"></a>Introduction
+</h3>
+<!-- l. 9 -->
+<p class="noindent">
+  Open Source Software (OSS) can be developed and published by anyone
+  without restrictions. Thus OSS packages are not guaranteed to be benign.
+  Nevertheless, developers often include many OSS packages in their projects
+  to speed up the development process [<a id="x1-1001"></a><a href="#cite.0@Garrett2019">10</a>, <a id="x1-1002"></a><a href="#cite.0@Gustavsson2020">12</a>]. They take this risk because they
+  trust the reputation of the package authors and trust that the community
+  will quickly find and fix arising issues [<a href="#cite.0@Garrett2019"
+    >10</a
+  >]. But the problem is even bigger: The packages one depends on, can
+  depend on other packages themselves. This means that by adding a single
+  direct dependency, several other packages might be recursively included,
+  so-called transitive dependencies. And a project can be infected if just
+  one of those packages is malicious. Therefore, as the number of
+  dependencies of an average software package is ever-increasing, so is its
+  attack surface. By attacking some highly popular packages, one can
+  possibly infect more than 100,000 other packages [<a id="x1-1003"></a><a href="#cite.0@Zimmermann2019">34</a>]. Such Software Supply Chain
+  Attacks (SCAs) on OSS are increasingly frequent and considered one of the
+  greatest cybersecurity risks nowadays [<a id="x1-1004"></a><a href="#cite.0@ENISA2021">6</a>].
+</p>
+<!-- l. 12 -->
+<p class="indent">
+  Recently the incidents around the
+  <span class="fvmr8t-x-x-93">npm</span> packages
+  <span class="fvmr8t-x-x-93">colors.js</span>,
+  <span class="fvmr8t-x-x-93">faker.js</span>, and
+  <span class="fvmr8t-x-x-93">node-ipc </span>gained a lot of attention
+  because they were each sabotaged by their own maintainer. Hence we
+  especially focus on the <span class="fvmr8t-x-x-93">npm</span> ecosystem,
+  around the popular programming language
+  <span class="LinLibertineTI-tlf-t1-x-x-120">JavaScript</span>. The
+  maintainer of <span class="fvmr8t-x-x-93">colors.js </span>and
+  <span class="fvmr8t-x-x-93">faker.js </span>sabotaged his projects because
+  he was frustrated that even big corporations use them without paying
+  him [<a id="x1-1005"></a><a href="#cite.0@Sharma2022">30</a>,
+  <a id="x1-1006"></a><a href="#cite.0@Tal2022a">32</a>]. Meanwhile, the
+  maintainer of <span class="fvmr8t-x-x-93">node-ipc </span>sabotaged his
+  project in such a way, that it would affect users whose geolocation was
+  Belarus or Russia, as a protest against the war that Russia is waging in
+  Ukraine [<a id="x1-1007"></a><a href="#cite.0@Paganini2022">25</a>,
+  <a id="x1-1008"></a><a href="#cite.0@Tal2022">31</a>].
+</p>
+<!-- l. 16 -->
+<p class="indent">
+  In this paper, we first discuss how SCAs work and how effective they can
+  be. We analyze which strategies an attacker might take and discuss
+  mitigation strategies. Afterward, we analyze the aforementioned incidents
+  from a technical perspective. Besides that, we have to acknowledge, that
+  developing software is not an ethically neutral practice [<a
+    id="x1-1009"
+  ></a><a href="#cite.0@Noorman2020">21</a>]—especially not with OSS, as it is
+  being developed in socially interacting online communities, like on
+  GitHub. Therefore we also want to consider the ethical perspective of SCAs
+  and these incidents in particular. As a foundation, we first introduce the
+  ethical concepts of
+  <span class="LinLibertineTI-tlf-t1-x-x-120">trust </span>and
+  <span class="LinLibertineTI-tlf-t1-x-x-120">responsibility </span>and then
+  discuss if maintainers are responsible for the integrity of their open
+  source projects and if it is rational to trust OSS, i.e. to trust its
+  maintainers to act responsibly. With those arguments, we return to the two
+  recent incidents and discuss whether the behavior of these maintainers,
+  who were also the attackers, is morally acceptable and what factors might
+  have led them to act irresponsibly.
+</p>
+<!-- l. 7 -->
+<p class="noindent"></p>
+<h3 class="sectionHead">
+  <span class="titlemark">2 </span> <a id="x1-20002"></a>Open Source
+  Software
+</h3>
+<!-- l. 9 -->
+<p class="noindent">
+  In this section, we introduce the fundamentals of OSS. We first define the
+  term OSS itself and then discuss dependency governance in general, and in
+  the <span class="fvmr8t-x-x-93">npm</span> ecosystem in particular.
+  Afterward, we discuss who uses and who contributes to OSS projects, and
+  how widespread OSS usage is, i.a. in regards to
+  <span class="fvmr8t-x-x-93">npm</span>.
+</p>
+<!-- l. 11 -->
+<p class="noindent"></p>
+<h4 class="subsectionHead">
+  <span class="titlemark">2.1 </span> <a id="x1-30002.1"></a>Fundamentals
+</h4>
+<!-- l. 13 -->
+<p class="noindent">
+  Let us start introducing the fundamentals of OSS by first defining the
+  term itself. The <span class="LinLibertineTI-tlf-t1-x-x-120">The </span
+  ><span class="LinLibertineTI-tlf-t1-x-x-120"
+    >GNU Free Software Foundation (GNU) </span
+  >defines the term “Free Software” [<a id="x1-3001"></a><a href="#cite.0@GNU">1</a>] and
+  <span class="LinLibertineTI-tlf-t1-x-x-120">The </span
+  ><span class="LinLibertineTI-tlf-t1-x-x-120"
+    >Open Source Initiative (OSI) </span
+  >defines the term “Open Source Software” [<a id="x1-3002"></a><a href="#cite.0@OSI">2</a>], which are commonly used synonymously [<a
+    href="#cite.0@GNU"
+    >1</a
+  >]. For this paper it is sufficient to consider the following definition
+  for OSS, which we adapted from both the aforementioned definitions [<a
+    href="#cite.0@GNU"
+    >1</a
+  >, <a href="#cite.0@OSI">2</a>]:
+</p>
+<div class="newtheorem">
+  <!-- l. 15 -->
+  <p class="noindent">
+    <span class="head">
+      <a id="x1-3003r1"></a>
+      <span class="LinLibertineTB-tlf-t1-x-x-120"
+        >Definition 1.</span
+      > </span
+    ><span class="LinLibertineTB-tlf-t1-x-x-120">Open Source Software </span
+    ><span class="LinLibertineTI-tlf-t1-x-x-120"
+      >means software whose license gives users full access </span
+    ><span class="LinLibertineTI-tlf-t1-x-x-120"
+      >to the source code and the freedom to run, copy and change it for any
+      purpose, as well as the </span
+    ><span class="LinLibertineTI-tlf-t1-x-x-120"
+      >right to redistribute the software as is or as a component of another
+      software, without any </span
+    ><span class="LinLibertineTI-tlf-t1-x-x-120">royalty fee.</span>
+  </p>
+</div>
+<!-- l. 17 -->
+<p class="indent"></p>
+<!-- l. 19 -->
+<p class="indent">
+  To understand how OSS can be reused, let us now introduce the basics of
+  <span class="LinLibertineTI-tlf-t1-x-x-120">dependency </span
+  ><span class="LinLibertineTI-tlf-t1-x-x-120">governance</span>. OSS
+  projects are published as so-called (software-)<span
+    class="LinLibertineTB-tlf-t1-x-x-120"
+    >packages</span
+  >, which contain all the project’s resources, e.g. source code,
+  executables, metadata etc. They can be uploaded to a (package-)<span
+    class="LinLibertineTB-tlf-t1-x-x-120"
+    >registry</span
+  >, which is a server that stores packages, or rather multiple versions of
+  them. OSS packages are hosted in public registries: Anyone can upload
+  their packages to them and download packages from them.
+</p>
+<!-- l. 21 -->
+<p class="indent">
+  The packages that a package A directly (re-)uses in its codebase are its
+  <span class="LinLibertineTB-tlf-t1-x-x-120">direct dependencies</span>.
+  Each of those direct dependencies can have (direct) dependencies itself.
+  Therefore we define the
+  <span class="LinLibertineTB-tlf-t1-x-x-120">transitive dependencies </span
+  >of A as the (direct or transitive) dependencies of the (direct)
+  dependencies of A. By recursively traversing the dependencies of each
+  dependency, one can obtain the
+  <span class="LinLibertineTB-tlf-t1-x-x-120">dependency tree </span>of A.
+  We call this process
+  <span class="LinLibertineTI-tlf-t1-x-x-120">resolving </span>the
+  dependencies of A.
+</p>
+<div class="wrapfig-o">
+  <img
+    src="/images/software-sabotage-in-open-source-projects/directtransitivedependencies_bw.png"
+    class="bg-white"
+  />
+  <a id="x1-3004r1"></a><a id="x1-3005"></a>
+  <figcaption class="caption">
+    <span class="id"
+      ><span class="LinLibertineT-tlf-t1-x-x-109">Figure 1: </span></span
+    ><span class="content"
+      ><span class="LinLibertineT-tlf-t1-x-x-109"
+        >Illustration of a dependency </span
+      ><span class="LinLibertineT-tlf-t1-x-x-109">tree for some </span
+      ><span class="LinLibertineT-tlf-t1-x-x-109">OSS </span
+      ><span class="LinLibertineT-tlf-t1-x-x-109">package A</span></span
+    >
+  </figcaption>
+  <!-- tex4ht:label?: x1-3004r2.1  -->
+</div>
+
+<!-- l. 30 -->
+<p class="indent">
+  To build package A, its dependency tree must be resolved and all packages
+  in it must be downloaded from the registry and installed locally on the
+  build system.
+  <span class="LinLibertineTB-tlf-t1-x-x-120">Dependency </span
+  ><span class="LinLibertineTB-tlf-t1-x-x-120">managers </span>are tools
+  that automate this process [<a id="x1-3006"></a><a href="#cite.0@Ohm2020">23</a>].
+</p>
+<!-- l. 32 -->
+<p class="indent">
+  To better understand these concepts we want to look at an example: In this
+  paper focus on the ecosystem around the
+  <span class="LinLibertineTBI-tlf-t1-x-x-120">Node Package Manager</span>,
+  better known just as <span class="fvmr8t-x-x-93">npm</span>, which is the
+  most popular dependency manager for the programming language
+  <span class="LinLibertineTI-tlf-t1-x-x-120">JavaScript</span>.
+</p>
+<!-- l. 34 -->
+<p class="indent">
+  In <span class="fvmr8t-x-x-93">npm</span>, the developer defines all the
+  package’s metadata in a JSON file named
+  <span class="fvmr8t-x-x-93">package.json</span>. They must at least
+  specify the package’s name, that uniquely identifies it in the
+  <span class="fvmr8t-x-x-93">npm</span> registry and the current version
+  according to semantic versioning [<a id="x1-3007"></a><a href="#cite.0@npmdocssemver">22</a>]. The direct dependencies are also
+  listed in this file, each with its name and version constraints.
+  Auto-updates can be constrained individually for each package to:
+  <a id="x1-3008r1"></a>(1) a specific version<a id="x1-3009r2"></a> (2) all
+  newer patch releases<a id="x1-3010r3"></a> (3) all newer patch and minor
+  releases, or<a id="x1-3011r4"></a> (4) all newer releases, including major
+  releases
+</p>
+<!-- l. 43 -->
+<p class="noindent"></p>
+<h4 class="subsectionHead">
+  <span class="titlemark">2.2 </span> <a id="x1-40002.2"></a>The Widespread
+  Use of Open Source Software
+</h4>
+<!-- l. 45 -->
+<p class="noindent">
+  Initially, OSS was a movement of altruist hackers developing software in
+  their free time for the common good [<a id="x1-4001"></a><a href="#cite.0@AndersenGott2012">3</a>]. To this day, many individuals
+  support and rely on OSS, but there is also an increasing number of
+  companies adopting OSS [<a id="x1-4002"></a><a href="#cite.0@Fuggetta2003">9</a>, <a id="x1-4003"></a><a href="#cite.0@Ladisa2022">17</a>]. Two popular examples of commercial
+  OSS adoption are Linux and Apache. They are the de-facto backbone of the
+  internet nowadays, with about 65% of all websites running Apache [<a
+    href="#cite.0@Fuggetta2003"
+    >9</a
+  >, <a id="x1-4004"></a><a href="#cite.0@Jesiek2003">15</a>]. But
+  companies are not only
+  <span class="LinLibertineTI-tlf-t1-x-x-120">using</span> OSS, there is
+  also an increasing amount of companies “contributing their intellectual
+  property for free to the open source community” [<a
+    href="#cite.0@AndersenGott2012"
+    >3</a
+  >]. Moreover, even public institutions and governmental agencies,
+  especially in Europe, are increasingly interested in the use of OSS [<a
+    href="#cite.0@Fuggetta2003"
+    >9</a
+  >].
+</p>
+<!-- l. 47 -->
+<p class="indent">
+  To further understand the popularity of OSS, let us return to our example:
+  The <span class="fvmr8t-x-x-93">npm</span> registry provides OSS packages
+  for nearly every imaginable situation, ranging from small utility packages
+  to large frameworks and libraries [<a id="x1-4005"></a><a href="#cite.0@Zimmermann2019">34</a>]. On July 31, 2021 the
+  <span class="fvmr8t-x-x-93">npm</span> registry alone contained over 1.8
+  million JavaScript packages, and over 21 million different versions of
+  those packages. In 2021 alone almost 4 million new versions and over
+  400,000 entirely new packages were published to the
+  <span class="fvmr8t-x-x-93">npm</span> registry [<a id="x1-4006"></a><a href="#cite.0@Sonatype2021">14</a>].
+</p>
+<!-- l. 7 -->
+<p class="noindent"></p>
+<h3 class="sectionHead">
+  <span class="titlemark">3 </span> <a id="x1-50003"></a>Software Supply
+  Chain Attacks
+</h3>
+<!-- l. 9 -->
+<p class="noindent">
+  The European Union Agency for Cybersecurity (ENISA) threat landscape
+  report 2021 states, that Software Supply Chain Attacks (SCAs) have become
+  one of the major cybersecurity threats nowadays [<a id="x1-5001"></a><a href="#cite.0@ENISA2021">6</a>]. In this section we first define, what
+  an SCA is, then we analyze the role that dependency managers play in SCAs.
+  Thereafter we discuss some SCA strategies and how one might mitigate them.
+</p>
+<!-- l. 7 -->
+<p class="noindent"></p>
+<h4 class="subsectionHead">
+  <span class="titlemark">3.1 </span> <a id="x1-60003.1"></a>Definition
+</h4>
+<!-- l. 9 -->
+<p class="noindent">
+  First, we want to define what can be understood as
+  <span class="LinLibertineTI-tlf-t1-x-x-120">malicious code</span>:
+</p>
+<div class="newtheorem">
+  <!-- l. 10 -->
+  <p class="noindent">
+    <span class="head">
+      <a id="x1-6001r2"></a>
+      <span class="LinLibertineTB-tlf-t1-x-x-120">Definition 2.</span>
+    </span>
+    <span class="LinLibertineTI-tlf-t1-x-x-120">“[</span
+    ><span class="LinLibertineTB-tlf-t1-x-x-120">Malicious code</span
+    ><span class="LinLibertineTI-tlf-t1-x-x-120"
+      >] implements malicious behavior including (but not </span
+    ><span class="LinLibertineTI-tlf-t1-x-x-120"
+      >limited to) exfiltrating sensitive or personal data, tampering with
+      or destroying data, or </span
+    ><span class="LinLibertineTI-tlf-t1-x-x-120"
+      >performing long-running or expensive computations that are not
+      explicitly documented.” [</span
+    ><a id="x1-6002"></a><a href="#cite.0@Sejfia2022"
+      ><span class="LinLibertineTI-tlf-t1-x-x-120">29</span></a
+    ><span class="LinLibertineTI-tlf-t1-x-x-120">]</span>
+  </p>
+</div>
+<!-- l. 12 -->
+<p class="indent">
+  Based on that we can define SCAs. The following definition is adapted from
+  the definitions by <a id="x1-6003"></a> Ladisa et al. [<a
+    href="#cite.0@Ladisa2022"
+    >17</a
+  >] and <a id="x1-6004"></a> Ohm et al. [<a href="#cite.0@Ohm2020">23</a>]:
+</p>
+<div class="newtheorem">
+  <!-- l. 15 -->
+  <p class="noindent">
+    <span class="head">
+      <a id="x1-6005r3"></a>
+      <span class="LinLibertineTB-tlf-t1-x-x-120">Definition 3.</span>
+    </span>
+    <span class="LinLibertineTI-tlf-t1-x-x-120">A </span
+    ><span class="LinLibertineTB-tlf-t1-x-x-120"
+      >Software Supply Chain Attack </span
+    ><span class="LinLibertineTI-tlf-t1-x-x-120"
+      >is characterized by the injection of</span
+    >
+    malicious code
+    <span class="LinLibertineTI-tlf-t1-x-x-120"
+      >into a software package, in order to infect directly or transitively
+      dependent </span
+    ><span class="LinLibertineTI-tlf-t1-x-x-120"
+      >software packages and comprise the systems using them.</span
+    >
+  </p>
+</div>
+<!-- l. 17 -->
+<p class="indent"></p>
+<!-- l. 7 -->
+<p class="noindent"></p>
+<h4 class="subsectionHead">
+  <span class="titlemark">3.2 </span> <a id="x1-70003.2"></a>The Role of
+  Dependency Managers and Registries
+</h4>
+<!-- l. 9 -->
+<p class="noindent">
+  As we have seen in Section <a href="#x1-30002.1"
+    >2.1<!-- tex4ht:ref: sec:oss_fundamentals  --></a
+  >, dependency managers make it easy to add OSS dependencies to a project.
+  This leads to heavy use of OSS packages even for simple tasks. Especially
+  in the <span class="fvmr8t-x-x-93">npm</span>
+
+  ecosystem, it is quite common to rely on very small packages that just
+  perform simple computations, so-called
+  <span class="LinLibertineTI-tlf-t1-x-x-120">micropackages</span> [<a
+    id="x1-7001"
+  ></a><a href="#cite.0@Zimmermann2019">34</a>], or to depend on a large library
+  and only use a single function from it [<a id="x1-7002"></a><a href="#cite.0@Gustavsson2020">12</a>]. Such dependencies can be caused
+  by economic pressure to develop as quickly as possible. Although they may
+  have short-term gains, each dependency increases the attack surface of a
+  project [<a href="#cite.0@Gustavsson2020">12</a>].
+</p>
+<!-- l. 11 -->
+<p class="indent">
+  In 2018, each <span class="fvmr8t-x-x-93">npm</span> package had on
+  average 2.8 direct dependencies. Due to their recursive nature, each
+  linear increase in direct dependencies leads to a super-linear increase in
+  transitive dependencies [<a id="x1-7003"></a><a href="#cite.0@Zimmermann2019">34</a>]. In 2019, an average
+  <span class="fvmr8t-x-x-93">npm</span> package had about 90 dependencies
+  overall (direct and transitive) [<a id="x1-7004"></a><a href="#cite.0@Garrett2019">10</a>].
+</p>
+<!-- l. 13 -->
+<p class="indent">
+  As an example, you can find the dependency tree of the famous
+  <span class="fvmr8t-x-x-93">electron </span>package, which allows building
+  cross-platform desktop apps using web technologies, in Figure <a
+    href="#x1-7006r2"
+    >2<!-- tex4ht:ref: fig:electrondependencytree  --></a
+  >. Although it only has three direct dependencies, this leads to 91
+  dependencies in total [<a id="x1-7005"></a><a href="#cite.0@anvaka">4</a>].
+</p>
+<figure class="figure">
+  <!-- l. 17 -->
+  <p class="noindent">
+    <img
+      src="/images/software-sabotage-in-open-source-projects/electrondependencytree.png"
+      class="bg-white"
+    />
+    <a id="x1-7006r2"></a><a id="x1-7007"></a>
+  </p>
+  <figcaption class="caption">
+    <span class="id"
+      ><span class="LinLibertineT-tlf-t1-x-x-109">Figure 2: </span></span
+    ><span class="content"
+      ><span class="LinLibertineT-tlf-t1-x-x-109">Dependency tree of </span
+      ><span class="fvmr8t-x-x-85">electron </span
+      ><span class="LinLibertineT-tlf-t1-x-x-109">package version </span
+      ><span class="fvmr8t-x-x-85">19.0.4 </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-109">Source: </span
+      ><span class="LinLibertineT-tlf-t1-x-x-109">[</span
+      ><a href="#cite.0@anvaka"
+        ><span class="LinLibertineT-tlf-t1-x-x-109">4</span></a
+      ><span class="LinLibertineT-tlf-t1-x-x-109">]</span>
+    </span>
+  </figcaption>
+  <!-- tex4ht:label?: x1-7006r3.2  -->
+</figure>
+<!-- l. 21 -->
+<p class="indent">
+  Another huge risk is that dependency managers can automatically update the
+  dependencies, as described in Section <a href="#x1-30002.1"
+    >2.1<!-- tex4ht:ref: sec:oss_fundamentals  --></a
+  >. Upon installation of a package, for each dependency, an applicable
+  version is resolved according to the version constraints. Thus when
+  installing on different machines and/or at different times, different
+  versions may be resolved. At first, it may seem more secure to lock all
+  dependencies to a specific version, to avoid malicious updates being
+  installed unnoticed. But that means updates need to be done manually—if
+  forgotten, important vulnerability fixes might not be installed [<a
+    id="x1-7009"
+  ></a><a href="#cite.0@Zimmermann2019">34</a>].
+</p>
+<!-- l. 23 -->
+<p class="indent">
+  Furthermore, while <span class="fvmr8t-x-x-93">npm</span>’s openness is a
+  major reason for its popularity and growth, it is also a huge risk. To
+  publish a package to the <span class="fvmr8t-x-x-93">npm</span> registry,
+  one only has to create a user account on the
+  <span class="fvmr8t-x-x-93">npm</span> website. There are no restrictions
+  or checks. The user who first published a package is automatically a
+  maintainer, and can thus upload new versions at any time. Maintainers can
+  also add other users as maintainers [<a id="x1-7010"></a><a href="#cite.0@Sejfia2022">29</a>,
+  <a href="#cite.0@Zimmermann2019">34</a>].
+</p>
+<!-- l. 25 -->
+<p class="indent">
+  Moreover, in the <span class="fvmr8t-x-x-93">npm</span> registry, it is
+  not mandatory to provide a link to the repository, where the source code
+  is publicly hosted. Attackers can abuse this to stealthily introduce
+  malicious packages or package versions [<a href="#cite.0@Sejfia2022">29</a
+  >, <a href="#cite.0@Zimmermann2019">34</a>].
+</p>
+<!-- l. 27 -->
+<p class="indent">
+  We can conclude that while dependency managers and OSS registries automate
+  the dependency governance and facilitate the use of OSS, they also pose a
+  security risk.
+</p>
+<h4 class="subsectionHead">
+  <span class="titlemark">3.3 </span> <a id="x1-80003.3"></a>Attack
+  Strategies
+</h4>
+<!-- l. 9 -->
+<p class="noindent">
+  In the following we will outline some relevant attack strategies:
+  <a id="x1-8001r1"></a>(1) The attacker creates a
+  <span class="LinLibertineTI-tlf-t1-x-x-120">new package from scratch</span
+  >, that fulfills a real purpose. They advertise it, until it becomes
+  popular and is used by a lot of downstream users. Then they publish an
+  update including malicious code, that infects those pulling the latest
+  version [<a id="x1-8002"></a><a href="#cite.0@Ladisa2022">17</a>].<a
+    id="x1-8003r2"
+  ></a>
+  (2)  The attacker publishes a malicious package that has a similar name to
+  a legitimate package, for example by just dropping a hyphen, introducing
+  <span class="LinLibertineTI-tlf-t1-x-x-120">name confusion</span>. Some
+  downstream users then pull the wrong package because they are not sure
+  which one is the legitimate one or because of a typing error [<a
+    href="#cite.0@Ladisa2022"
+    >17</a
+  >].<a id="x1-8004r3"></a> (3) The attacker
+  <span class="LinLibertineTI-tlf-t1-x-x-120">injects malicious </span
+  ><span class="LinLibertineTI-tlf-t1-x-x-120"
+    >code into an already existing package</span
+  >, infecting downstream users who pull the latest update [<a
+    href="#cite.0@Ladisa2022"
+    >17</a
+  >].
+</p>
+<!-- l. 16 -->
+<p class="noindent">
+  The last strategy can be very attractive for an attacker because some
+  highly popular packages have more than 100,000 other packages depending on
+  them [<a href="#cite.0@Zimmermann2019">34</a>]. One can thus reach
+  thousands of users of the legitimate package and the packages depending on
+  it.
+</p>
+<!-- l. 18 -->
+<p class="indent">
+  But this strategy also requires access to the codebase of the legitimate
+  package. Some strategies to gain access include:
+  <a id="x1-8005r1"></a>(1) becoming a maintainer of the project through
+  <span class="LinLibertineTI-tlf-t1-x-x-120">social </span
+  ><span class="LinLibertineTI-tlf-t1-x-x-120">engineering</span> [<a
+    id="x1-8006"
+  ></a><a href="#cite.0@Ohm2020">23</a>].<a id="x1-8007r2"></a> (2) <span
+    class="LinLibertineTI-tlf-t1-x-x-120"
+    >contributing </span
+  >code that seemingly solves an issue, but is malicious. This code needs to
+  be accepted by a maintainer. One might hide its malicious parts by means
+  of <span class="LinLibertineTI-tlf-t1-x-x-120">obfuscation</span> [<a
+    href="#cite.0@Ohm2020"
+    >23</a
+  >].<a id="x1-8008r3"></a> (3) gaining access to the codebase by
+  <span class="LinLibertineTI-tlf-t1-x-x-120"
+    >compromising the credentials </span
+  >of a maintainer [<a href="#cite.0@Ohm2020">23</a>].
+</p>
+<!-- l. 25 -->
+<p class="indent">
+  There are also different strategies, for when the malicious code gets
+  executed. <a id="x1-8009r1"></a>(1) Malicious code can be placed in
+  so-called
+  <span class="LinLibertineTI-tlf-t1-x-x-120">install scripts </span>which
+  the dependency manager runs during the installation of a package [<a
+    href="#cite.0@Ohm2020"
+    >23</a
+  >]. Thus the attack aims at the developers using the package as a
+  dependency.<a id="x1-8010r2"></a> (2) Malicious code can be placed in
+  tests. Thus attacking developers running those tests [<a
+    href="#cite.0@Ohm2020"
+    >23</a
+  >].<a id="x1-8011r3"></a> (3) Malicious code can also be placed in the
+  regular control flow of the package, and thus is executed at runtime of
+  the infected package [<a href="#cite.0@Ohm2020">23</a>]. This attack aims
+  at everyone running the package, i.e. end-users and developers.
+</p>
+<!-- l. 32 -->
+<p class="indent">
+  Furthermore, malicious code may always be executed
+  <span class="LinLibertineTI-tlf-t1-x-x-120">unconditionally</span>, or
+  only if certain conditions are met.
+  <span class="LinLibertineTI-tlf-t1-x-x-120">Conditional execution </span
+  >can be used to <a id="x1-8012r1"></a>(1) hide the malicious behavior
+  e.g. in test environments [<a id="x1-8013"></a><a href="#cite.0@Ohm2020">23</a>]<a id="x1-8014r2"></a> (2) only infect
+  specific packages [<a href="#cite.0@Ohm2020">23</a>]<a id="x1-8015r3"></a>
+  (3) only run depending on the victim package’s application state [<a
+    href="#cite.0@Ohm2020"
+    >23</a
+  >]
+</p>
+<!-- l. 7 -->
+<p class="noindent"></p>
+<h4 class="subsectionHead">
+  <span class="titlemark">3.4 </span> <a id="x1-90003.4"></a>Mitigation
+  Strategies
+</h4>
+<!-- l. 9 -->
+<p class="noindent">
+  Now that we understand what SCAs are, we want to analyze a few strategies
+  to mitigate such attacks. The first mitigation strategy that one might
+  think of—and probably the most effective one—is
+  <span class="LinLibertineTB-tlf-t1-x-x-120">manually reviewing </span>the
+  source code of each dependency one adds or version one updates to. But due
+  to the huge amount of dependencies that an average
+  <span class="fvmr8t-x-x-93">npm</span> package has (cf. Section <a
+    href="#x1-70003.2"
+    >3.2<!-- tex4ht:ref: sec:role_of_dm  --></a
+  >) and due to the frequent release of new updates, this is unfeasible, as
+  most of the literature agrees [<a id="x1-9001"></a><a href="#cite.0@Ladisa2022">17</a>, <a id="x1-9002"></a><a href="#cite.0@Sejfia2022">29</a>, <a id="x1-9003"></a><a href="#cite.0@Zimmermann2019">34</a>]. E.g. in 2019 approximately 29
+  updates per hour were published on
+  <span class="fvmr8t-x-x-93">npm</span> [<a id="x1-9004"></a><a href="#cite.0@Garrett2019">10</a>]. Hence it is also unrealistic for
+  the community to review all packages. Moreover, even if one could
+  thoroughly review all packages one depends on, this strategy does not
+  provide 100% security, since one can always overlook certain
+  vulnerabilities.
+</p>
+<!-- l. 11 -->
+<p class="indent">
+  Therefore researchers work on systems that can
+  <span class="LinLibertineTI-tlf-t1-x-x-120">automatically </span>and
+  <span class="LinLibertineTI-tlf-t1-x-x-120">efficiently </span>flag
+  possibly suspicious packages. They are based on the observation, that
+  <span class="LinLibertineTI-tlf-t1-x-x-120"
+    >many malicious package versions </span
+  ><span class="LinLibertineTI-tlf-t1-x-x-120"
+    >use certain functionalities that older, legitimate versions did never
+    use</span
+  >. An example therefore are native Node.js libraries, which allow access
+  to operating system level functionalities such as network or filesystem
+  access. Another example is the JavaScript
+  <span class="fvmr8t-x-x-93">eval </span>method, which allows code
+  evaluation at runtime. Also, malicious updates often introduce new files,
+  dependencies, or install scripts that have not been used before [<a
+    href="#cite.0@Garrett2019"
+    >10</a
+  >]. Garrett et al. [<a href="#cite.0@Garrett2019">10</a>] proposed a
+  <span class="LinLibertineTB-tlf-t1-x-x-120"
+    >machine-learning-based approach </span
+  >to detect such anomalies that suddenly occur from one version to another.
+  The algorithm is trained with the version history of several packages, and
+  not tailored for each package [<a href="#cite.0@Garrett2019">10</a>].
+  Sejfia and Schäfer [<a href="#cite.0@Sejfia2022">29</a>] expand on this
+  approach and proposed their system,
+  <span class="LinLibertineT-tlf-sc-t1-x-x-120">Amalfi</span>. It also
+  considers such anomalies as described above, but also incorporates
+  mitigation strategies for the following observations:
+  <a id="x1-9005r1"></a>(1) “malicious package versions tend not to have
+  their source code publicly available, in order to avoid detection” [<a
+    href="#cite.0@Sejfia2022"
+    >29</a
+  >]<a id="x1-9006r2"></a> (2) “attackers often publish multiple textually
+  identical copies of one and the same malicious package under different
+  names” [<a href="#cite.0@Sejfia2022">29</a>] Therefore,
+  <span class="LinLibertineT-tlf-sc-t1-x-x-120">Amalfi </span>uses
+  <a id="x1-9007r1"></a>(1)
+  <span class="LinLibertineTI-tlf-t1-x-x-120"
+    >machine-learning classifiers</span
+  >, trained on known malicious and benign packages [<a
+    href="#cite.0@Sejfia2022"
+    >29</a
+  >]<a id="x1-9008r2"></a>
+
+  (2) a <span class="LinLibertineTI-tlf-t1-x-x-120">reproducer </span>that
+  tries to build a package from its source code [<a
+    href="#cite.0@Sejfia2022"
+    >29</a
+  >]<a id="x1-9009r3"></a> (3) “a
+  <span class="LinLibertineTI-tlf-t1-x-x-120">clone </span
+  ><span class="LinLibertineTI-tlf-t1-x-x-120">detector </span>that finds
+  (near-)verbatim copies of known malicious packages” [<a
+    href="#cite.0@Sejfia2022"
+    >29</a
+  >] Garrett et al. [<a href="#cite.0@Garrett2019">10</a>] tested their
+  approach on 2,288 packages and found that their model reports 539
+  suspicious updates per week. They state, that even in the worst case,
+  where all reported packages are not malicious, the review effort can be
+  reduced by 89% [<a href="#cite.0@Garrett2019">10</a>]. Sejfia and Schäfer
+  [<a href="#cite.0@Sejfia2022">29</a>] find that the approach by Garrett et
+  al. [<a href="#cite.0@Garrett2019">10</a>] flagged more packages than
+  theirs. But one needs to consider that
+  <span class="LinLibertineT-tlf-sc-t1-x-x-120">Amalfi </span>has a larger
+  scope [<a href="#cite.0@Sejfia2022">29</a>] and they state that Garrett et
+  al. [<a href="#cite.0@Garrett2019">10</a>] “did not triage the results in
+  detail […]” [<a href="#cite.0@Sejfia2022">29</a>]. They state that
+  <span class="LinLibertineT-tlf-sc-t1-x-x-120">Amalfi </span>“can detect a
+  significant number of previously unknown malicious packages” [<a
+    href="#cite.0@Sejfia2022"
+    >29</a
+  >].
+</p>
+<!-- l. 35 -->
+<p class="indent">
+  In conclusion, one can say that machine-learning-based approaches can
+  drastically reduce the number of packages that must be manually reviewed.
+  But one has to keep in mind, that these systems do not flag suspicious
+  packages with 100% certainty.
+</p>
+<!-- l. 39 -->
+<p class="indent">
+  Let us now have a look at another approach. We already observed that many
+  malicious packages use operating system level functionalities. Then again
+  one can observe that a lot of packages published to
+  <span class="fvmr8t-x-x-93">npm</span> fulfill simple purposes and do not
+  require privileges like filesystem or network access [<a id="x1-9010"></a><a href="#cite.0@Ferreira2021">7</a>]. Therefore, Ferreira et al. [<a
+    href="#cite.0@Ferreira2021"
+    >7</a
+  >] “propose a
+  <span class="LinLibertineTB-tlf-t1-x-x-120">permission </span
+  ><span class="LinLibertineTB-tlf-t1-x-x-120">system </span>that
+  <span class="LinLibertineTI-tlf-t1-x-x-120">sandboxes </span>packages and
+  enforces per-package permissions […]” [<a href="#cite.0@Ferreira2021">7</a
+  >], following the
+  <span class="LinLibertineTI-tlf-t1-x-x-120"
+    >principle of least privilege</span
+  >. Such permission systems are e.g. commonly used in mobile apps and web
+  browser extensions [<a href="#cite.0@Ferreira2021">7</a>]. The developer
+  of a package selects the permissions his package needs “from a small set
+  of common and easy to understand permissions” [<a
+    href="#cite.0@Ferreira2021"
+    >7</a
+  >]. Every time a user installs a new package or a package is updated, the
+  list of permissions needed by that package is shown to them, and the
+  installation or update is only performed if they grant those permissions.
+  The system also ensures at runtime, that no package can use
+  functionalities for which it lacks permission [<a
+    href="#cite.0@Ferreira2021"
+    >7</a
+  >].
+</p>
+<!-- l. 43 -->
+<p class="indent">
+  In their tests, Ferreira et al. [<a href="#cite.0@Ferreira2021">7</a>]
+  found that they could protect 31.9% of packages, while the average
+  performance overhead of their system is, with much less than 1%,
+  negligible [<a href="#cite.0@Ferreira2021">7</a>].
+</p>
+<!-- l. 7 -->
+<p class="noindent"></p>
+<h3 class="sectionHead">
+  <span class="titlemark">4 </span> <a id="x1-100004"></a>The
+  <span class="fvmr8t-x-x-93">colors.js</span>,
+  <span class="fvmr8t-x-x-93">faker.js</span>, and
+  <span class="fvmr8t-x-x-93">node-ipc </span>Incidents
+</h3>
+<!-- l. 17 -->
+<p class="noindent">
+  Recently the SCAs on the <span class="fvmr8t-x-x-93">npm</span> packages
+  <span class="fvmr8t-x-x-93">colors.js</span>,
+  <span class="fvmr8t-x-x-93">faker.js</span>, and
+  <span class="fvmr8t-x-x-93">node-ipc </span>gained a lot of attention,
+  because they were attacked by their own maintainer. In the following, we
+  want to analyze those incidents from a technical viewpoint.
+</p>
+<!-- l. 7 -->
+<p class="noindent"></p>
+
+<h4 class="subsectionHead">
+  <span class="titlemark">4.1 </span> <a id="x1-110004.1"></a
+  ><span class="fvmr8t-x-x-93">colors.js </span>and
+  <span class="fvmr8t-x-x-93">faker.js</span>
+</h4>
+<!-- l. 10 -->
+<p class="noindent">
+  The <span class="fvmr8t-x-x-93">colors.js </span>and
+  <span class="fvmr8t-x-x-93">faker.js </span>incidents especially received
+  attention, because these legitimate and widely used packages were
+  sabotaged by their own maintainer, the
+  <span class="fvmr8t-x-x-93">npm</span> user Marak (Marak Squires).
+</p>
+<!-- l. 12 -->
+<p class="indent">
+  <span class="fvmr8t-x-x-93">colors.js </span>is used to print colored
+  messages to the terminal. <span class="fvmr8t-x-x-93">faker.js </span>is
+  used to generate fake data e.g. for use in tests [<a id="x1-11001"></a><a href="#cite.0@Sharma2022">30</a>].
+  <span class="fvmr8t-x-x-93">colors.js </span>regularly receives over 20
+  million downloads a week and was depended upon by over 19,000 packages at
+  the time of the incident. Even highly popular packages by big
+  corporations, like Amazon’s
+  <span class="fvmr8t-x-x-93">aws-cdk</span> package and Facebook’s
+  <span class="fvmr8t-x-x-93">jest </span>package, depended upon
+  <span class="fvmr8t-x-x-93">colors.js</span>.
+  <span class="fvmr8t-x-x-93">faker.js </span>is also quite popular, with
+  more than 2,500 dependent packages at the time of the incident [<a
+    href="#cite.0@Sharma2022"
+    >30</a
+  >, <a id="x1-11002"></a><a href="#cite.0@Tal2022a">32</a>].
+</p>
+<!-- l. 15 -->
+<p class="indent">
+  On January 5, 2022 Marak removed all source code from the
+  <span class="fvmr8t-x-x-93">faker.js </span>repository via a forced commit
+  with the commit message “endgame” and published an empty package as
+  version <span class="fvmr8t-x-x-93">6.6.6 </span>to
+  <span class="fvmr8t-x-x-93">npm</span> [<a href="#cite.0@Sharma2022">30</a
+  >, <a href="#cite.0@Tal2022a">32</a>]. On January 8, 2022 Marak released
+  the <span class="fvmr8t-x-x-93">colors.js</span> versions
+  <span class="fvmr8t-x-x-93">1.4.1</span>,
+  <span class="fvmr8t-x-x-93">1.4.2 </span>and
+  <span class="fvmr8t-x-x-93">1.4.44-liberty-2 </span>on
+  <span class="fvmr8t-x-x-93">npm</span>. Those versions would print
+  “LIBERTY” multiple times, before entering an infinite loop printing
+  non-ASCII characters, so-called
+  <span class="LinLibertineTI-tlf-t1-x-x-120">Zalgo </span>text, to the
+  console. An example output can be found in Figure <a href="#x1-11003r3"
+    >3<!-- tex4ht:ref: fig:colors-example  --></a
+  > [<a href="#cite.0@Sharma2022">30</a>,
+  <a href="#cite.0@Tal2022a">32</a>].
+</p>
+<figure class="figure">
+  <!-- l. 20 -->
+  <p class="noindent">
+    <img
+      src="/images/software-sabotage-in-open-source-projects/colorsjsoutput.png"
+      class="bg-white"
+    />
+    <a id="x1-11003r3"></a><a id="x1-11004"></a>
+  </p>
+  <figcaption class="caption">
+    <span class="id"
+      ><span class="LinLibertineT-tlf-t1-x-x-109">Figure 3: </span></span
+    ><span class="content"
+      ><span class="LinLibertineT-tlf-t1-x-x-109"
+        >Example output of malicious </span
+      ><span class="fvmr8t-x-x-85">colors.js </span
+      ><span class="LinLibertineT-tlf-t1-x-x-109">version </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-109">Source: </span
+      ><span class="LinLibertineT-tlf-t1-x-x-109">[</span
+      ><a href="#cite.0@Tal2022a"
+        ><span class="LinLibertineT-tlf-t1-x-x-109">32</span></a
+      ><span class="LinLibertineT-tlf-t1-x-x-109">]</span>
+    </span>
+  </figcaption>
+  <!-- tex4ht:label?: x1-11003r4.1  -->
+</figure>
+<!-- l. 24 -->
+<p class="indent">
+  With <span class="fvmr8t-x-x-93">faker.js</span>, it was obvious that the
+  repository is empty, and even if automatically installed on a system,
+  dependent packages would just not build, but there was no harm to the
+  system. Therefore one could argue that this attack does not even suffice
+  the criteria for
+  <span class="LinLibertineTI-tlf-t1-x-x-120">malicious code </span
+  >(cf. Definition <a href="#x1-6001r2"
+    >2<!-- tex4ht:ref: def:malicious_code  --></a
+  >), respectively can not be classified as an
+  <span class="LinLibertineTI-tlf-t1-x-x-120">SCA</span> (cf. Definition <a
+    href="#x1-6005r3"
+    >3<!-- tex4ht:ref: def:sca  --></a
+  >). The malicious versions of
+  <span class="fvmr8t-x-x-93">colors.js </span>on the other hand introduced
+  an infinite loop i.e. performed long-running (in fact infinite)
+  computations, without documenting this, and can thus be categorized as
+  <span class="LinLibertineTI-tlf-t1-x-x-120">malicious </span
+  >(cf. Definition <a href="#x1-6001r2"
+    >2<!-- tex4ht:ref: def:malicious_code  --></a
+  >). Since these versions affected many dependent packages, it is an
+  <span class="LinLibertineTI-tlf-t1-x-x-120">SCA</span> according to
+  Definition <a href="#x1-6005r3">3<!-- tex4ht:ref: def:sca  --></a>.
+</p>
+<!-- l. 27 -->
+<p class="indent">
+  Let us further categorize the attack based on Section <a
+    href="#x1-80003.3"
+    >3.3<!-- tex4ht:ref: sec:attack_strategies  --></a
+  >. The attack strategy was to
+  <span class="LinLibertineTI-tlf-t1-x-x-120"
+    >infect an already existing package</span
+  >. However, access to the package was gained due to being the original
+  maintainer of the package, which is what makes this attack so interesting.
+  The infinite loop was placed in the
+  <span class="LinLibertineTI-tlf-t1-x-x-120">regular control flow </span>of
+  <span class="fvmr8t-x-x-93">colors.js </span>and
+  <span class="LinLibertineTI-tlf-t1-x-x-120">executed unconditionally</span
+  >. It thus aimed at anyone running the package, including end-users.
+</p>
+<!-- l. 29 -->
+<p class="indent">
+  Next, let us discuss if the
+  <span class="fvmr8t-x-x-93">colors.js </span>attack could have been
+  prevented by the mitigation strategies presented in Section <a
+    href="#x1-90003.4"
+    >3.4<!-- tex4ht:ref: sec:mitigation_strategies  --></a
+  >. The infinite loop could have easily been found by
+  <span class="LinLibertineTI-tlf-t1-x-x-120">manually </span
+  ><span class="LinLibertineTI-tlf-t1-x-x-120">reviewing </span>the update.
+  But since the malicious
+  <span class="fvmr8t-x-x-93">colors.js </span>version did not require any
+  permissions that older versions did not need,
+  <span class="LinLibertineTI-tlf-t1-x-x-120">machine-learning-based </span
+  >mitigation systems and
+  <span class="LinLibertineTI-tlf-t1-x-x-120">sandboxing </span>systems
+  could not have prevented this attack.
+</p>
+<h4 class="subsectionHead">
+  <span class="titlemark">4.2 </span> <a id="x1-120004.2"></a
+  ><span class="fvmr8t-x-x-93">node-ipc</span>
+</h4>
+<!-- l. 9 -->
+<p class="noindent">
+  The <span class="fvmr8t-x-x-93">node-ipc </span>package is used for local
+  and remote inter-process communication on Linux, macOS, and Windows. It
+  regularly receives more than 1 million weekly downloads on
+  <span class="fvmr8t-x-x-93">npm</span> [<a id="x1-12001"></a><a href="#cite.0@Paganini2022">25</a>].
+</p>
+<!-- l. 11 -->
+<p class="indent">
+  The <span class="fvmr8t-x-x-93">npm</span> user RIAEvangelist (Brandon
+  Nozaki Miller) is the maintainer of
+  <span class="fvmr8t-x-x-93">node-ipc</span>. On March 7, 2022 he published
+  version <span class="fvmr8t-x-x-93">10.1.1 </span>of
+  <span class="fvmr8t-x-x-93">node-ipc </span>on
+  <span class="fvmr8t-x-x-93">npm</span>. This version checks the
+  geolocation of the system running
+  <span class="fvmr8t-x-x-93">node-ipc </span>at random time intervals. If
+  the geolocation is matched to either Belarus or Russia, random files on
+  the system are wiped and overwritten with a single heart emoji [<a
+    href="#cite.0@Paganini2022"
+    >25</a
+  >, <a id="x1-12002"></a><a href="#cite.0@Tal2022">31</a>]. About ten
+  hours later version <span class="fvmr8t-x-x-93">10.1.2 </span>was
+  published, with nearly no changes, also containing the malicious code.
+  This was probably done so that dependency managers would pull the
+  malicious update [<a href="#cite.0@Paganini2022">25</a>,
+  <a href="#cite.0@Tal2022">31</a>]. On March 8, 2022 RIAEvangelist
+  published a new package on <span class="fvmr8t-x-x-93">npm</span> called
+  <span class="fvmr8t-x-x-93">peacenotwar</span>. In the package’s
+  description he writes:
+</p>
+<div class="tcolorbox github_readme" id="tcolobox-1">
+  <div class="tcolorbox-title">
+    <!-- l. 16 -->
+    <p class="indent">
+      <span class="fvmb8t-x-x-93">peacenotwar </span>— README
+    </p>
+  </div>
+  <div class="tcolorbox-content">
+    <!-- l. 15 -->
+    <p class="noindent">
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >This code serves as a non-destructive example of why controlling
+        your node modules is </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120"
+        >important. It also serves as a non-violent protest against Russia’s
+        aggression that threatens </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120"
+        >the world right now. This module will add a message of peace on
+        your users’ desktops, and </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120"
+        >it will only do it if it does not already exist just to be
+        polite.</span
+      >
+    </p>
+  </div>
+</div>
+<div class="flushright">
+  <!-- l. 16 -->
+  <p class="noindent">
+    <span class="LinLibertineTI-tlf-t1-x-x-120">Source: [</span
+    ><a id="x1-12003"></a><a href="#cite.0@Peacenotwar2022"
+      ><span class="LinLibertineTI-tlf-t1-x-x-120">28</span></a
+    ><span class="LinLibertineTI-tlf-t1-x-x-120">]</span>
+  </p>
+</div>
+<p>
+  The same day he published version
+  <span class="fvmr8t-x-x-93">10.1.3 </span>of
+  <span class="fvmr8t-x-x-93">node-ipc </span>that removed the malicious
+  code. Shortly thereafter he published a new major version
+  <span class="fvmr8t-x-x-93">11.0.0 </span>which introduced a dependency on
+  the <span class="fvmr8t-x-x-93">peacenotwar </span>package. In this
+  version, every time a <span class="fvmr8t-x-x-93">node-ipc </span>function
+  would be called, a message from the
+  <span class="fvmr8t-x-x-93">peacenotwar </span>package would be printed to
+  the console and a file would be written to the system’s desktop,
+  containing information on the current war situation in Ukraine [<a
+    href="#cite.0@Paganini2022"
+    >25</a
+  >, <a href="#cite.0@Tal2022">31</a>]. On March 15, 2022 a patch version
+  <span class="fvmr8t-x-x-93">9.2.2 </span>of
+  <span class="fvmr8t-x-x-93">node-ipc </span>was published. This version
+  also added <span class="fvmr8t-x-x-93">peacenotwar </span>as a dependency
+  and would run it whenever <span class="fvmr8t-x-x-93">node-ipc</span> gets
+  imported. Also, RIAEvangelist introduced a dependency on the
+  aforementioned malicious package
+  <span class="fvmr8t-x-x-93">colors.js </span>(cf. Section <a
+    href="#x1-110004.1"
+    >4.1<!-- tex4ht:ref: sec:faker_colors  --></a
+  >). The release of this version was especially impactful, as the package
+  <span class="fvmr8t-x-x-93">@vue/cli</span>, which is the command line
+  tool of the highly popular JavaScript front-end framework Vue.js, depended
+  upon the <span class="fvmr8t-x-x-93">9.2.x </span>version range [<a
+    href="#cite.0@Paganini2022"
+    >25</a
+  >, <a href="#cite.0@Tal2022">31</a>].
+</p>
+<!-- l. 20 -->
+<p class="indent">
+  Since some versions of
+  <span class="fvmr8t-x-x-93">node-ipc </span>tampered with data on the
+  user’s desktop, those versions are
+  <span class="LinLibertineTI-tlf-t1-x-x-120">malicious </span>according to
+  Definition <a href="#x1-6001r2"
+    >2<!-- tex4ht:ref: def:malicious_code  --></a
+  >. And because the attack spread to many other packages, including the
+  aforementioned <span class="fvmr8t-x-x-93">vue.js</span>, it can be
+  categorized as an SCA in line with Definition <a href="#x1-6005r3"
+    >3<!-- tex4ht:ref: def:sca  --></a
+  >. Based on Section <a href="#x1-80003.3"
+    >3.3<!-- tex4ht:ref: sec:attack_strategies  --></a
+  >, we can further categorize this attack. Similar to
+  <span class="fvmr8t-x-x-93">colors.js</span>, the strategy was to
+  <span class="LinLibertineTI-tlf-t1-x-x-120"
+    >infect an already existing package</span
+  >, with the specialty of the attacker being the original maintainer. The
+  malicious code was also placed in the
+  <span class="LinLibertineTI-tlf-t1-x-x-120">regular control flow</span>,
+  affecting developers and end-users as well. But the malicious behavior was
+  only
+  <span class="LinLibertineTI-tlf-t1-x-x-120">performed conditionally</span
+  >, based on the geolocation of the executing system.
+</p>
+<!-- l. 23 -->
+<p class="indent">
+  Next let us analyze if the mitigation strategies presented in Section <a
+    href="#x1-90003.4"
+    >3.4<!-- tex4ht:ref: sec:mitigation_strategies  --></a
+  >
+  could have prevented this attack. It could have been mitigated by
+  <span class="LinLibertineTI-tlf-t1-x-x-120">manual review</span>, but the
+  changes were hidden by means of
+  <span class="LinLibertineTI-tlf-t1-x-x-120">obfuscation</span>, so one
+  could have overlooked the changes. Moreover, since
+  <span class="fvmr8t-x-x-93">node-ipc </span>had always been using native
+  <span class="fvmr8t-x-x-93">node.js </span>libraries to make (remote)
+  inter-process communication possible, the only observable anomaly would be
+  access to the user’s desktop. Depending on how fine-grained a
+  <span class="LinLibertineTI-tlf-t1-x-x-120">sandboxing system </span>is
+  and how good a
+  <span class="LinLibertineTI-tlf-t1-x-x-120"
+    >machine-learning-based anomaly detection system </span
+  >is trained, these approaches could have averted the incident, but it is
+  also possible that this attack would have slipped through.
+</p>
+<!-- l. 7 -->
+<p class="noindent"></p>
+<h3 class="sectionHead">
+  <span class="titlemark">5 </span> <a id="x1-130005"></a>Trust and
+  Responsibility in Open Source Software
+</h3>
+<!-- l. 9 -->
+<p class="noindent">
+  In this section, we first lay the fundamentals of
+  <span class="LinLibertineTI-tlf-t1-x-x-120">responsibility </span>and
+  <span class="LinLibertineTI-tlf-t1-x-x-120">trust </span>in ethics and
+  technology ethics in particular. With this knowledge, we then discuss the
+  responsibilities an OSS developer has and if one can rationally trust OSS.
+</p>
+<!-- l. 7 -->
+<p class="noindent"></p>
+<h4 class="subsectionHead">
+  <span class="titlemark">5.1 </span> <a id="x1-140005.1"></a>Responsibility
+  Fundamentals
+</h4>
+<!-- l. 10 -->
+<p class="noindent">
+  In this section, we want to discuss what it generally means to be
+  <span class="LinLibertineTI-tlf-t1-x-x-120">morally responsible</span>.
+  The concept of responsibility is central in technology ethics and there
+  are several different understandings of it.
+</p>
+<!-- l. 14 -->
+<p class="indent">
+  First, we want to differentiate between
+  <span class="LinLibertineTI-tlf-t1-x-x-120">moral responsibility </span
+  >and
+  <span class="LinLibertineTI-tlf-t1-x-x-120">causal responsibility</span>.
+  While moral responsibility is a
+  <span class="LinLibertineTI-tlf-t1-x-x-120">normative </span>relation,
+  causal responsibility merely means causation. One can say “the campfire is
+  <span class="LinLibertineTI-tlf-t1-x-x-120">responsible </span>for the
+  forest fire” [<a id="x1-14001"></a><a href="#cite.0@Grunwald2013">11</a>,
+  pp. 38], which only conveys that the campfire caused the forest fire. In
+  contrast, moral responsibility “is about human action and its intentions
+  and consequences” [<a id="x1-14002"></a><a href="#cite.0@Noorman2020">21</a>]. Since we want to ethically analyze
+  the actions of OSS developers in this paper, we will hereinafter only talk
+  about moral responsibility and mostly just refer to it as
+  <span class="LinLibertineTI-tlf-t1-x-x-120">responsibility</span>.
+</p>
+<!-- l. 19 -->
+<p class="indent">
+  Moral responsibility has a
+  <span class="LinLibertineTI-tlf-t1-x-x-120">prospective </span>and a
+  <span class="LinLibertineTI-tlf-t1-x-x-120">retrospective </span
+  >dimension. Responsibility gets
+  <span class="LinLibertineTI-tlf-t1-x-x-120">prospectively </span>assigned
+  whenever actors have normative expectations towards themselves or other
+  morally acting entities. A prospective responsibility thus describes what
+  a person must do or fulfill in the future [<a href="#cite.0@Grunwald2013"
+    >11</a
+  >, <a href="#cite.0@Noorman2020">21</a>]. Responsibility is
+  <span class="LinLibertineTI-tlf-t1-x-x-120">retrospectively </span
+  >assigned whenever an actor criticizes themselves or another entity for
+  their actions, intentions, or neglect. Determining retrospective
+  responsibility involves determining who was at fault for an occurrence in
+  the past [<a href="#cite.0@Grunwald2013">11</a>,
+  <a href="#cite.0@Noorman2020">21</a>]. Both prospective and retrospective
+  responsibility is a social relation. It describes which obligations or
+  duties someone might expect someone else to fulfill. Through
+  responsibility certain behavior can be corrected or encouraged [<a
+    href="#cite.0@Noorman2020"
+    >21</a
+  >].
+</p>
+<!-- l. 26 -->
+<p class="indent">
+  Let us now discuss the requirements for responsible behavior. The famous
+  philosopher Hans Jonas concentrated on the concept of responsibility in
+  the context of technology. He formulates the bare minimum requirements for
+  responsible behavior in his popular imperative:
+</p>
+<div class="newtheorem">
+  <!-- l. 27 -->
+  <p class="noindent">
+    <span class="head">
+      <a id="x1-14003r1"></a>
+      <span class="LinLibertineTB-tlf-t1-x-x-120">Proposition 1.</span>
+    </span>
+    <span class="LinLibertineTI-tlf-t1-x-x-120"
+      >“Act so that the effects of your action are compatible with the
+      permanence </span
+    ><span class="LinLibertineTI-tlf-t1-x-x-120"
+      >of genuine human life” [</span
+    ><a id="x1-14004"></a><a href="#cite.0@Jonas2003"
+      ><span class="LinLibertineTI-tlf-t1-x-x-120">16</span></a
+    ><span class="LinLibertineTI-tlf-t1-x-x-120">].</span>
+  </p>
+</div>
+<!-- l. 29 -->
+<p class="indent"></p>
+<!-- l. 31 -->
+<p class="noindent">
+  More specifically, a person can be held responsible for their behavior
+  <a id="x1-14005r1"></a>(1) if that behavior has a morally significant
+  outcome,<a id="x1-14006r2"></a> (2) they are able to consider the
+  consequences of that behavior,<a id="x1-14007r3"></a> (3) are able to
+  control their behavior,<a id="x1-14008r4"></a> (4) that behavior was
+  voluntary, based on their own authentic thoughts and motivations. They may
+  not be held responsible for an action if they had no other choice than to
+  act in the way they did. Similarly, a person must have some kind of
+  influence on an event, in order to be held responsible for it [<a
+    href="#cite.0@Noorman2020"
+    >21</a
+  >].
+</p>
+<!-- l. 7 -->
+<p class="noindent"></p>
+<h4 class="subsectionHead">
+  <span class="titlemark">5.2 </span> <a id="x1-150005.2"></a>Trust
+  Fundamentals
+</h4>
+<!-- l. 9 -->
+<p class="noindent">
+  Since the OSS community is fundamentally based on trust, we need to
+  discuss what trust philosophically means. First, we need to understand
+  that <span class="LinLibertineTBI-tlf-t1-x-x-120">trust </span>and
+  <span class="LinLibertineTBI-tlf-t1-x-x-120">trustworthiness </span>are
+  not the same. We can trust someone who is not trustworthy or distrust a
+  trustworthy person. Therefore trust is an attitude one (the
+  <span class="LinLibertineTI-tlf-t1-x-x-120">trustor</span>) has towards
+  another entity (the
+  <span class="LinLibertineTI-tlf-t1-x-x-120">trustee</span>).
+  Trustworthiness is a property one can have, regardless of being trusted by
+  others. Trust, however, requires that the trustor regards the trustee as
+  trustworthy [<a id="x1-15001"></a><a href="#cite.0@McLeod2021">20</a>].
+</p>
+<!-- l. 15 -->
+<p class="indent">
+  Furthermore, trust is only
+  <span class="LinLibertineTBI-tlf-t1-x-x-120">plausible </span>if the
+  trustor is able to develop trust and is optimistic that the trustee is
+  trustworthy. Trust is
+  <span class="LinLibertineTBI-tlf-t1-x-x-120">well-grounded </span>if the
+  trustee is in fact trustworthy. However, trust can be
+  <span class="LinLibertineTBI-tlf-t1-x-x-120">justified </span>even if the
+  trustee is not trustworthy. Trust might be
+  <span class="LinLibertineTI-tlf-t1-x-x-120">justified</span> because it is
+  valuable to trust someone in and of itself [<a href="#cite.0@McLeod2021"
+    >20</a
+  >].
+</p>
+<!-- l. 19 -->
+<p class="indent">
+  The trustor relies on the trustee being competent and motivated to do what
+  they are trusted to do.
+  <span class="LinLibertineTI-tlf-t1-x-x-120">Motives-based theories </span
+  >find that trustworthy people are motivated by their own interests to
+  maintain the trust they were given. They do so out of self-interest or
+  goodwill. Trustworthy people include the interests of the trustor into
+  their own. Vice-versa we should only trust people that we can reasonably
+  expect to include our interests into their own [<a
+    href="#cite.0@McLeod2021"
+    >20</a
+  >].
+  <span class="LinLibertineTI-tlf-t1-x-x-120"
+    >Non-motives-based theories </span
+  >regard the trustee as a morally responsible person (see Section <a
+    href="#x1-140005.1"
+    >5.1<!-- tex4ht:ref: sec:responsibility  --></a
+  >). Therefore the trustor has not only
+  <span class="LinLibertineTI-tlf-t1-x-x-120">predictive </span>but also
+  <span class="LinLibertineTI-tlf-t1-x-x-120">normative</span> expectations
+  of the trustee. The trustworthy person can have many different kinds of
+  motives “including, among others, goodwill, ‘pride in one’s role’, ‘fear
+  of penalties for poor performance’, and ‘an impersonal sense of
+  obligation’ ” [<a id="x1-15002"></a><a href="#cite.0@Walker2006">33</a>,
+  p. 77] as cited by [<a href="#cite.0@McLeod2021">20</a>].
+</p>
+<!-- l. 24 -->
+<p class="indent">
+  While trusting someone, the trustor risks, that the trustee might fail to
+  do what they were trusted to do, or intentionally abuse the given trust
+  and betray the trustor. The trustor can try to reduce these risks, by
+  monitoring the trustee. But the more they do so, the less they trust the
+  trustee [<a href="#cite.0@McLeod2021">20</a>].
+</p>
+<!-- l. 27 -->
+<p class="indent">
+  Finally one might ask, whether trust can be
+  <span class="LinLibertineTBI-tlf-t1-x-x-120">rational</span>. If one tries
+  to eliminate the risks that inherently come with trust, it may be rendered
+  into mere reliance. Also, the trust might make the trustor resistant to
+  evidence against the trustworthiness of the trustee. That would mean trust
+  can never be rational, but a counter-example is that we could say it is
+  rational to trust emergency room physicians [<a href="#cite.0@McLeod2021"
+    >20</a
+  >]. Therefore some philosophers define rationality differently in the
+  context of trust: Trust can be rationally justified if the belief in
+  someone’s trustworthiness can be rationally justified [<a
+    href="#cite.0@McLeod2021"
+    >20</a
+  >]. With this definition, we must ask if it is rational to derive
+  someone’s trustworthiness from past experiences, or if one needs evidence
+  for it. Gathering evidence might cease the trust of the other person or
+  might not be possible at all since we are not able to look into the
+  future [<a href="#cite.0@McLeod2021">20</a>].
+</p>
+<!-- l. 7 -->
+<p class="noindent"></p>
+<h4 class="subsectionHead">
+  <span class="titlemark">5.3 </span> <a id="x1-160005.3"></a>The
+  Responsibility of Open Source Software Developers
+</h4>
+<!-- l. 9 -->
+<p class="noindent">
+  In this Section, we want to discuss the responsibilities that apply to OSS
+  developers and why they may act irresponsibly. Most engineering ethics
+  codes state in some way:
+</p>
+<div class="newtheorem">
+  <!-- l. 10 -->
+  <p class="noindent">
+    <span class="head">
+      <a id="x1-16001r2"></a>
+      <span class="LinLibertineTB-tlf-t1-x-x-120">Proposition 2.</span>
+    </span>
+    <span class="LinLibertineTI-tlf-t1-x-x-120"
+      >Engineers shall conduct their profession with integrity and honesty
+      and in </span
+    ><span class="LinLibertineTI-tlf-t1-x-x-120"
+      >a competent way, holding paramount the safety, health, and welfare of
+      the public [</span
+    ><a id="x1-16002"></a><a href="#cite.0@Franssen2018"
+      ><span class="LinLibertineTI-tlf-t1-x-x-120">8</span></a
+    ><span class="LinLibertineTI-tlf-t1-x-x-120">].</span>
+  </p>
+</div>
+<!-- l. 12 -->
+<p class="indent">
+  One can apply these requirements to responsible software engineering as
+  well. According to engineering ethics codes, engineers also have
+  responsibilities toward their clients [<a href="#cite.0@Franssen2018">8</a
+  >]. Since most OSS developers are unsalaried volunteers [<a
+    id="x1-16003"
+  ></a><a href="#cite.0@Overney2020">24</a>], one might argue that the users of
+  their OSS package must not be equated with clients in the business sense,
+  and therefore there does not exist a responsibility towards those users.
+</p>
+<!-- l. 15 -->
+<p class="indent">
+  This may hold to some extent. A developer who maintains a OSS package in
+  their free time, not receiving major funding, may not be responsible for
+  actively maintaining the package, as long as they make it clear to the
+  users, that the package is in fact not actively maintained, and thus may
+  contain unfixed vulnerabilities. On the other hand, we need to ask if they
+  are still responsible for fixing dangerous, known vulnerabilities that
+  pose a risk to many dependent systems or even their human users. In line
+  with Hans Jonas’ imperative (Proposition <a href="#x1-14003r1"
+    >1<!-- tex4ht:ref: prop:hansjonas  --></a
+  >), they should be held responsible if their package harms a human being
+  due to a vulnerability they could have averted (cf. Section <a
+    href="#x1-140005.1"
+    >5.1<!-- tex4ht:ref: sec:responsibility  --></a
+  >). However, if a developer actively maintains a package, or implies to
+  the users of that package, that it is actively maintained, one might argue
+  that the aforementioned responsibilities of engineering ethics codes apply
+  to them. This would mean that they are then in fact responsible for the
+  integrity of their package, and moreover, the users of that package, who
+  trust them and thus normatively expect them to act responsibly.
+</p>
+<!-- l. 19 -->
+<p class="indent">
+  In the incidents we discussed earlier, the maintainers abused the trust
+  they were given by performing a SCA on their own package. That makes one
+  wonder why they did not feel the normative, social pressure, posed by
+  their users who trust them (according to
+  <span class="LinLibertineTI-tlf-t1-x-x-120">non-motives-based</span>
+  theories, cf. Section <a href="#x1-150005.2"
+    >5.2<!-- tex4ht:ref: sec:fundamentals_trust  --></a
+  >). First, a OSS developer must be aware, that developing software is not
+  an ethically neutral practice [<a id="x1-16004"></a><a href="#cite.0@Noorman2020">21</a>]. Further, “computer technologies can
+  obscure the causal connections between a person’s actions and the eventual
+  consequences” [<a href="#cite.0@Noorman2020">21</a>]. The consequences
+  might unfold some time in the future (<span
+    class="LinLibertineTI-tlf-t1-x-x-120"
+    >temporal distance</span
+  >) and/or at a faraway location (<span
+    class="LinLibertineTI-tlf-t1-x-x-120"
+    >physical distance</span
+  >) [<a href="#cite.0@Noorman2020">21</a>]. The consequences might also
+  affect users that the OSS developer does not personally or even remotely
+  know, due to the
+  <span class="LinLibertineTI-tlf-t1-x-x-120">anonymity </span>the internet
+  provides and due to the possibly huge amount of users. Therefore, the
+  sense of responsibility a OSS developer feels might be reduced, since they
+  might not fully understand the consequences of their actions [<a
+    href="#cite.0@Noorman2020"
+    >21</a
+  >]. It is also important to consider that the actions of a OSS developer
+  might be influenced by “hierarchical or market constraints” [<a
+    href="#cite.0@Noorman2020"
+    >21</a
+  >] or by “economic or time pressures” [<a id="x1-16005"></a><a href="#cite.0@Bellovin2022">5</a>]. This might lead to laxity or acting
+  irresponsibly.
+</p>
+<!-- l. 23 -->
+<p class="indent"></p>
+<!-- l. 7 -->
+<p class="noindent"></p>
+<h4 class="subsectionHead">
+  <span class="titlemark">5.4 </span> <a id="x1-170005.4"></a>Trust in and
+  Trustworthiness of Open Source Software
+</h4>
+<!-- l. 9 -->
+<p class="noindent">
+  As we have seen in Section <a href="#x1-40002.2"
+    >2.2<!-- tex4ht:ref: sec:oss_adoption  --></a
+  >, many individuals and companies rely on OSS and even institutions
+  increasingly adopt it. Descriptively, this means that they trust OSS,
+  implying that OSS is in fact not only widely used but also widely trusted.
+  In Section <a href="#x1-150005.2"
+    >5.2<!-- tex4ht:ref: sec:fundamentals_trust  --></a
+  >
+  we concluded that the trustor, in this case, the OSS users, must believe
+  the trustee, in this case, OSS, to be trustworthy. In the following, we
+  want to discuss if it is rational to trust OSS.
+</p>
+<!-- l. 13 -->
+<p class="indent">
+  One can say that trust in OSS is
+  <span class="LinLibertineTI-tlf-t1-x-x-120">well-grounded </span>if we can
+  expect it to be secure. People that advocate for the secureness of OSS
+  often state the
+  <span class="LinLibertineTI-tlf-t1-x-x-120">Principle of Many Eyes</span>,
+  also referred to as
+  <span class="LinLibertineTI-tlf-t1-x-x-120">Linus’s Law</span>: “Given
+  enough eyeballs, all bugs are shallow” [<a id="x1-17001"></a><a href="#cite.0@Raymond1999">26</a>]. This means that the more developers
+  read the source code of a package, the more secure it gets because each
+  bug will be spotted by at least one developer. If Linus’s Law was indeed
+  true, OSS would be invulnerable, because the community would over time
+  spot all bugs and vulnerabilities [<a id="x1-17002"></a><a href="#cite.0@Hissam2002">13</a>]. But we can observe that OSS packages
+  are still vulnerable [<a id="x1-17003"></a><a href="#cite.0@Sonatype2021">14</a>, <a id="x1-17004"></a><a href="#cite.0@Ohm2020">23</a>], e.g. up till July 31, 2021 2.2% of
+  <span class="fvmr8t-x-x-93">npm</span> package versions contained known
+  vulnerabilities [<a href="#cite.0@Sonatype2021">14</a>]. One reason for
+  this is that OSS packages are not static but constantly evolving and
+  getting new features. Another reason might be that not all contributors
+  have the required competence to spot certain vulnerabilities. Also, some
+  people might be discouraged from contributing for various reasons, like
+  lacking time or funding [<a href="#cite.0@Hissam2002">13</a>]. So we can
+  conclude, that trust in OSS is
+  <span class="LinLibertineTI-tlf-t1-x-x-120">not </span
+  ><span class="LinLibertineTI-tlf-t1-x-x-120">well-grounded</span>.
+</p>
+<!-- l. 16 -->
+<p class="indent">
+  We also need to consider, that trusting a OSS package in fact means
+  trusting its contributors, and especially its maintainers. Trusting OSS
+  can therefore only be
+  <span class="LinLibertineTI-tlf-t1-x-x-120">plausible </span>and
+  <span class="LinLibertineTI-tlf-t1-x-x-120">justified </span>if one can
+  rationally expect its developers to act responsibly. We could argue that
+  most maintainers have an interest of their own in maintaining a legitimate
+  package. Therefore
+  <span class="LinLibertineTI-tlf-t1-x-x-120">motives-based </span
+  ><span class="LinLibertineTI-tlf-t1-x-x-120">theories </span>would find
+  them to be trustworthy (cf. Section <a href="#x1-150005.2"
+    >5.2<!-- tex4ht:ref: sec:fundamentals_trust  --></a
+  >). We can also argue that since OSS is often developed in a community
+  socially interacting with one another (remotely), the maintainers and
+  contributors are subject to
+  <span class="LinLibertineTI-tlf-t1-x-x-120">normative expectations </span
+  >as outlined in Section <a href="#x1-150005.2"
+    >5.2<!-- tex4ht:ref: sec:fundamentals_trust  --></a
+  >. Therefore
+  <span class="LinLibertineTI-tlf-t1-x-x-120"
+    >non-motives-based theories </span
+  >would also find OSS to be trustworthy (cf. Section <a href="#x1-150005.2"
+    >5.2<!-- tex4ht:ref: sec:fundamentals_trust  --></a
+  >).
+</p>
+<!-- l. 19 -->
+<p class="indent">
+  On the other hand, we saw in the previous Section <a href="#x1-160005.3"
+    >5.3<!-- tex4ht:ref: sec:responsibility_oss_devs  --></a
+  >
+  that there are several reasons why a developer might not act responsibly,
+  and thus might not be trustworthy. So one might be optimistic that the
+  maintainers of a OSS package act responsibly and thus are trustworthy,
+  therefore making it
+  <span class="LinLibertineTI-tlf-t1-x-x-120">plausible </span>to trust the
+  package. But it can not always be
+  <span class="LinLibertineTI-tlf-t1-x-x-120">justified </span>to trust a
+  package, especially if one does so blindly. In general, one might say that
+  it can be <span class="LinLibertineTI-tlf-t1-x-x-120">rational </span>to
+  trust OSS as a whole, but one should thoroughly consider for each
+  individual package if one can optimistically expect it to be trustworthy.
+</p>
+<!-- l. 7 -->
+<p class="noindent"></p>
+<h3 class="sectionHead">
+  <span class="titlemark">6 </span> <a id="x1-180006"></a>Ethical Analysis
+  of the Incidents
+</h3>
+<!-- l. 9 -->
+<p class="noindent">
+  In Section <a href="#x1-100004">4<!-- tex4ht:ref: sec:recent_scas  --></a>
+  we discussed the SCAs on <span class="fvmr8t-x-x-93">colors.js</span>,
+  <span class="fvmr8t-x-x-93">faker.js</span>, and
+  <span class="fvmr8t-x-x-93">node-ipc </span>from a technical viewpoint. In
+  this Section, we want to consider the ethical perspective of these
+  incidents. We discuss, whether the behavior of the maintainers, who
+  attacked their own projects, is morally acceptable, and why they might
+  have acted the way they did.
+</p>
+<!-- l. 7 -->
+<p class="noindent"></p>
+<h4 class="subsectionHead">
+  <span class="titlemark">6.1 </span> <a id="x1-190006.1"></a
+  ><span class="fvmr8t-x-x-93">colors.js </span>and
+  <span class="fvmr8t-x-x-93">faker.js</span>
+</h4>
+<!-- l. 9 -->
+<p class="noindent">
+  Already on November 8, 2020 the developer of
+  <span class="fvmr8t-x-x-93">colors.js </span>and
+  <span class="fvmr8t-x-x-93">faker.js</span>, Marak, opened the following
+  issue, essentially a discussion thread, on the GitHub page of
+  <span class="fvmr8t-x-x-93">faker.js</span>:
+</p>
+<div class="tcolorbox github_issue" id="tcolobox-2">
+  <div class="tcolorbox-title">
+    <!-- l. 12 -->
+    <p class="indent">
+      <span class="fvmr8t-x-x-93">faker.js </span>issue #1046:
+      <span class="LinLibertineTB-tlf-t1-x-x-120"
+        >No more free work from Marak—Pay Me or Fork </span
+      ><span class="LinLibertineTB-tlf-t1-x-x-120">This</span>
+    </p>
+  </div>
+  <div class="tcolorbox-content">
+    <!-- l. 11 -->
+    <p class="noindent">
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >Respectfully, I am no longer going to support Fortune 500s (and
+        other smaller sized </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120"
+        >companies) with my free work. There isn’t much else to say. Take
+        this as an opportunity </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120"
+        >to send me a six figure yearly contract or fork the project and
+        have someone else work on </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120">it.</span>
+    </p>
+  </div>
+</div>
+<div class="flushright">
+  <!-- l. 12 -->
+  <p class="noindent">
+    <span class="LinLibertineTI-tlf-t1-x-x-120">Source: [</span
+    ><a id="x1-19001"></a><a href="#cite.0@Marak2020"
+      ><span class="LinLibertineTI-tlf-t1-x-x-120">18</span></a
+    ><span class="LinLibertineTI-tlf-t1-x-x-120">]</span>
+  </p>
+</div>
+<p>
+  On January 8, 2022, the day of the
+  <span class="fvmr8t-x-x-93">colors.js </span>attack, Marak opened an issue
+  on its GitHub page, mockingly saying:
+</p>
+<div class="tcolorbox github_issue" id="tcolobox-3">
+  <div class="tcolorbox-title">
+    <!-- l. 17 -->
+    <p class="indent">
+      <span class="fvmr8t-x-x-93">colors.js </span>issue #285:
+      <span class="LinLibertineTB-tlf-t1-x-x-120">Zalgo issue with </span
+      ><span class="fvmb8t-x-x-93">v1.4.44-liberty-2 </span
+      ><span class="LinLibertineTB-tlf-t1-x-x-120">release</span>
+    </p>
+  </div>
+  <div class="tcolorbox-content">
+    <!-- l. 16 -->
+    <p class="noindent">
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >It’s come to our attention that there is a zalgo bug in the </span
+      ><span class="fvmro8t-x-x-93">v1.4.44-liberty-2 </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120">release of </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120"
+        >colors. Please know we are working right now to fix the situation
+        and will have a resolution </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120">shortly.</span>
+    </p>
+  </div>
+</div>
+<div class="flushright">
+  <!-- l. 17 -->
+  <p class="noindent">
+    <span class="LinLibertineTI-tlf-t1-x-x-120">Source: [</span
+    ><a id="x1-19002"></a><a href="#cite.0@Marak2022"
+      ><span class="LinLibertineTI-tlf-t1-x-x-120">19</span></a
+    ><span class="LinLibertineTI-tlf-t1-x-x-120">]</span>
+  </p>
+</div>
+<p>
+  He, later on, posts multiple comments cynically pretending to not know
+  where the bug came from or how to fix it, saying he had been working on it
+  all night [<a href="#cite.0@Marak2022">19</a>]. In one comment he even
+  asks other maintainers to fix the bug, knowing they do not have access to
+  the project [<a id="x1-19003"></a><a href="#cite.0@Tal2022a">32</a>].
+</p>
+<!-- l. 21 -->
+<p class="indent">
+  Although OSS increasingly receives commercial adoption (cf. Section <a
+    href="#x1-40002.2"
+    >2.2<!-- tex4ht:ref: sec:oss_adoption  --></a
+  >), it is often still developed by volunteers who do not receive any
+  compensation [<a id="x1-19004"></a><a href="#cite.0@Overney2020">24</a>].
+  Such volunteers “increasingly report stress and even burnout” [<a
+    href="#cite.0@Overney2020"
+    >24</a
+  >]. Marak’s complaint in 2020 and the way he mocked his community in the
+  days following the incident are hints of him being stressed and frustrated
+  due to the lack of compensation. One contributor replied to Marak, that he
+  is harming other OSS developers with his actions, rather than only the big
+  corporations. The internet may have blurred his sense of whom he hurt with
+  his behavior, as explained in Section <a href="#x1-160005.3"
+    >5.3<!-- tex4ht:ref: sec:responsibility_oss_devs  --></a
+  >.
+</p>
+<!-- l. 24 -->
+<p class="indent">
+  But we need to classify these two incidents separately. That Marak removed
+  all source code from <span class="fvmr8t-x-x-93">faker.js </span>is
+  arguably
+  <span class="LinLibertineTI-tlf-t1-x-x-120">morally acceptable</span>,
+  since it raised awareness of his situation without harming others
+  (cf. Section <a href="#x1-110004.1"
+    >4.1<!-- tex4ht:ref: sec:faker_colors  --></a
+  >), and thus is in line with Hans Jonas’ imperative (Proposition <a
+    href="#x1-14003r1"
+    >1<!-- tex4ht:ref: prop:hansjonas  --></a
+  >) and engineering ethics codes (Proposition <a href="#x1-16001r2"
+    >2<!-- tex4ht:ref: prop:engineering_ethics_codes  --></a
+  >). The attack on <span class="fvmr8t-x-x-93">colors.js </span>on the
+  other hand is
+  <span class="LinLibertineTI-tlf-t1-x-x-120">not morally acceptable</span>.
+  While the circumstances that lead Marak to perform the attack are quite
+  relatable, they do not justify it, e.g. the infinite loop in
+  <span class="fvmr8t-x-x-93">colors.js</span>, could have potentially
+  harmed systems belonging to critical infrastructure, and thus harm other
+  people. This attack is thus morally unacceptable according to
+  Propositions <a href="#x1-14003r1"
+    >1<!-- tex4ht:ref: prop:hansjonas  --></a
+  >
+  and <a href="#x1-16001r2"
+    >2<!-- tex4ht:ref: prop:engineering_ethics_codes  --></a
+  >. Furthermore, mocking the people who trusted him, is not morally
+  acceptable. Marak could have just stopped working on both packages and
+  informed its users, that they are no longer maintained.
+</p>
+<!-- l. 27 -->
+<p class="indent"></p>
+<!-- l. 7 -->
+<p class="noindent"></p>
+<h4 class="subsectionHead">
+  <span class="titlemark">6.2 </span> <a id="x1-200006.2"></a
+  ><span class="fvmr8t-x-x-93">node-ipc</span>
+</h4>
+<!-- l. 9 -->
+<p class="noindent">
+  Shortly after the maintainer of
+  <span class="fvmr8t-x-x-93">node-ipc</span>, RIAEvangelist, added the
+  <span class="fvmr8t-x-x-93">peacenotwar </span>package as a dependency
+  (cf. Section <a href="#x1-120004.2"
+    >4.2<!-- tex4ht:ref: sec:node-ipc  --></a
+  >), a contributor opened an issue on the GitHub page of
+  <span class="fvmr8t-x-x-93">node-ipc</span>, asking RIAEvangelist to
+  “Remove the ‘peacenotwar’ module” [<a id="x1-20001"></a><a href="#cite.0@NodeIpcIssue2022">27</a>], further stating “Don’t get me
+  wrong, I’m against all forms of war, but sabotaging people’s dependencies
+  is not the way to protest” [<a href="#cite.0@NodeIpcIssue2022">27</a>].
+  This is a hint that RIAEvangelist did not fulfill the responsibilities his
+  community normatively expected from him. RIAEvangelist responds, trying to
+  justify his actions: “You are free to lock your dependency to a version
+  that does not include this until something happens with the war, like it
+  turns into WWIII and more of us wish that we had done something about it,
+  or ends and this gets removed” [<a href="#cite.0@NodeIpcIssue2022">27</a
+  >]. He later says: “I’m going to tag the piece not war module as
+  protestware just to make it explicitly clear that that’s what it is” [<a
+    href="#cite.0@NodeIpcIssue2022"
+    >27</a
+  >].
+</p>
+<!-- l. 11 -->
+<p class="indent">
+  That RIAEvangelist published the
+  <span class="fvmr8t-x-x-93">peacenotwar </span>package can be morally
+  acceptable, since he clearly stated in the package’s description how the
+  package will behave (cf. Section <a href="#x1-120004.2"
+    >4.2<!-- tex4ht:ref: sec:node-ipc  --></a
+  >). However, adding this package as a dependency to
+  <span class="fvmr8t-x-x-93">node-ipc</span>, without immediately
+  indicating it, might be considered morally wrong, since this led to the
+  malicious <span class="fvmr8t-x-x-93">peacenotwar </span>package infecting
+  users of <span class="fvmr8t-x-x-93">node-ipc </span>without them knowing
+  it. Furthermore he programmed
+  <span class="fvmr8t-x-x-93">node-ipc </span>to sabotage the users’ files,
+  which is a violation of the users’ privacy and security, and thus morally
+  unacceptable.
+</p>
+<!-- l. 13 -->
+<p class="indent">
+  We see that in RIAEvangelist’s view, the protest against the Russian
+  invasion of Ukraine was morally more valuable than retaining the trust of
+  his OSS community. But one must ask if there could not have been a better
+  way to protest, as the contributor who initially commented suggested.
+  RIAEvangelist could, for example, have just programmed the package to
+  print a protest message to the console (which he did, cf. Section <a
+    href="#x1-120004.2"
+    >4.2<!-- tex4ht:ref: sec:node-ipc  --></a
+  >), without sabotaging the users’ files. One could say while trying to act
+  especially exemplary by protesting, he in fact acted morally wrong and
+  lost the trust of many people.
+</p>
+<!-- l. 15 -->
+<p class="indent"></p>
+<!-- l. 7 -->
+<p class="noindent"></p>
+<h3 class="sectionHead">
+  <span class="titlemark">7 </span> <a id="x1-210007"></a>What We Must Learn
+</h3>
+<!-- l. 9 -->
+<p class="noindent">
+  We argued, that it might be plausible to trust OSS, but one cannot do so
+  blindly (c.f. Section <a href="#x1-130005"
+    >5<!-- tex4ht:ref: sec:trust_responsibility  --></a
+  >). The increasing spread of SCAs should be a warning sign, prompting us
+  to employ mitigation strategies, as outlined in Section <a
+    href="#x1-90003.4"
+    >3.4<!-- tex4ht:ref: sec:mitigation_strategies  --></a
+  >. Furthermore, although software reuse is a good practice, one might also
+  ask oneself if it is really necessary to introduce a new OSS dependency
+  even for simple tasks, as this might also increase the attack surface of
+  the own software. And one should critically think about the usage of the
+  auto-update functionalities of dependency managers.
+</p>
+<!-- l. 12 -->
+<p class="indent">
+  Besides those rather technical strategies, we should also try to prevent
+  SCAs before they even were performed. The fact that in the incidents we
+  discussed, the attacker was the maintainer of the package themself should
+  raise our awareness of the circumstances that led them to their
+  irresponsible behavior. We should ask ourselves, how we as end users might
+  be responsible as well, e.g. for taking advantage of OSS without even
+  considering a donation.
+</p>
+<!-- l. 14 -->
+<p class="indent"></p>
+<!-- l. 7 -->
+<p class="noindent"></p>
+<h3 class="sectionHead">
+  <span class="titlemark">8 </span> <a id="x1-220008"></a>Related Work
+</h3>
+<!-- l. 9 -->
+<p class="noindent">
+  <a id="x1-22001"></a> Ladisa et al. [<a href="#cite.0@Ladisa2022">17</a>]
+  proposed a taxonomy for categorizing SCAs. <a id="x1-22002"></a> Ohm et
+  al. [<a href="#cite.0@Ohm2020">23</a>] reviewed several real-world SCAs on
+  OSS. <a id="x1-22003"></a> Zimmermann et al. [<a
+    href="#cite.0@Zimmermann2019"
+    >34</a
+  >] analyzed security risks in the
+  <span class="fvmr8t-x-x-93">npm</span> ecosystem in particular. Those
+  works do not analyze the two SCAs we covered in this paper, i.a. due to
+  their recentness. <a id="x1-22004"></a><a id="x1-22005"></a><a id="x1-22006"></a> Sharma [<a href="#cite.0@Sharma2022">30</a>], Tal
+  [<a href="#cite.0@Tal2022">31</a>], and Tal and Josef [<a
+    href="#cite.0@Tal2022a"
+    >32</a
+  >] analyze how the two SCAs we discussed unfolded, from a technical
+  viewpoint. All the aforementioned works do not provide an ethical
+  perspective, as this work does. <a id="x1-22007"></a><a id="x1-22008"></a><a id="x1-22009"></a> Ferreira et al. [<a
+    href="#cite.0@Ferreira2021"
+    >7</a
+  >], Garrett et al. [<a href="#cite.0@Garrett2019">10</a>], and Sejfia and
+  Schäfer [<a href="#cite.0@Sejfia2022">29</a>] each propose mitigation
+  strategies for SCAs, which we summarized in this work. In his short
+  article, <a id="x1-22010"></a> Bellovin [<a href="#cite.0@Bellovin2022"
+    >5</a
+  >] mentions several recent SCAs, including the ones we analyzed, but he
+  does not go into detail on how these incidents unfolded. He formulates the
+  question if one can trust OSS developers, which we tried to answer in
+  greater detail. <a id="x1-22011"></a> Noorman [<a
+    href="#cite.0@Noorman2020"
+    >21</a
+  >] discusses moral responsibility in computing, but not with a specific
+  focus on SCAs or OSS.
+</p>
+<!-- l. 7 -->
+<p class="noindent"></p>
+<h3 class="sectionHead">
+  <span class="titlemark">9 </span> <a id="x1-230009"></a>Conclusion
+</h3>
+<!-- l. 9 -->
+<p class="noindent">
+  We saw that SCAs are a major cybersecurity threat nowadays [<a
+    id="x1-23001"
+  ></a><a href="#cite.0@ENISA2021">6</a>]. Due to the many dependencies, an
+  average OSS package has, an attack on a single package can spread to
+  thousands of other packages that directly or transitively depend on it.
+  Dependency managers play a significant role in such attacks, as they make
+  it easy to include many (micro-)packages and can automatically download
+  updates of packages, which could potentially be malicious [<a
+    id="x1-23002"
+  ></a><a href="#cite.0@Garrett2019">10</a>, <a id="x1-23003"></a><a href="#cite.0@Gustavsson2020">12</a>, <a id="x1-23004"></a><a href="#cite.0@Zimmermann2019">34</a>]. We have seen, that it is
+  impractical to manually review all packages and each update of them [<a
+    id="x1-23005"
+  ></a><a href="#cite.0@Ladisa2022">17</a>, <a id="x1-23006"></a><a href="#cite.0@Sejfia2022">29</a>,
+  <a href="#cite.0@Zimmermann2019">34</a>]. We discussed that
+  machine-learning-based systems can, with some confidence, flag malicious
+  packages [<a href="#cite.0@Garrett2019">10</a>,
+  <a href="#cite.0@Sejfia2022">29</a>] and that it is advisable to sandbox
+  packages, like e.g. it is common practice with mobile apps [<a
+    id="x1-23007"
+  ></a><a href="#cite.0@Ferreira2021">7</a>]. We discussed the
+  <span class="fvmr8t-x-x-93">colors.js</span>,
+  <span class="fvmr8t-x-x-93">faker.js</span> and
+  <span class="fvmr8t-x-x-93">node-ipc </span>incidents in the
+  <span class="fvmr8t-x-x-93">npm</span> ecosystem, that recently gained
+  attention because the maintainers themselves attacked their own OSS
+  packages. We concluded that the
+  <span class="fvmr8t-x-x-93">faker.js</span> incident does not suffice the
+  criteria for being an SCA, but the
+  <span class="fvmr8t-x-x-93">colors.js </span>and
+  <span class="fvmr8t-x-x-93">node-ipc</span>
+  incidents do so.
+</p>
+<!-- l. 13 -->
+<p class="indent">
+  We introduced the fundamentals of
+  <span class="LinLibertineTI-tlf-t1-x-x-120">trust </span>and
+  <span class="LinLibertineTI-tlf-t1-x-x-120">responsibility </span>in
+  technology ethics and asked ourselves, whether a maintainer is responsible
+  for the integrity of their package. We concluded, that a developer might
+  not be responsible for actively maintaining his package, but if they do so
+  or pretend to do so, they are in fact responsible for its integrity. We
+  considered that the sense of responsibility a developer feels might be
+  reduced by many factors, among others, by the temporal and/or physical
+  distance between their actions and the resulting consequences, the
+  anonymity on the internet, personal circumstances like stress, or
+  hierarchical, economic, or time pressures [<a id="x1-23008"></a><a href="#cite.0@Bellovin2022">5</a>, <a id="x1-23009"></a><a href="#cite.0@Noorman2020">21</a>]. Furthermore, we discussed if it is
+  rational to trust OSS. We saw that trusting OSS means trusting
+  contributors and especially its maintainers to act responsibly. Therefore
+  such a trust cannot be
+  <span class="LinLibertineTI-tlf-t1-x-x-120">well-grounded</span>, but it
+  can be <span class="LinLibertineTI-tlf-t1-x-x-120">plausible </span>and
+  sometimes even
+  <span class="LinLibertineTI-tlf-t1-x-x-120">justified</span>. We,
+  therefore, concluded that it can be rational to trust OSS, but one cannot
+  do so blindly and needs to consider each package individually.
+</p>
+<!-- l. 18 -->
+<p class="indent">
+  We then returned to the recent incidents and analyzed if the behavior of
+  the maintainers is morally acceptable. We concluded, that it is morally
+  acceptable to just stop maintaining a package and it might even be
+  acceptable to completely delete the package, as was done in the
+  <span class="fvmr8t-x-x-93">faker.js </span>incident. However, the
+  behavior of the maintainers in the
+  <span class="fvmr8t-x-x-93">colors.js </span>and
+  <span class="fvmr8t-x-x-93">node-ipc</span>
+  incidents is not morally acceptable. While their circumstances and motives
+  might be quite relatable, they do not justify the attacks, that affected
+  many (mostly) innocent people.
+</p>
+<!-- l. 22 -->
+<p class="indent">
+  We finally drew the conclusion, that one should apply SCA mitigation
+  strategies. One should also consider if one needs to introduce a new
+  dependency even for small tasks, and be cautious with the auto-updating
+  functionalities of dependency managers. Furthermore as a user of OSS
+  packages, one should consider donating to the mostly unsalaried volunteers
+  maintaining them.
+</p>
+<!-- l. 225 -->
+<p class="noindent"></p>
+<h3 class="sectionHead">
+  <span class="titlemark">10 </span> <a id="x1-2400010"></a>References
+</h3>
+<!-- l. 225 -->
+<p class="noindent"></p>
+<dl class="thebibliography">
+  <dt class="thebibliography" id="X0-GNU">[1]</dt>
+  <dd class="thebibliography" id="bib-1">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@GNU"></a>GNU Free Software Foundation (GNU).
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >What is free software? - GNU Project - Free </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120">Software Foundation</span
+      >. <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a class="url" href="https://www.gnu.org/philosophy/free-sw.en.html"
+        ><span class="fvmr8t-x-x-93"
+          >https://www.gnu.org/philosophy/free-sw.en.html</span
+        ></a
+      >
+      (visited on 05/24/2022).
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-OSI">[2]</dt>
+  <dd class="thebibliography" id="bib-2">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@OSI"></a>Open Source Initiative (OSI).
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >The Open Source Definition</span
+      >. <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a class="url" href="https://opensource.org/docs/osd"
+        ><span class="fvmr8t-x-x-93"
+          >https://opensource.org/docs/osd</span
+        ></a
+      >
+      (visited on 05/24/2022).
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-AndersenGott2012">[3]</dt>
+  <dd class="thebibliography" id="bib-3">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@AndersenGott2012"></a>Morten Andersen-Gott, Gheorghita
+      Ghinea, and Bendik Bygstad. “Why do commercial companies contribute to
+      open source software?” In:
+      <span class="LinLibertineTI-tlf-t1-x-x-120">International </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120"
+        >Journal of Information Management </span
+      >32.2 (2012), pp. 106–117.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">issn</span>: 0268-4012.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">doi</span>:
+      <a
+        href="https://doi.org/https://doi.org/10.1016/j.ijinfomgt.2011.10.003"
+        ><span class="fvmr8t-x-x-93"
+          >https : / / doi . org / 10 . 1016 / j . ijinfomgt . 2011 . 10 .
+          003</span
+        ></a
+      >. <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a
+        class="url"
+        href="https://www.sciencedirect.com/science/article/pii/S026840121100123X"
+        ><span class="fvmr8t-x-x-93"
+          >https://www.sciencedirect.com/science/article/pii/S026840121100123X</span
+        ></a
+      >.
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-anvaka">[4]</dt>
+  <dd class="thebibliography" id="bib-4">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@anvaka"></a>sturman anvaka AsaAyers.
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >npmgraph.an - Visualization of NPM dependencies</span
+      >. <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a class="url" href="https://npm.anvaka.com/"
+        ><span class="fvmr8t-x-x-93">https://npm.anvaka.com/</span></a
+      >
+      (visited on 06/20/2022).
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Bellovin2022">[5]</dt>
+  <dd class="thebibliography" id="bib-5">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Bellovin2022"></a>Steven M. Bellovin. “Open Source and
+      Trust”. In:
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >IEEE Security Privacy </span
+      >20.2 (Mar. 2022), pp. 107–108.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">issn</span>: 1558-4046.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">doi</span>:
+      <a href="https://doi.org/10.1109/MSEC.2022.3142464"
+        ><span class="fvmr8t-x-x-93">10.1109/MSEC.2022.3142464</span></a
+      >.
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-ENISA2021">[6]</dt>
+  <dd class="thebibliography" id="bib-6">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@ENISA2021"></a>ENISA.
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >Enisa Threat Landscape 2021</span
+      >. Oct. 2021.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a
+        class="url"
+        href="https://www.enisa.europa.eu/publications/enisa-threat-landscape-2021"
+        ><span class="fvmr8t-x-x-93"
+          >https://www.enisa.europa.eu/publications/enisa-threat-landscape-2021</span
+        ></a
+      >
+      (visited on 06/18/2022).
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Ferreira2021">[7]</dt>
+  <dd class="thebibliography" id="bib-7">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Ferreira2021"></a>Gabriel Ferreira et al. “Containing
+      Malicious Package Updates in npm with a Lightweight Permission
+      System”. In:
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >2021 IEEE/ACM 43rd International Conference </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120"
+        >on Software Engineering (ICSE)</span
+      >. 2021, pp. 1334–1346.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">doi</span>:
+      <a href="https://doi.org/10.1109/ICSE43902.2021.00121"
+        ><span class="fvmr8t-x-x-93">10.1109/ICSE43902. </span
+        ><span class="fvmr8t-x-x-93">2021.00121</span></a
+      >. <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a
+        class="url"
+        href="https://ieeexplore.ieee.org/abstract/document/9402108"
+        ><span class="fvmr8t-x-x-93"
+          >https://ieeexplore.ieee.org/abstract/document/9402108</span
+        ></a
+      >
+      (visited on 06/18/2022).
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Franssen2018">[8]</dt>
+  <dd class="thebibliography" id="bib-8">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Franssen2018"></a>Maarten Franssen, Gert-Jan Lokhorst,
+      and Ibo van de Poel. “Philosophy of Technology”. In:
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >The Stanford Encyclopedia of Philosophy</span
+      >. Ed. by Edward N. Zalta. Fall 2018. Metaphysics Research Lab,
+      Stanford University, 2018.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a
+        class="url"
+        href="https://plato.stanford.edu/archives/fall2018/entries/technology/"
+        ><span class="fvmr8t-x-x-93"
+          >https://plato.stanford.edu/archives/fall2018/entries/technology/</span
+        ></a
+      >
+      (visited on 06/18/2022).
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Fuggetta2003">[9]</dt>
+  <dd class="thebibliography" id="bib-9">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Fuggetta2003"></a>Alfonso Fuggetta. “Open source
+      software––an evaluation”. In:
+      <span class="LinLibertineTI-tlf-t1-x-x-120">Journal of Systems </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120">and Software </span>66.1
+      (2003), pp. 77–90.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">issn</span>: 0164-1212.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">doi</span>:
+      <a href="https://doi.org/10.1016/S0164-1212(02)00065-1"
+        ><span class="fvmr8t-x-x-93">10.1016/S0164-1212(02)00065-1</span></a
+      >. <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a
+        class="url"
+        href="https://www.sciencedirect.com/science/article/pii/S0164121202000651"
+        ><span class="fvmr8t-x-x-93"
+          >https://www.sciencedirect.com/science/article/pii/S0164121202000651</span
+        ></a
+      >
+      (visited on 06/18/2022).
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Garrett2019">[10]</dt>
+  <dd class="thebibliography" id="bib-10">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Garrett2019"></a>Kalil Garrett et al. “Detecting
+      Suspicious Package Updates”. In:
+      <span class="LinLibertineTI-tlf-t1-x-x-120">2019 IEEE/ACM </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120"
+        >41st International Conference on Software Engineering: New Ideas
+        and Emerging </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120">Results (ICSE-NIER)</span
+      >. 2019, pp. 13–16.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">doi</span>:
+      <a href="https://doi.org/10.1109/ICSE-NIER.2019.00012"
+        ><span class="fvmr8t-x-x-93">10.1109/ICSE-NIER.2019.00012</span></a
+      >. <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a
+        class="url"
+        href="https://ieeexplore.ieee.org/abstract/document/8805698"
+        ><span class="fvmr8t-x-x-93"
+          >https://ieeexplore.ieee.org/abstract/document/8805698</span
+        ></a
+      >
+      (visited on 06/18/2022).
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Grunwald2013">[11]</dt>
+  <dd class="thebibliography" id="bib-11">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Grunwald2013"></a>Armin Grunwald.
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >Handbuch Technikethik</span
+      >. de. Ed. by Armin Grunwald. J.B. Metzler, Aug. 2013.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">isbn</span>:
+      978-3-476-02443-5.
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Gustavsson2020">[12]</dt>
+  <dd class="thebibliography" id="bib-12">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Gustavsson2020"></a>Tomas Gustavsson. “Managing the Open
+      Source Dependency”. In:
+      <span class="LinLibertineTI-tlf-t1-x-x-120">Computer </span>53.2
+      (2020), pp. 83–87.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">doi</span>:
+      <a href="https://doi.org/10.1109/MC.2019.2955869"
+        ><span class="fvmr8t-x-x-93">10.1109/MC.2019.2955869</span></a
+      >.
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Hissam2002">[13]</dt>
+  <dd class="thebibliography" id="bib-13">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Hissam2002"></a>S.A. Hissam, D. Plakosh, and C.
+      Weinstock. “Trust and vulnerability in open source software”. English.
+      In:
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >IEE Proceedings - Software </span
+      >149 (1 Feb. 2002), 47–51(4).
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">issn</span>: 1462-5970.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a class="url" href="http://www.jstor.org/stable/24436821"
+        ><span class="fvmr8t-x-x-93"
+          >http://www.jstor.org/stable/24436821</span
+        ></a
+      >
+      (visited on 05/06/2022).
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Sonatype2021">[14]</dt>
+  <dd class="thebibliography" id="bib-14">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Sonatype2021"></a>Sonatype Inc.
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >SONATYPE’s 2021 State of the software supply chain</span
+      >. July 2021.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a
+        class="url"
+        href="https://www.sonatype.com/resources/state-of-the-software-supply-chain-2021"
+        ><span class="fvmr8t-x-x-93"
+          >https://www.sonatype.com/resources/state-of-the-software-supply-chain-2021</span
+        ></a
+      >
+      (visited on 05/18/2022).
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Jesiek2003">[15]</dt>
+  <dd class="thebibliography" id="bib-15">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Jesiek2003"></a>Brent Jesiek. “Democratizing software:
+      Open source, the hacker ethic, and beyond”. In:
+      <span class="LinLibertineTI-tlf-t1-x-x-120">First Monday </span>8.10
+      (Oct. 2003). <span class="LinLibertineT-tlf-sc-t1-x-x-120">doi</span>:
+      <a href="https://doi.org/10.5210/fm.v8i10.1082"
+        ><span class="fvmr8t-x-x-93">10 . 5210 / fm . v8i10 . 1082</span></a
+      >. <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a
+        class="url"
+        href="https://firstmonday.org/ojs/index.php/fm/article/view/1082/1002"
+        ><span class="fvmr8t-x-x-93"
+          >https://firstmonday.org/ojs/index.php/fm/article/view/1082/1002</span
+        ></a
+      >
+      (visited on 06/18/2022).
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Jonas2003">[16]</dt>
+  <dd class="thebibliography" id="bib-16">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Jonas2003"></a>Hans Jonas.
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >Das Prinzip Verantwortung</span
+      >. de. 6th ed. suhrkamp taschenbuch. Berlin, Germany: Suhrkamp, Apr.
+      2003. <span class="LinLibertineT-tlf-sc-t1-x-x-120">isbn</span>:
+      978-3-518-39992-7.
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Ladisa2022">[17]</dt>
+  <dd class="thebibliography" id="bib-17">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Ladisa2022"></a>Piergiorgio Ladisa et al.
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >Taxonomy of Attacks on Open-Source Software Supply </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120">Chains</span>. 2022.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">doi</span>:
+      <a href="https://doi.org/10.48550/ARXIV.2204.04008"
+        ><span class="fvmr8t-x-x-93">10.48550/ARXIV.2204.04008</span></a
+      >. arXiv:
+      <a href="https://arxiv.org/abs/2204.04008"
+        ><span class="fvmr8t-x-x-93">2204.04008</span></a
+      >.
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Marak2020">[18]</dt>
+  <dd class="thebibliography" id="bib-18">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Marak2020"></a>Marak.
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >No more free work from Marak - pay me or </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120"
+        >fork this - issue #1046 - Marak/Faker.js</span
+      >. Nov. 2020.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a
+        class="url"
+        href="http://web.archive.org/web/20210704022108/https://github.com/Marak/faker.js/issues/1046"
+        ><span class="fvmr8t-x-x-93"
+          >http://web.archive.org/web/20210704022108/https://github.com/Marak/faker.js/issues/1046</span
+        ></a
+      >
+      (visited on 06/18/2022).
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Marak2022">[19]</dt>
+  <dd class="thebibliography" id="bib-19">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Marak2022"></a>Marak.
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >Zalgo issue with v1.4.44-liberty-2 release </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120"
+        >- issue #285 - Marak/colors.js</span
+      >. Jan. 8, 2022.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a
+        class="url"
+        href="https://web.archive.org/web/20220320201334/https://github.com/Marak/colors.js/issues/285"
+        ><span class="fvmr8t-x-x-93"
+          >https://web.archive.org/web/20220320201334/https://github.com/Marak/colors.js/issues/285</span
+        ></a
+      >
+      (visited on 03/15/2022).
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-McLeod2021">[20]</dt>
+  <dd class="thebibliography" id="bib-20">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@McLeod2021"></a>Carolyn McLeod. “Trust”. In:
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >The Stanford Encyclopedia of Philosophy</span
+      >. Ed. by Edward N. Zalta. Fall 2021. Metaphysics Research Lab,
+      Stanford University, 2021.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a
+        class="url"
+        href="https://plato.stanford.edu/archives/fall2021/entries/trust/"
+        ><span class="fvmr8t-x-x-93"
+          >https://plato.stanford.edu/archives/fall2021/entries/trust/</span
+        ></a
+      >
+      (visited on 06/18/2022).
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Noorman2020">[21]</dt>
+  <dd class="thebibliography" id="bib-21">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Noorman2020"></a>Merel Noorman. “Computing and Moral
+      Responsibility”. In:
+      <span class="LinLibertineTI-tlf-t1-x-x-120">The </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120"
+        >Stanford Encyclopedia of Philosophy</span
+      >. Ed. by Edward N. Zalta. Spring 2020. Metaphysics Research Lab,
+      Stanford University, 2020.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a
+        class="url"
+        href="https://plato.stanford.edu/archives/spr2020/entries/computing-responsibility/"
+        ><span class="fvmr8t-x-x-93"
+          >https://plato.stanford.edu/archives/spr2020/entries/computing-responsibility/</span
+        ></a
+      >
+      (visited on 06/18/2022).
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-npmdocssemver">[22]</dt>
+  <dd class="thebibliography" id="bib-22">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@npmdocssemver"></a>npm.
+      <span class="LinLibertineTI-tlf-t1-x-x-120">About semantic </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120">versioning</span>.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a class="url" href="https://docs.npmjs.com/about-semantic-versioning"
+        ><span class="fvmr8t-x-x-93"
+          >https://docs.npmjs.com/about-semantic-versioning</span
+        ></a
+      >
+      (visited on 05/28/2022).
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Ohm2020">[23]</dt>
+  <dd class="thebibliography" id="bib-23">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Ohm2020"></a>Marc Ohm et al. “Backstabber’s Knife
+      Collection: A Review of Open Source Software Supply Chain Attacks”.
+      In:
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >Detection of Intrusions and Malware, and </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120"
+        >Vulnerability Assessment</span
+      >. Ed. by Clémentine Maurice et al. Cham: Springer International
+      Publishing, 2020, pp. 23–43.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">isbn</span>:
+      978-3-030-52683-2.
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Overney2020">[24]</dt>
+  <dd class="thebibliography" id="bib-24">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Overney2020"></a>Cassandra Overney. “Hanging by the
+      Thread: An Empirical Study of Donations in Open Source”. In:
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >Proceedings of the ACM/IEEE 42nd International Conference on </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120"
+        >Software Engineering: Companion Proceedings</span
+      >. New York, NY, USA: Association for Computing Machinery, 2020,
+      pp. 131–133.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">isbn</span>:
+      9781450371223.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">doi</span>:
+      <a href="https://doi.org/10.1145/3377812.3382170"
+        ><span class="fvmr8t-x-x-93">10.1145/ </span
+        ><span class="fvmr8t-x-x-93">3377812.3382170</span></a
+      >.
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Paganini2022">[25]</dt>
+  <dd class="thebibliography" id="bib-25">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Paganini2022"></a>Pierluigi Paganini.
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >Node-IPC NPM package sabotage </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120"
+        >to protest Ukraine invasion</span
+      >. Mar. 2022.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a
+        class="url"
+        href="https://securityaffairs.co/wordpress/129174/hacking/node-ipc-npm-package-sabotage.html"
+        ><span class="fvmr8t-x-x-93"
+          >https://securityaffairs.co/wordpress/129174/hacking/node-ipc-npm-package-sabotage.html</span
+        ></a
+      >
+      (visited on 06/18/2022).
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Raymond1999">[26]</dt>
+  <dd class="thebibliography" id="bib-26">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Raymond1999"></a>Eric Raymond. “The cathedral and the
+      bazaar”. In:
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >Knowledge, Technology &amp; Policy</span
+      >
+      12.3 (1999), pp. 23–49.
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-NodeIpcIssue2022">[27]</dt>
+  <dd class="thebibliography" id="bib-27">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@NodeIpcIssue2022"></a>RIAEvangelist.
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >issue #233 - RIAEvangelist / node-ipc</span
+      >. Mar. 9, 2022.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a
+        class="url"
+        href="https://web.archive.org/web/20220315161016/https://github.com/RIAEvangelist/node-ipc/issues/233"
+        ><span class="fvmr8t-x-x-93"
+          >https://web.archive.org/web/20220315161016/https://github.com/RIAEvangelist/node-ipc/issues/233</span
+        ></a
+      >
+      (visited on 03/15/2022).
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Peacenotwar2022">[28]</dt>
+  <dd class="thebibliography" id="bib-28">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Peacenotwar2022"></a>RIAEvangelist.
+      <span class="LinLibertineTI-tlf-t1-x-x-120">peacenotwar</span>.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a
+        class="url"
+        href="https://web.archive.org/web/20220330234320/https://github.com/RIAEvangelist/peacenotwar"
+        ><span class="fvmr8t-x-x-93"
+          >https://web.archive.org/web/20220330234320/https://github.com/RIAEvangelist/peacenotwar</span
+        ></a
+      >
+      (visited on 06/01/2022).
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Sejfia2022">[29]</dt>
+  <dd class="thebibliography" id="bib-29">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Sejfia2022"></a>Adriana Sejfia and Max Schäfer.
+      “Practical Automated Detection of Malicious npm Packages”. In: (2022).
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">doi</span>:
+      <a href="https://doi.org/10.1145/3510003.3510104"
+        ><span class="fvmr8t-x-x-93">10.1145/3510003.3510104</span></a
+      >. arXiv:
+      <a href="https://arxiv.org/abs/2202.13953"
+        ><span class="fvmr8t-x-x-93">2202.13953</span></a
+      >.
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Sharma2022">[30]</dt>
+  <dd class="thebibliography" id="bib-30">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Sharma2022"></a>Ax Sharma.
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >npm Libraries ‘colors’ and ‘faker’ Sabotaged in </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120"
+        >Protest by their Maintainer—What to do Now? </span
+      >2022. <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a
+        class="url"
+        href="https://blog.sonatype.com/npm-libraries-colors-and-faker-sabotaged-in-protest-by-their-maintainer-what-to-do-now"
+        ><span class="fvmr8t-x-x-93"
+          >https://blog.sonatype.com/npm-libraries-colors-and-faker-sabotaged-in-protest-by-their-maintainer-what-to-do-now</span
+        ></a
+      >
+      (visited on 05/06/2022).
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Tal2022">[31]</dt>
+  <dd class="thebibliography" id="bib-31">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Tal2022"></a>Liran Tal.
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >Alert: peacenotwar module sabotages npm developers in </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120"
+        >the node-ipc package to protest the invasion of Ukraine</span
+      >. 2022. <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a
+        class="url"
+        href="https://snyk.io/blog/peacenotwar-malicious-npm-node-ipc-package-vulnerability/"
+        ><span class="fvmr8t-x-x-93"
+          >https://snyk.io/blog/peacenotwar-malicious-npm-node-ipc-package-vulnerability/</span
+        ></a
+      >
+      (visited on 05/06/2022).
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Tal2022a">[32]</dt>
+  <dd class="thebibliography" id="bib-32">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Tal2022a"></a>Liran Tal and Assaf Ben Josef.
+      <span class="LinLibertineTI-tlf-t1-x-x-120">Open </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120"
+        >source maintainer pulls the plug on npm packages colors and faker,
+        now what? </span
+      >Jan. 9, 2022.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a
+        class="url"
+        href="https://snyk.io/blog/open-source-npm-packages-colors-faker/"
+        ><span class="fvmr8t-x-x-93"
+          >https://snyk.io/blog/open-source-npm-packages-colors-faker/</span
+        ></a
+      >
+      (visited on 05/19/2022).
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Walker2006">[33]</dt>
+  <dd class="thebibliography" id="bib-33">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Walker2006"></a>Margaret Walker and Urban. In:
+      <span class="LinLibertineTI-tlf-t1-x-x-120"
+        >Moral Repair: Reconstructing Moral Relations After </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120">Wrongdoing</span>.
+      Cambridge: Cambridge University Press, 2006.
+    </p>
+  </dd>
+  <dt class="thebibliography" id="X0-Zimmermann2019">[34]</dt>
+  <dd class="thebibliography" id="bib-34">
+    <!-- l. 225 -->
+    <p class="noindent">
+      <a id="cite.0@Zimmermann2019"></a>Markus Zimmermann et al. “Small
+      World with High Risks: A Study of Security Threats in the npm
+      Ecosystem”. In:
+      <span class="LinLibertineTI-tlf-t1-x-x-120">28th USENIX </span
+      ><span class="LinLibertineTI-tlf-t1-x-x-120"
+        >Security Symposium (USENIX Security 19)</span
+      >. Santa Clara, CA: USENIX Association, Aug. 2019, pp. 995–1010.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">isbn</span>:
+      978-1-939133-06-9.
+      <span class="LinLibertineT-tlf-sc-t1-x-x-120">url</span>:
+      <a
+        class="url"
+        href="https://www.usenix.org/conference/usenixsecurity19/presentation/zimmerman"
+        ><span class="fvmr8t-x-x-93"
+          >https://www.usenix.org/conference/usenixsecurity19/presentation/zimmerman</span
+        ></a
+      >
+      (visited on 06/18/2022).
+    </p>
+  </dd>
+</dl>
