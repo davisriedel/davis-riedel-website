@@ -13,7 +13,7 @@ export default function RootLayout({
 		<html lang="en" suppressHydrationWarning>
       <head>
         <title>Content Manager</title>
-        <link href="https://www.davis-riedel.de/admin/config.yml" type="text/yaml" rel="cms-config-url" />
+        <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
       </head>
 			<body suppressHydrationWarning>
         {children}

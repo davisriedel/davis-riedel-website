@@ -3,6 +3,7 @@ import path from "path";
 import { compileMDX } from "next-mdx-remote/rsc";
 import { PostFrontmatter } from "./post-frontmatter";
 import { ReactNode } from 'react';
+import { unstable_cacheTag as cacheTag } from 'next/cache'
 
 const postsDirectory = path.join(process.cwd(), "cms/posts");
 
@@ -19,6 +20,7 @@ function truncateWithEllipses(text: string, max: number) {
 
 export async function fetchAllPosts(): Promise<PostContent[]> {
   "use cache";
+  cacheTag("cms", "posts", "fetchAllPosts");
 
   // Get file names under /posts
   const fileNames = await fs.readdir(postsDirectory);
@@ -65,6 +67,7 @@ export async function fetchAllPosts(): Promise<PostContent[]> {
 
 export async function countPosts(tag?: string): Promise<number> {
   "use cache";
+  cacheTag("cms", "posts", "countPosts");
 
   return (await fetchAllPosts()).filter(
     (it) => !tag || (it.frontmatter.tags && it.frontmatter.tags.includes(tag))
@@ -77,6 +80,7 @@ export async function listPostContent(
   tag?: string
 ): Promise<PostContent[]> {
   "use cache";
+  cacheTag("cms", "posts", "listPostContent");
 
   return (await fetchAllPosts())
     .filter((it) => !tag || (it.frontmatter.tags && it.frontmatter.tags.includes(tag)))

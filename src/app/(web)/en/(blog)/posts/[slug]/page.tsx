@@ -14,8 +14,6 @@ export async function generateStaticParams() {
 }
 
 async function slugToPostContent(slug: string) {
-  "use cache";
-
   return Object.fromEntries(
     (await fetchAllPosts()).map((post) => [post.frontmatter.slug, post])
   )[slug];
