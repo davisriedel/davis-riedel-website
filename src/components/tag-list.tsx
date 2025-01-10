@@ -7,8 +7,6 @@ type Props = {
 };
 
 export default async function TagList({ tags }: Props) {
-  "use cache";
-
   return (
     <ul>
       {await Promise.all(tags.map(async (it, i) => (

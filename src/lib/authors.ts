@@ -2,6 +2,7 @@ import { promises as fs } from 'node:fs';
 import yaml from "js-yaml";
 import path from 'node:path';
 import { unstable_cacheLife as cacheLife } from 'next/cache'
+import { unstable_cacheTag as cacheTag } from 'next/cache'
 
 export type AuthorContent = {
   readonly slug: string;
@@ -12,6 +13,7 @@ export type AuthorContent = {
 async function generateAuthorMap(): Promise<{ [key: string]: AuthorContent }> {
   "use cache";
   cacheLife("days");
+  cacheTag("cms", "authors", "generateAuthorMap");
 
   const tagsFile = await fs.readFile(path.join(process.cwd(), "cms/authors.yml"), "utf8");
   const authors = yaml.load(tagsFile) as { authors: AuthorContent[] };
@@ -25,6 +27,7 @@ async function generateAuthorMap(): Promise<{ [key: string]: AuthorContent }> {
 export async function getAuthor(slug: string) {
   "use cache";
   cacheLife("days");
+  cacheTag("cms", "authors", "getAuthor");
 
   return (await generateAuthorMap())[slug];
 }

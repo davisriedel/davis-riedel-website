@@ -1,4 +1,4 @@
-import ResumeTable from "@/app/(web)/de/(subpages)/lebenslauf/ResumeTable";
+import ResumeTable from "@/app/de/(subpages)/lebenslauf/ResumeTable";
 import { headingFont } from "@/fonts";
 
 export const metadata = {

@@ -1,8 +1,8 @@
 backend:
   name: github
   repo: davisriedel/davis-riedel-website
-  branch: main
-  base_url: https://www.davis-riedel.de
+  branch: dev
+  base_url: https://davis-riedel-website-git-dev-davisriedels-projects.vercel.app
   auth_endpoint: api/oauth
   squash_merges: true
 
