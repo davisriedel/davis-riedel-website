@@ -6,6 +6,8 @@ type Props = {
   params: Promise<{ slug: string }>
 }
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const postContents = await fetchAllPosts();
   return postContents.map((post) => ({
@@ -14,8 +16,6 @@ export async function generateStaticParams() {
 }
 
 async function slugToPostContent(slug: string) {
-  "use cache";
-
   return Object.fromEntries(
     (await fetchAllPosts()).map((post) => [post.frontmatter.slug, post])
   )[slug];

@@ -8,6 +8,8 @@ type Props = {
   params: Promise<{ slug: string[] }>
 }
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const tags = await listTags();
   const paths = await Promise.all(tags.flatMap(async (tag) => {

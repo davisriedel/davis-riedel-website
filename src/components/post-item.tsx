@@ -11,8 +11,6 @@ type Props = {
 };
 
 export default async function PostItem({ post }: Props) {
-  "use cache";
-
   return (
     <div>
       <div className="text-indigo-950 dark:text-indigo-400 text-sm">
