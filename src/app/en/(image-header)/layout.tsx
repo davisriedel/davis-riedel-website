@@ -2,7 +2,7 @@ import { Footer } from "@/components/en/footer";
 import { NavBar } from "@/components/en/navbar";
 import { Header } from "@/components/header";
 import RouterScrollWorkaround from "@/components/router-scroll-workaround";
-import HeaderImage from "@/images/header.jpg";
+import HeaderImage from "@/assets/images/header.jpg";
 import Image from "next/image";
 import type { PropsWithChildren } from "react";
 

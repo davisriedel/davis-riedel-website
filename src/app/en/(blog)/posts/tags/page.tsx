@@ -2,7 +2,7 @@
 
 import { getAllTags } from "@/lib/tags";
 import TagList from "@/components/tag-list";
-import { headingFont } from "@/fonts";
+import { headingFont } from "@/assets/fonts";
 
 export async function generateMetadata() {
   const title = "All tags";

@@ -2,7 +2,7 @@ import { PostContent } from "@/lib/posts";
 import Date from "./date";
 import Link from "next/link";
 import { parseISO } from "date-fns";
-import { headingFont } from "@/fonts";
+import { headingFont } from "@/assets/fonts";
 import { cn } from "@/lib/utils";
 import { AnimatedLink } from "./animated-link";
 

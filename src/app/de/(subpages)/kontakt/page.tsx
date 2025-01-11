@@ -1,5 +1,5 @@
 import { ContactForm } from "@/components/contact-form";
-import { headingFont } from "@/fonts";
+import { headingFont } from "@/assets/fonts";
 
 export const metadata = {
   alternates: {

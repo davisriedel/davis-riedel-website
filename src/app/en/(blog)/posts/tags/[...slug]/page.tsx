@@ -1,5 +1,5 @@
 import TagPostList from "@/components/tag-post-list";
-import { headingFont } from "@/fonts";
+import { headingFont } from "@/assets/fonts";
 import { listPostContent, countPosts } from "@/lib/posts";
 import { getAllTags, getTag } from "@/lib/tags";
 import { notFound } from "next/navigation";

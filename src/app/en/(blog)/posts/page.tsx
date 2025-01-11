@@ -3,7 +3,7 @@
 import PostList from "@/components/post-list";
 import { countPosts, listPostContent } from "@/lib/posts";
 import { getAllTags } from "@/lib/tags";
-import { headingFont } from "@/fonts";
+import { headingFont } from "@/assets/fonts";
 
 export async function generateMetadata() {
   const title = "All posts";

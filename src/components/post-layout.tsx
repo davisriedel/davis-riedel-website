@@ -5,7 +5,7 @@ import { getAuthor } from "@/lib/authors";
 import { PostFrontmatter } from "@/lib/post-frontmatter";
 import { parseISO } from "date-fns";
 import TagList from "./tag-list";
-import { headingFont } from "@/fonts";
+import { headingFont } from "@/assets/fonts";
 
 type Props = {
   frontmatter: PostFrontmatter;

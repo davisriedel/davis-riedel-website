@@ -1,4 +1,4 @@
-import { headingFont } from "@/fonts";
+import { headingFont } from "@/assets/fonts";
 import ResumeTable from "./ResumeTable";
 
 export const metadata = {

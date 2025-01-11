@@ -1,4 +1,4 @@
-import { headingFont } from "@/fonts";
+import { headingFont } from "@/assets/fonts";
 import { cn } from "@/lib/utils";
 import type { ReactNode } from "react";
 import { LanguageToggle } from "./lang-toggle";

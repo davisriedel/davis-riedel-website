@@ -3,7 +3,8 @@ import { Footer } from "@/components/en/footer";
 import { NavBar } from "@/components/en/navbar";
 import { Header } from "@/components/header";
 import RouterScrollWorkaround from "@/components/router-scroll-workaround";
-import HeaderImage from "@/images/header.jpg";
+import { SocialButtons } from "@/components/social-buttons";
+import HeaderImage from "@/assets/images/header.jpg";
 import Image from "next/image";
 import type { PropsWithChildren } from "react";
 
@@ -15,7 +16,7 @@ export default function HomeLayout({ children }: PropsWithChildren<{}>) {
         lang="en"
 				navBar={
           <>
-					<p className="mt-2 text-lg">
+					<p className="mt-1 text-lg">
 						<AnimatedLink
 							className="text-white after:bg-white dark:text-white dark:after:bg-white"
 							href="/en#developer"
@@ -44,6 +45,7 @@ export default function HomeLayout({ children }: PropsWithChildren<{}>) {
 							Student
 						</AnimatedLink>
 					</p>
+          <div className="text-2xl mt-4"><SocialButtons /></div>
           <NavBar />
           </>
 				}

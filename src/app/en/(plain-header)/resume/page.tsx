@@ -1,5 +1,5 @@
 import ResumeTable from "@/app/de/(subpages)/lebenslauf/ResumeTable";
-import { headingFont } from "@/fonts";
+import { headingFont } from "@/assets/fonts";
 
 export const metadata = {
   alternates: {

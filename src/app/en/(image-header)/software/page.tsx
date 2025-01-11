@@ -2,7 +2,7 @@ import { AnimatedLink } from "@/components/animated-link";
 import { ObsidianPluginDownloads } from "@/components/obsidian-plugin-downloads";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { headingFont } from "@/fonts";
+import { headingFont } from "@/assets/fonts";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
