@@ -1,6 +1,6 @@
 "use cache";
 
-import { listTags } from "@/lib/tags";
+import { getAllTags } from "@/lib/tags";
 import TagList from "@/components/tag-list";
 import { headingFont } from "@/fonts";
 
@@ -13,7 +13,7 @@ export async function generateMetadata() {
 }
 
 export default async function TagIndexPage() {
-  const tags = await listTags();
+  const tags = await getAllTags();
 
   return (
 		<section className="space-y-4">

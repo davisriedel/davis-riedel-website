@@ -2,7 +2,7 @@
 
 import PostList from "@/components/post-list";
 import { countPosts, listPostContent } from "@/lib/posts";
-import { listTags } from "@/lib/tags";
+import { getAllTags } from "@/lib/tags";
 import { headingFont } from "@/fonts";
 
 export async function generateMetadata() {
@@ -15,7 +15,7 @@ export async function generateMetadata() {
 
 export default async function PostIndexPage() {
   const posts = await fetchPosts();
-  const tags = await listTags();
+  const tags = await getAllTags();
   const pagination = await fetchPagination();
 
   return (

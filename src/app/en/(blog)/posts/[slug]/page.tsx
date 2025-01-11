@@ -1,5 +1,6 @@
 import PostLayout from "@/components/post-layout";
-import { fetchAllPosts } from '@/lib/posts';
+import { fetchAllPosts, getPost } from '@/lib/posts';
+import { notFound } from "next/navigation";
 import { Suspense } from 'react';
 
 type Props = {
@@ -13,23 +14,20 @@ export async function generateStaticParams() {
   }));
 }
 
-async function slugToPostContent(slug: string) {
-  return Object.fromEntries(
-    (await fetchAllPosts()).map((post) => [post.frontmatter.slug, post])
-  )[slug];
-}
-
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
-  const { frontmatter } = await slugToPostContent(slug);
+  const post = await getPost(slug);
+  if (!post) return {};
   return {
-    title: frontmatter.title,
-    description: frontmatter.description ?? ""
+    title: post.frontmatter.title,
+    description: post.frontmatter.description ?? ""
   };
 }
 
 async function PageContent({ slug }: { slug: Promise<string> }) {
-  const { content, frontmatter } = await slugToPostContent(await slug);
+  const post = await getPost(await slug);
+  if (!post) return notFound();
+  const { content, frontmatter } = post;
   return <PostLayout frontmatter={frontmatter}>
     {content}
   </PostLayout>;

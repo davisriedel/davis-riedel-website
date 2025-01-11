@@ -1,8 +1,5 @@
-import { promises as fs } from 'node:fs';
-import yaml from "js-yaml";
-import path from 'node:path';
-import { unstable_cacheLife as cacheLife } from 'next/cache'
-import { unstable_cacheTag as cacheTag } from 'next/cache'
+import { CmsMetadata } from "./cms-metadata";
+import { unstable_cacheTag as cacheTag, unstable_cacheLife as cacheLife } from 'next/cache'
 
 export type AuthorContent = {
   readonly slug: string;
@@ -10,24 +7,22 @@ export type AuthorContent = {
   readonly introduction: string;
 };
 
-async function generateAuthorMap(): Promise<{ [key: string]: AuthorContent }> {
-  "use cache";
-  cacheLife("days");
-  cacheTag("cms", "authors", "generateAuthorMap");
+const authors = new CmsMetadata<AuthorContent>("cms/authors.yml", "authors");
 
-  const tagsFile = await fs.readFile(path.join(process.cwd(), "cms/authors.yml"), "utf8");
-  const authors = yaml.load(tagsFile) as { authors: AuthorContent[] };
-  let result: { [key: string]: AuthorContent } = {};
-  for (const author of authors.authors) {
-    result[author.slug] = author;
-  }
-  return result;
+export async function getAllAuthors() {
+  "use cache";
+  cacheLife("max"); // next rebuilds and clears all caches when a change in decap cms is committed.
+  cacheTag("cms", "authors");
+  return await authors.getAll();
+}
+
+async function getAuthorsMap() {
+  "use cache";
+  cacheLife("max"); // next rebuilds and clears all caches when a change in decap cms is committed.
+  cacheTag("cms", "authors");
+  return await authors.generateMetadataMap();
 }
 
 export async function getAuthor(slug: string) {
-  "use cache";
-  cacheLife("days");
-  cacheTag("cms", "authors", "getAuthor");
-
-  return (await generateAuthorMap())[slug];
+  return (await getAuthorsMap())[slug];
 }

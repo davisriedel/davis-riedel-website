@@ -1,7 +1,8 @@
 import TagPostList from "@/components/tag-post-list";
 import { headingFont } from "@/fonts";
 import { listPostContent, countPosts } from "@/lib/posts";
-import { getTag, listTags } from "@/lib/tags";
+import { getAllTags, getTag } from "@/lib/tags";
+import { notFound } from "next/navigation";
 import { Suspense } from "react";
 
 type Props = {
@@ -9,7 +10,7 @@ type Props = {
 }
 
 export async function generateStaticParams() {
-  const tags = await listTags();
+  const tags = await getAllTags();
   const paths = await Promise.all(tags.flatMap(async (tag) => {
     const postCount = await countPosts(tag.slug);
     const pages = Math.ceil(postCount / 10);
@@ -26,7 +27,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
   const [tagSlug] = slug;
+  if (!tagSlug) return notFound();
   const tag = await getTag(tagSlug);
+  if (!tag) return notFound();
 
   return {
     title: tag.name,
@@ -36,7 +39,9 @@ export async function generateMetadata({ params }: Props) {
 
 async function PageContent({ slug }: { slug: Promise<string[]> }) {
   const [tagSlug, page] = await slug;
+  if (!tagSlug || !page) return notFound();
   const tag = await getTag(tagSlug);
+  if (!tag) return notFound();
   const currentPage = page ? parseInt(page) : 1;
 
   const posts = await listPostContent(currentPage, 10, tagSlug);

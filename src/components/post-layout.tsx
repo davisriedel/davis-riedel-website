@@ -21,6 +21,8 @@ export default async function PostLayout({
   },
   children,
 }: Props) {
+  const authorContent = await getAuthor(author);
+
   return (
     <article>
       <header className="mb-8">
@@ -30,7 +32,7 @@ export default async function PostLayout({
         <div className="text-indigo-950 dark:text-indigo-400">
           <Date date={parseISO(date)} />
           <span> | </span>
-          <Author author={await getAuthor(author)} />
+          {authorContent && <Author author={authorContent} />}
         </div>
       </header>
       <div className="prose dark:prose-invert">{children}</div>
