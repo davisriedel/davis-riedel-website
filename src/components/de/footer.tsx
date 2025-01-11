@@ -1,12 +1,14 @@
 import { AnimatedLink } from "@/components/animated-link";
 import { headingFont } from "@/fonts";
 import { Copyright } from "@/components/copyright";
+import { SocialButtons } from "../social-buttons";
 
 export function Footer() {
 	return (
 		<footer
 			className={`${headingFont.className} bg-indigo-950 text-white text-center py-4 space-y-2`}
 		>
+      <SocialButtons />
 			<p>
 				<AnimatedLink
 					className="text-white after:bg-white dark:text-white dark:after:bg-white"
