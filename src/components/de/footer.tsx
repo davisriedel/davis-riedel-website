@@ -1,5 +1,5 @@
+import { headingFont } from "@/assets/fonts";
 import { AnimatedLink } from "@/components/animated-link";
-import { headingFont } from "@/fonts";
 import { Copyright } from "@/components/copyright";
 import { SocialButtons } from "../social-buttons";
 
@@ -8,13 +8,13 @@ export function Footer() {
 		<footer
 			className={`${headingFont.className} bg-indigo-950 text-white text-center py-4 space-y-2`}
 		>
-      <SocialButtons />
+			<SocialButtons />
 			<p>
 				<AnimatedLink
 					className="text-white after:bg-white dark:text-white dark:after:bg-white"
 					href="/de/kontakt"
 				>
-          Kontakt
+					Kontakt
 				</AnimatedLink>
 				<span> | </span>
 				<AnimatedLink
@@ -32,9 +32,18 @@ export function Footer() {
 				</AnimatedLink>
 			</p>
 
-      <p className="text-sm">Der Quellcode dieser Website kann auf <AnimatedLink href="https://github.com/davisriedel/davis-riedel-website" target="_blank">GitHub</AnimatedLink> eingesehen werden.</p>
+			<p className="text-sm">
+				Der Quellcode dieser Website kann auf{" "}
+				<AnimatedLink
+					href="https://github.com/davisriedel/davis-riedel-website"
+					target="_blank"
+				>
+					GitHub
+				</AnimatedLink>{" "}
+				eingesehen werden.
+			</p>
 
-      <Copyright lang="de" />
+			<Copyright lang="de" />
 		</footer>
 	);
 }

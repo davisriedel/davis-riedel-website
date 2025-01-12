@@ -9,11 +9,11 @@ export default function Home() {
 		const browserLang = navigator.language;
 
 		let detectedLocale: string;
-    if (browserLang.startsWith("de")) {
-      detectedLocale = "de"
-    } else {
-      detectedLocale = "en"
-    }
+		if (browserLang.startsWith("de")) {
+			detectedLocale = "de";
+		} else {
+			detectedLocale = "en";
+		}
 
 		redirect(`/${detectedLocale}`);
 	}, []);

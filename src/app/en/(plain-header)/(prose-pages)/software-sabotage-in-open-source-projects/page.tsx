@@ -2,11 +2,11 @@
 import page from "./page.html";
 
 export const metadata = {
-  alternates: {
-    languages: {
-      'en-US': '/en/software-sabotage-in-open-source-projects',
-    },
-  },
+	alternates: {
+		languages: {
+			"en-US": "/en/software-sabotage-in-open-source-projects",
+		},
+	},
 };
 
 export default function Page() {

@@ -1,20 +1,18 @@
-import { headingFont } from "@/fonts";
+import { headingFont } from "@/assets/fonts";
 
 export const metadata = {
-  alternates: {
-    languages: {
-      'en-US': '/en/imprint',
-      'de-DE': '/de/impressum',
-    },
-  },
+	alternates: {
+		languages: {
+			"en-US": "/en/imprint",
+			"de-DE": "/de/impressum",
+		},
+	},
 };
 
 export default function Imprint() {
 	return (
 		<section className="space-y-4">
-      <h2 className={`${headingFont.className} text-3xl`}>
-				Impressum
-			</h2>
+			<h2 className={`${headingFont.className} text-3xl`}>Impressum</h2>
 
 			<p className="mt-3">
 				<b>Angaben gemäß § 5 TMG</b>

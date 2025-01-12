@@ -1,10 +1,10 @@
+import HeaderImage from "@/assets/images/header.jpg";
 import { AnimatedLink } from "@/components/animated-link";
 import { Footer } from "@/components/de/footer";
 import { NavBar } from "@/components/de/navbar";
 import { Header } from "@/components/header";
 import RouterScrollWorkaround from "@/components/router-scroll-workaround";
 import { SocialButtons } from "@/components/social-buttons";
-import HeaderImage from "@/images/header.jpg";
 import Image from "next/image";
 import type { PropsWithChildren } from "react";
 
@@ -13,47 +13,49 @@ export default function HomeLayout({ children }: PropsWithChildren<{}>) {
 	return (
 		<RouterScrollWorkaround>
 			<Header
-        lang="de"
+				lang="de"
 				navBar={
-          <>
-					<p className="mt-1 text-lg">
-						<AnimatedLink
-							className="text-white after:bg-white dark:text-white dark:after:bg-white"
-							href="/de#programmierer"
-						>
-							Programmierer
-						</AnimatedLink>
-						,{" "}
-						<AnimatedLink
-							className="text-white after:bg-white dark:text-white dark:after:bg-white"
-							href="/de#politiker"
-						>
-							Politiker
-						</AnimatedLink>
-						,{" "}
-						<AnimatedLink
-							className="text-white after:bg-white dark:text-white dark:after:bg-white"
-							href="/de#autor"
-						>
-							Schriftsteller
-						</AnimatedLink>{" "}
-						und{" "}
-						<AnimatedLink
-							className="text-white after:bg-white dark:text-white dark:after:bg-white"
-							href="/de#student"
-						>
-							Student
-						</AnimatedLink>
-					</p>
-          <div className="mt-4 text-2xl"><SocialButtons /></div>
-          <NavBar />
-          </>
+					<>
+						<p className="mt-1 text-lg">
+							<AnimatedLink
+								className="text-white after:bg-white dark:text-white dark:after:bg-white"
+								href="/de#programmierer"
+							>
+								Programmierer
+							</AnimatedLink>
+							,{" "}
+							<AnimatedLink
+								className="text-white after:bg-white dark:text-white dark:after:bg-white"
+								href="/de#politiker"
+							>
+								Politiker
+							</AnimatedLink>
+							,{" "}
+							<AnimatedLink
+								className="text-white after:bg-white dark:text-white dark:after:bg-white"
+								href="/de#autor"
+							>
+								Schriftsteller
+							</AnimatedLink>{" "}
+							und{" "}
+							<AnimatedLink
+								className="text-white after:bg-white dark:text-white dark:after:bg-white"
+								href="/de#student"
+							>
+								Student
+							</AnimatedLink>
+						</p>
+						<div className="mt-4 text-2xl">
+							<SocialButtons />
+						</div>
+						<NavBar />
+					</>
 				}
 				image={
 					<Image
 						src={HeaderImage}
 						alt="Davis Riedel vor dem Europäischen Parlament in Brüssel"
-            className="object-cover h-full"
+						className="object-cover h-full"
 					/>
 				}
 			/>

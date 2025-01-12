@@ -1,23 +1,21 @@
-import { headingFont } from "@/fonts";
+import { headingFont } from "@/assets/fonts";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 import type { ReactNode } from "react";
 import { LanguageToggle } from "./lang-toggle";
 import { ThemeToggle } from "./theme-toggle";
-import Link from "next/link";
 
 type Props = {
 	navBar: ReactNode;
 	image?: ReactNode;
-  lang: "en" | "de";
+	lang: "en" | "de";
 };
 
 export function Header({ navBar, image, lang }: Props) {
 	return (
 		<header className={cn(image && "relative h-svh max-h-[1000px]")}>
 			{image && (
-				<div className="absolute top-0 left-0 w-full h-full z-0">
-					{image}
-				</div>
+				<div className="absolute top-0 left-0 w-full h-full z-0">{image}</div>
 			)}
 			<div
 				className={cn(

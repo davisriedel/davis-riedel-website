@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "@/globals.css";
+import { bodyFont, headingFont } from "@/assets/fonts";
 import { ThemeProvider } from "@/components/theme-provider";
-import { bodyFont, headingFont } from "@/fonts";
 
 export const metadata: Metadata = {
 	title: "Davis Riedel",

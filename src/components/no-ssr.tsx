@@ -1,11 +1,9 @@
-import dynamic from 'next/dynamic'
-import React, { PropsWithChildren } from 'react'
+import dynamic from "next/dynamic";
+import React, { type PropsWithChildren } from "react";
 
 // biome-ignore lint/complexity/noBannedTypes: no props to pass
-const NoSsr = ({ children }: PropsWithChildren<{}>) => (
-  <React.Fragment>{children}</React.Fragment>
-)
+const NoSsr = ({ children }: PropsWithChildren<{}>) => children;
 
 export default dynamic(() => Promise.resolve(NoSsr), {
-  ssr: false
-})
+	ssr: false,
+});

@@ -1,22 +1,20 @@
+import { headingFont } from "@/assets/fonts";
 import { AnimatedLink } from "@/components/animated-link";
-import { headingFont } from "@/fonts";
 
 export const metadata = {
-  alternates: {
-    languages: {
-      // TODO: Translation missing
-      // 'en-US': '/en/studies',
-      'de-DE': '/de/studium',
-    },
-  },
+	alternates: {
+		languages: {
+			// TODO: Translation missing
+			// 'en-US': '/en/studies',
+			"de-DE": "/de/studium",
+		},
+	},
 };
 
 export default function Resume() {
 	return (
 		<section className="space-y-4">
-      <h2 className={`${headingFont.className} text-3xl`}>
-				Mein Studium
-			</h2>
+			<h2 className={`${headingFont.className} text-3xl`}>Mein Studium</h2>
 			<p>
 				<b>
 					Ich studiere aktuell Informatik am{" "}

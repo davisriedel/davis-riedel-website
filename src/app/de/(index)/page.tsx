@@ -1,18 +1,18 @@
+import { headingFont } from "@/assets/fonts";
 import { AnimatedLink } from "@/components/animated-link";
 import { ObsidianPluginDownloads } from "@/components/obsidian-plugin-downloads";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { headingFont } from "@/fonts";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 export const metadata = {
-  alternates: {
-    languages: {
-      'en-US': '/en',
-      'de-DE': '/de',
-    },
-  },
+	alternates: {
+		languages: {
+			"en-US": "/en",
+			"de-DE": "/de",
+		},
+	},
 };
 
 export default function Home() {
@@ -46,8 +46,8 @@ export default function Home() {
 							Typewriter&nbsp;Mode
 						</AnimatedLink>
 						, das aktuell bereits über{" "}
-            <ObsidianPluginDownloads pluginId="typewriter-mode" lang="de" />{" "}
-						mal heruntergeladen wurde.
+						<ObsidianPluginDownloads pluginId="typewriter-mode" lang="de" /> mal
+						heruntergeladen wurde.
 					</p>
 
 					<p className="mt-2">
@@ -113,13 +113,9 @@ export default function Home() {
 			</section>
 
 			<section id="politiker" className="space-y-4">
-				<h2 className={`${headingFont.className} text-3xl`}>
-					Politiker
-				</h2>
+				<h2 className={`${headingFont.className} text-3xl`}>Politiker</h2>
 				<Card className="p-4 shadow-md">
-					<h3 className="text-xl">
-						Ortschaftsrat in Pforzheim-Eutingen
-					</h3>
+					<h3 className="text-xl">Ortschaftsrat in Pforzheim-Eutingen</h3>
 					<p className="mt-2">
 						Ich wurde am 9. Juni 2024 in den{" "}
 						<AnimatedLink
@@ -190,9 +186,7 @@ export default function Home() {
 			</section>
 
 			<section id="student" className="space-y-4">
-				<h2 className={`${headingFont.className} text-3xl`}>
-					Student
-				</h2>
+				<h2 className={`${headingFont.className} text-3xl`}>Student</h2>
 				<Card className="p-4 shadow-md">
 					<h3 className="text-xl">Informatik (B.Sc.)</h3>
 					<p className="mt-2">
@@ -208,9 +202,7 @@ export default function Home() {
 					</p>
 				</Card>
 				<Card className="p-4 shadow-md">
-					<h3 className="text-xl">
-						Philosophie (Akademiestudium)
-					</h3>
+					<h3 className="text-xl">Philosophie (Akademiestudium)</h3>
 					<p className="mt-2">
 						Ich belege aktuell Philosophie-Vorlesungen im Rahmen eines
 						Akademiestudiums an der{" "}
@@ -243,9 +235,7 @@ export default function Home() {
 			</section>
 
 			<section id="autor" className="space-y-4">
-				<h2 className={`${headingFont.className} text-3xl`}>
-					Schriftsteller
-				</h2>
+				<h2 className={`${headingFont.className} text-3xl`}>Schriftsteller</h2>
 				<p>
 					Ich bin Hobby-Schriftsteller und schreibe meistens Science-Fiction und
 					Lyrik. Aktuell arbeite ich an meinem Debut-Roman.

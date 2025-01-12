@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-export default {
+const nextConfig: NextConfig = {
   pageExtensions: ['js', 'jsx', 'md', 'ts', 'tsx'],
   webpack: (cfg, _ /* { buildId, dev, isServer, defaultLoaders, webpack } */) => {
     cfg.module.rules.push({
@@ -9,6 +9,7 @@ export default {
     });
     return cfg;
   },
+  serverExternalPackages: ["handlebars"],
   experimental: {
     ppr: true,
     dynamicIO: true,
@@ -22,4 +23,11 @@ export default {
     },
   },
   transpilePackages: ['next-mdx-remote'],
-} satisfies NextConfig;
+};
+
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
+
+module.exports = withBundleAnalyzer(nextConfig)
+

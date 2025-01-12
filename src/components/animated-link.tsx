@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import Link, { LinkProps } from "next/link";
+import Link, { type LinkProps } from "next/link";
 import type { AnchorHTMLAttributes, PropsWithChildren } from "react";
 
 export function AnimatedLink({
