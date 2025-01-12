@@ -134,6 +134,12 @@ export function Privacy() {
 				<br />
 				San Francisco, CA 94114
 			</p>
+      <p>
+        <strong>Apple Inc.</strong><br />
+        One Apple Park Way<br />
+        Cupertino, Kalifornien<br />
+        CA 95014, USA
+      </p>
 
 			<h2>3. Allgemeine Hinweise und Pflichtinformationen</h2>
 			<h3>Datenschutz</h3>
@@ -399,9 +405,7 @@ export function Privacy() {
 			<h3>Kontaktformular</h3>
 			<p>
 				Daten, die Sie über das Kontaktformular eingeben, werden per E-Mail an
-				mail@davis-riedel.de übermittelt. Die Domain wird bei <b>GoNeo</b>{" "}
-				(Kontaktdaten s.o.) gehostet. Der Mailserver wird von <b>Resend</b>{" "}
-				(Kontaktdaten s.o.) gehostet.
+				mail@davis-riedel.de übermittelt. Die Domain wird bei <b>GoNeo</b> gehostet. Der sendende Mailserver wird von <b>Resend</b> gehostet. Der empfangende Mailserver wird von <b>Apple</b> gehostet. Die Kontaktdaten der jeweiligen Hoster finden Sie oben.
 			</p>
 		</div>
 	);

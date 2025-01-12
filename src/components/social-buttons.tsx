@@ -1,9 +1,9 @@
-import { iconFonts } from "@/assets/fonts";
+import { faBrands } from "@/assets/fonts";
 import { cn } from "@/lib/utils";
 
 export function SocialButtons() {
 	return (
-		<div className={cn(iconFonts.brands.className, "text-center *:mr-2 ml-2")}>
+		<div className={cn(faBrands.className, "text-center *:mr-2 ml-2")}>
 			<a
 				href="https://www.facebook.com/riedeldavis"
 				target="_blank"

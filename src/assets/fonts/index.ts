@@ -11,14 +11,11 @@ export const headingFont = Share_Tech({
 	variable: "--font-heading",
 });
 
-const regular = localFont({
+export const faRegular = localFont({
 	src: "./fontawesome/fa-regular-400.woff2",
+  variable: "--fontawesome-regular"
 });
-const solid = localFont({
-	src: "./fontawesome/fa-solid-900.woff2",
-});
-const brands = localFont({
+export const faBrands = localFont({
 	src: "./fontawesome/fa-brands-400.woff2",
+  variable: "--fontawesome-brands"
 });
-// TODO: Workaround because fonts must be consts in module scope
-export const iconFonts = { regular, solid, brands };
