@@ -1,5 +1,4 @@
 import ResumeTable from "@/app/de/(subpages)/lebenslauf/ResumeTable";
-import { headingFont } from "@/assets/fonts";
 
 export const metadata = {
 	alternates: {
@@ -13,7 +12,7 @@ export const metadata = {
 export default function Resume() {
 	return (
 		<section className="space-y-4">
-			<h2 className={`${headingFont.className} text-3xl`}>Resumé</h2>
+			<h2 className="text-3xl">Resumé</h2>
 			<p>My resumé is currently only available in german.</p>
 			<ResumeTable />
 		</section>

@@ -1,4 +1,3 @@
-import { headingFont } from "@/assets/fonts";
 import { ContactForm } from "@/components/contact-form";
 
 export const metadata = {
@@ -13,7 +12,7 @@ export const metadata = {
 export default function Contact() {
 	return (
 		<section className="space-y-4">
-			<h2 className={`${headingFont.className} text-3xl text-center`}>
+			<h2 className="text-3xl text-center">
 				Contact me
 			</h2>
 			<ContactForm lang="en" />

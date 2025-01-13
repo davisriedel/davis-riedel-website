@@ -1,4 +1,3 @@
-import { headingFont } from "@/assets/fonts";
 import { AnimatedLink } from "@/components/animated-link";
 
 export const metadata = {
@@ -13,7 +12,7 @@ export const metadata = {
 export default function Copyright() {
 	return (
 		<section className="space-y-4">
-			<h2 className={`${headingFont.className} text-3xl`}>Copyright</h2>
+			<h2 className="text-3xl">Copyright</h2>
 
 			<p>
 				The source code of this website can be viewed on{" "}

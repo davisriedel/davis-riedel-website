@@ -19,7 +19,7 @@ export default function Home() {
 	return (
 		<>
 			<section id="developer" className="space-y-4">
-				<h2 className={`${headingFont.className} text-3xl`}>
+				<h2 className="text-3xl">
 					Open-Source Developer
 				</h2>
 				<Card className="p-4 shadow-md">
@@ -110,7 +110,7 @@ export default function Home() {
 			</section>
 
 			<section id="politician" className="space-y-4">
-				<h2 className={`${headingFont.className} text-3xl`}>Politician</h2>
+				<h2 className="text-3xl">Politician</h2>
 				<Card className="p-4 shadow-md">
 					<h3 className="text-xl">Local Councilor in Pforzheim-Eutingen</h3>
 					<p className="mt-2">
@@ -182,7 +182,7 @@ export default function Home() {
 			</section>
 
 			<section id="student" className="space-y-4">
-				<h2 className={`${headingFont.className} text-3xl`}>Student</h2>
+				<h2 className="text-3xl">Student</h2>
 				<Card className="p-4 shadow-md">
 					<h3 className="text-xl">Computer Science (B.Sc.)</h3>
 					<p className="mt-2">
@@ -230,7 +230,7 @@ export default function Home() {
 			</section>
 
 			<section id="writer" className="space-y-4">
-				<h2 className={`${headingFont.className} text-3xl`}>Writer</h2>
+				<h2 className="text-3xl">Writer</h2>
 				<p>
 					I am a hobbyist writer. I enjoy writing poetry and science fiction. I
 					am currently working on my debut novel.
@@ -242,7 +242,7 @@ export default function Home() {
 			</section>
 
 			<section className="space-y-4">
-				<h2 className={`${headingFont.className} text-3xl`}>
+				<h2 className="text-3xl">
 					Get to know more about me
 				</h2>
 				<p>You can read my resumé here:</p>

@@ -1,4 +1,3 @@
-import { headingFont } from "@/assets/fonts";
 import { getAuthor } from "@/lib/authors";
 import type { PostFrontmatter } from "@/lib/post-frontmatter";
 import { parseISO } from "date-fns";
@@ -21,7 +20,7 @@ export default async function PostLayout({
 	return (
 		<article>
 			<header className="mb-8">
-				<h2 className={`${headingFont.className} text-3xl`}>{title}</h2>
+				<h2 className="text-3xl">{title}</h2>
 				<div className="text-indigo-950 dark:text-indigo-400">
 					<DateComponent date={parseISO(date)} />
 					<span> | </span>

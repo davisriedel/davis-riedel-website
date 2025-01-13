@@ -141,7 +141,7 @@ export default function Resume() {
 				</Card>
 			</section>
 			<section className="space-y-4">
-				<h2 className={`${headingFont.className} text-3xl`}>Support Me</h2>
+				<h2 className="text-3xl">Support Me</h2>
 				<p className="mt-2">
 					You can support me and my work on these projects via{" "}
 					<AnimatedLink

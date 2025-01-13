@@ -19,7 +19,7 @@ export default function Home() {
 	return (
 		<>
 			<section id="programmierer" className="space-y-4">
-				<h2 className={`${headingFont.className} text-3xl`}>
+				<h2 className="text-3xl">
 					Open-Source Entwickler
 				</h2>
 				<Card className="p-4 shadow-md">
@@ -113,7 +113,7 @@ export default function Home() {
 			</section>
 
 			<section id="politiker" className="space-y-4">
-				<h2 className={`${headingFont.className} text-3xl`}>Politiker</h2>
+				<h2 className="text-3xl">Politiker</h2>
 				<Card className="p-4 shadow-md">
 					<h3 className="text-xl">Ortschaftsrat in Pforzheim-Eutingen</h3>
 					<p className="mt-2">
@@ -186,7 +186,7 @@ export default function Home() {
 			</section>
 
 			<section id="student" className="space-y-4">
-				<h2 className={`${headingFont.className} text-3xl`}>Student</h2>
+				<h2 className="text-3xl">Student</h2>
 				<Card className="p-4 shadow-md">
 					<h3 className="text-xl">Informatik (B.Sc.)</h3>
 					<p className="mt-2">
@@ -235,7 +235,7 @@ export default function Home() {
 			</section>
 
 			<section id="autor" className="space-y-4">
-				<h2 className={`${headingFont.className} text-3xl`}>Schriftsteller</h2>
+				<h2 className="text-3xl">Schriftsteller</h2>
 				<p>
 					Ich bin Hobby-Schriftsteller und schreibe meistens Science-Fiction und
 					Lyrik. Aktuell arbeite ich an meinem Debut-Roman.
@@ -247,7 +247,7 @@ export default function Home() {
 			</section>
 
 			<section className="space-y-4">
-				<h2 className={`${headingFont.className} text-3xl`}>
+				<h2 className="text-3xl">
 					Erfahren Sie mehr über mich
 				</h2>
 				<p>Hier können Sie meinen ausführlichen Lebenslauf lesen:</p>

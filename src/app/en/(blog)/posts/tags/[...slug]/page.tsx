@@ -1,4 +1,3 @@
-import { headingFont } from "@/assets/fonts";
 import TagPostList from "@/components/tag-post-list";
 import { countPosts, listPostContent } from "@/lib/posts";
 import { getAllTags, getTag } from "@/lib/tags";
@@ -55,7 +54,7 @@ async function PageContent({ slug }: { slug: Promise<string[]> }) {
 
 	return (
 		<>
-			<h2 className={`${headingFont.className} text-3xl`}>
+			<h2 className="text-3xl">
 				All posts with tag: <i>{tag.name}</i>
 			</h2>
 			<TagPostList posts={posts} tag={tag} pagination={pagination} />

@@ -1,4 +1,3 @@
-import { headingFont } from "@/assets/fonts";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import type { ReactNode } from "react";
@@ -23,7 +22,7 @@ export function Header({ navBar, image, lang }: Props) {
 					image && "absolute top-0 left-0 bg-indigo-950/75 backdrop-blur-md",
 				)}
 			>
-				<h1 className={`${headingFont.className} text-4xl`}>
+				<h1 className="text-4xl">
 					<Link href={`/${lang}`}>Davis Riedel</Link>
 				</h1>
 				<div>{navBar}</div>

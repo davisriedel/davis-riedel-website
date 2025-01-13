@@ -1,4 +1,3 @@
-import { headingFont } from "@/assets/fonts";
 import { Privacy } from "@/components/privacy";
 
 export const metadata = {
@@ -13,7 +12,7 @@ export const metadata = {
 export default function PrivacyPage() {
 	return (
 		<div>
-			<h2 className={`${headingFont.className} text-3xl mb-6`}>
+			<h2 className="text-3xl mb-6">
 				Datenschutzerklärung
 			</h2>
 			<Privacy />

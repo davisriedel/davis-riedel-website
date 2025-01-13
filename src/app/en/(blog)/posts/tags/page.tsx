@@ -1,6 +1,5 @@
 "use cache";
 
-import { headingFont } from "@/assets/fonts";
 import TagList from "@/components/tag-list";
 import { getAllTags } from "@/lib/tags";
 
@@ -17,7 +16,7 @@ export default async function TagIndexPage() {
 
 	return (
 		<section className="space-y-4">
-			<h2 className={`${headingFont.className} text-3xl`}>Tags</h2>
+			<h2 className="text-3xl">Tags</h2>
 			<TagList tags={tags} />
 		</section>
 	);

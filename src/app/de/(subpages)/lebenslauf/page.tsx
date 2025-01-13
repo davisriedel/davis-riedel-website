@@ -1,4 +1,3 @@
-import { headingFont } from "@/assets/fonts";
 import ResumeTable from "./ResumeTable";
 
 export const metadata = {
@@ -13,7 +12,7 @@ export const metadata = {
 export default function Resume() {
 	return (
 		<section className="space-y-4">
-			<h2 className={`${headingFont.className} text-3xl`}>Lebenslauf</h2>
+			<h2 className="text-3xl">Lebenslauf</h2>
 			<ResumeTable />
 		</section>
 	);

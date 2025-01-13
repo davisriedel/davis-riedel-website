@@ -1,5 +1,3 @@
-import { headingFont } from "@/assets/fonts";
-
 export const metadata = {
 	alternates: {
 		languages: {
@@ -12,7 +10,7 @@ export const metadata = {
 export default function Imprint() {
 	return (
 		<section className="space-y-4">
-			<h2 className={`${headingFont.className} text-3xl`}>Imprint</h2>
+			<h2 className="text-3xl">Imprint</h2>
 
 			<p className="mt-3">
 				<b>Declarations according to § 5 TMG / Angaben gemäß § 5 TMG</b>

@@ -1,6 +1,5 @@
 "use cache";
 
-import { headingFont } from "@/assets/fonts";
 import PostList from "@/components/post-list";
 import { countPosts, listPostContent } from "@/lib/posts";
 import { getAllTags } from "@/lib/tags";
@@ -20,7 +19,7 @@ export default async function PostIndexPage() {
 
 	return (
 		<section className="space-y-4">
-			<h2 className={`${headingFont.className} text-3xl`}>Blog</h2>
+			<h2 className="text-3xl">Blog</h2>
 			<PostList posts={posts} tags={tags} pagination={pagination} />
 		</section>
 	);

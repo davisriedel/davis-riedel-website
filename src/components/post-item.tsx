@@ -1,4 +1,3 @@
-import { headingFont } from "@/assets/fonts";
 import type { PostContent } from "@/lib/posts";
 import { cn } from "@/lib/utils";
 import { parseISO } from "date-fns";
@@ -17,7 +16,7 @@ export default async function PostItem({ post }: Props) {
 				<DateComponent date={parseISO(post.frontmatter.date)} />
 			</div>
 			<Link href={`/en/posts/${post.frontmatter.slug}`}>
-				<h3 className={cn(headingFont.className, "text-3xl")}>
+				<h3 className="text-3xl">
 					{post.frontmatter.title}
 				</h3>
 			</Link>
