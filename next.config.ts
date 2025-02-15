@@ -1,8 +1,10 @@
 import type { NextConfig } from "next";
+import writeDecapConfig from "./scripts/write-decap-config";
 
 const nextConfig: NextConfig = {
   pageExtensions: ['js', 'jsx', 'md', 'ts', 'tsx'],
   webpack: (cfg, _ /* { buildId, dev, isServer, defaultLoaders, webpack } */) => {
+    writeDecapConfig();
     cfg.module.rules.push({
       test: /\.html$/,
       type: 'asset/source',
