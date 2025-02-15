@@ -1,8 +1,9 @@
+"use cache";
+
 import TagPostList from "@/components/tag-post-list";
 import { countPosts, listPostContent } from "@/lib/posts";
 import { getAllTags, getTag } from "@/lib/tags";
 import { notFound } from "next/navigation";
-import { Suspense } from "react";
 
 type Props = {
 	params: Promise<{ lang: "de" | "en"; slug: string[] }>;
@@ -47,12 +48,9 @@ export async function generateMetadata({ params }: Props) {
 			};
 }
 
-async function PageContent(props: {
-	lang: Promise<"de" | "en">;
-	slug: Promise<string[]>;
-}) {
-	const lang = await props.lang;
-	const [tagSlug, page] = await props.slug;
+export default async function TagIndexPage({ params }: Props) {
+  const {lang, slug} = await params;
+	const [tagSlug, page] = slug;
 	if (!tagSlug) return notFound();
 	const tag = await getTag(lang, tagSlug);
 	if (!tag) return notFound();
@@ -66,25 +64,12 @@ async function PageContent(props: {
 	};
 
 	return (
-		<>
+		<section className="space-y-4">
 			<h2 className="text-3xl">
 				{lang === "en" ? "All posts with tag:" : "Alle Beiträge mit dem Tag:"}{" "}
 				<i>{tag.name}</i>
 			</h2>
 			<TagPostList lang={lang} posts={posts} tag={tag} pagination={pagination} />
-		</>
-	);
-}
-
-export default async function TagIndexPage({ params }: Props) {
-	const lang = params.then((p) => p.lang);
-	const slug = params.then((p) => p.slug);
-
-	return (
-		<section className="space-y-4">
-			<Suspense fallback={<span>Loading ...</span>}>
-				<PageContent lang={lang} slug={slug} />
-			</Suspense>
 		</section>
 	);
 }

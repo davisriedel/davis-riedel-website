@@ -1,7 +1,8 @@
+"use cache";
+
 import PostLayout from "@/components/post-layout";
 import { fetchAllPosts, getPost } from "@/lib/posts";
 import { notFound } from "next/navigation";
-import { Suspense } from "react";
 
 type Props = {
 	params: Promise<{ lang: "de" | "en"; slug: string }>;
@@ -30,26 +31,10 @@ export async function generateMetadata({ params }: Props) {
 	};
 }
 
-async function PageContent(props: {
-	lang: Promise<"de" | "en">;
-	slug: Promise<string>;
-}) {
-	const lang = await props.lang;
-	const slug = await props.slug;
-
+export default async function PostPage({ params }: Props) {
+  const { lang, slug } = await params;
 	const post = await getPost(lang, slug);
 	if (!post) return notFound();
 	const { content, frontmatter } = post;
 	return <PostLayout lang={lang} frontmatter={frontmatter}>{content}</PostLayout>;
-}
-
-export default async function PostPage({ params }: Props) {
-	const lang = params.then((p) => p.lang);
-	const slug = params.then((p) => p.slug);
-
-	return (
-		<Suspense fallback={<span>Loading ...</span>}>
-			<PageContent lang={lang} slug={slug} />
-		</Suspense>
-	);
 }

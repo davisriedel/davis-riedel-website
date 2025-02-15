@@ -12,7 +12,8 @@ const nextConfig: NextConfig = {
   serverExternalPackages: ["handlebars"],
   experimental: {
     ppr: true,
-    dynamicIO: true,
+    // dynamicIO: true,
+    useCache: true, // TODO: issue with dynamicIO, see https://github.com/vercel/next.js/issues/75338
     turbo: {
       rules: {
         '*.html': {
