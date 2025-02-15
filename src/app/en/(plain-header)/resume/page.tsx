@@ -1,4 +1,4 @@
-import ResumeTable from "@/app/de/(subpages)/lebenslauf/ResumeTable";
+import ResumeTable from "@/app/de/(plain-header)/lebenslauf/ResumeTable";
 
 export const metadata = {
 	alternates: {

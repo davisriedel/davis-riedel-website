@@ -5,4 +5,5 @@ export type PostFrontmatter = {
 	tags: string[];
 	author: string;
 	description?: string;
+  alternates?: Record<string, string>;
 };

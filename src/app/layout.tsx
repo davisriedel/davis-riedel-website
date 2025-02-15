@@ -15,7 +15,13 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<body className={cn(bodyFont.variable, headingFont.variable, "font-body antialiased")}>
+			<body
+				className={cn(
+					bodyFont.variable,
+					headingFont.variable,
+					"font-body antialiased",
+				)}
+			>
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"

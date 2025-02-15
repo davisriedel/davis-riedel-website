@@ -3,13 +3,14 @@ import React from "react";
 import TagLink from "./tag-link";
 
 type Props = {
+	lang: "de" | "en";
 	tags: (string | TagContent)[];
 };
 
-export default async function TagList({ tags }: Props) {
+export default async function TagList({ lang, tags }: Props) {
 	const tagContents = await Promise.all(
 		tags.map(async (tag) =>
-			typeof tag === "string" ? await getTag(tag) : tag,
+			typeof tag === "string" ? await getTag(lang, tag) : tag,
 		),
 	);
 	return (
@@ -18,7 +19,7 @@ export default async function TagList({ tags }: Props) {
 				(it) =>
 					it && (
 						<li key={it.slug}>
-							<TagLink tag={it} />
+							<TagLink lang={lang} tag={it} />
 						</li>
 					),
 			)}
