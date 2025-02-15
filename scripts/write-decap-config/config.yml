@@ -117,7 +117,7 @@ collections:
         name: tag
         widget: relation
         collection: "meta"
-        file: "tags"
+        file: "tags-en"
         searchFields:
           - "tags.*.name"
         displayFields:
@@ -176,7 +176,7 @@ collections:
         name: tag
         widget: relation
         collection: "meta"
-        file: "tags"
+        file: "tags-de"
         searchFields:
           - "tags.*.name"
         displayFields:
