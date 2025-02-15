@@ -1,16 +1,14 @@
-const plugin = require('tailwindcss/plugin');
+import { withOptions } from 'tailwindcss/plugin';
 
-const icons = require('./manifest.js');
+import defaultManifest from './manifest.js';
 
-module.exports = plugin.withOptions(
+export default withOptions(
     (options) => {
-        return function ({ e, addUtilities, theme }) {
-            let regularFontFamily, brandsFontFamily, custom;
-            if (typeof options !== 'undefined') {
-                ({ regularFontFamily, brandsFontFamily, custom } = options);
-            }
+        return function ({ addUtilities, theme }) {
+            const { regularFontFamily, brandsFontFamily, custom } = options;
+            let manifest = defaultManifest;
 
-            icons.push(...(custom || []));
+            if (custom) manifest.push(...custom);
 
             const iconStyle = theme('iconStyle');
             const iconSpacing = theme('iconSpacing');
@@ -59,9 +57,9 @@ module.exports = plugin.withOptions(
                     }
                 },
                 // Styles
-                Object.entries(iconStyle).map(([key, value]) => {
+                ...Object.entries(iconStyle).map(([key, value]) => {
                     return {
-                        [`.${e(`icon-${key}`)}`]: {
+                        [`.icon-${key}`]: {
                             '&::before,&::after': {
                                 fontWeight: `${value}`
                             }
@@ -76,9 +74,9 @@ module.exports = plugin.withOptions(
                     }
                 },
                 // Spacing
-                Object.entries(iconSpacing).map(([key, value]) => {
+                ...Object.entries(iconSpacing).map(([key, value]) => {
                     return {
-                        [`.${e(`icon-space-${key}`)}`]: {
+                        [`.icon-space-${key}`]: {
                             '&.icon-before::before': {
                                 marginRight: `${value}`
                             },
@@ -140,9 +138,9 @@ module.exports = plugin.withOptions(
                     }
                 },
                 // Icons
-                icons.map((icon) => {
+                ...manifest.map((icon) => {
                     return {
-                        [`.${e(`icon-${icon.name}`)}`]: {
+                        [`.icon-${icon.name}`]: {
                             '&::before': {
                                 content: `"\\${icon.code}"`
                             },
