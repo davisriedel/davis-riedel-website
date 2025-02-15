@@ -127,6 +127,7 @@ collections:
       label_singular: "Alternate"
       name: "alternates"
       widget: object
+      required: false
       fields:
         - {label: "English", name: "en-US", widget: "string"}
         - {label: "Deutsch", name: "de-DE", widget: "string"}
@@ -185,6 +186,7 @@ collections:
     - label: Alternates
       label_singular: "Alternate"
       name: "alternates"
+      required: false
       widget: object
       fields:
         - {label: "English", name: "en-US", widget: "string"}
