@@ -24,7 +24,7 @@ export default async function PostLayout({
 			<header className="mb-8">
 				<h2 className="text-3xl">{title}</h2>
 				<div className="text-indigo-950 dark:text-indigo-400">
-					<DateComponent date={parseISO(date)} />
+					<DateComponent lang={lang} date={parseISO(date)} />
 					<span> | </span>
 					{authorContent && <Author author={authorContent} />}
 				</div>
