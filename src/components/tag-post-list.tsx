@@ -5,6 +5,7 @@ import Pagination from "./pagination";
 import PostItem from "./post-item";
 
 type Props = {
+	lang: "de" | "en";
 	posts: PostContent[];
 	tag: TagContent;
 	pagination: {
@@ -13,13 +14,13 @@ type Props = {
 	};
 };
 
-export default function TagPostList({ posts, tag, pagination }: Props) {
+export default function TagPostList({ lang, posts, tag, pagination }: Props) {
 	return (
 		<div>
 			<ul className="space-y-4 mb-4">
 				{posts.map((it) => (
 					<li key={it.fullPath}>
-						<PostItem post={it} />
+						<PostItem lang={lang} post={it} />
 					</li>
 				))}
 			</ul>
@@ -27,11 +28,11 @@ export default function TagPostList({ posts, tag, pagination }: Props) {
 				current={pagination.current}
 				pages={pagination.pages}
 				link={{
-					href: () => "/en/posts/tags/[[...slug]]",
+					href: () => `/${lang}/blog/tags/[[...slug]]`,
 					as: (page) =>
 						page === 1
-							? `/en/posts/tags/${tag.slug}`
-							: `/en/posts/tags/${tag.slug}/${page}`,
+							? `/${lang}/blog/tags/${tag.slug}`
+							: `/${lang}/blog/tags/${tag.slug}/${page}`,
 				}}
 			/>
 		</div>

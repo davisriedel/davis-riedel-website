@@ -7,11 +7,13 @@ import DateComponent from "./date";
 import TagList from "./tag-list";
 
 type Props = {
+  lang: "de" | "en";
 	frontmatter: PostFrontmatter;
 	children: React.ReactNode;
 };
 
 export default async function PostLayout({
+  lang,
 	frontmatter: { title, date, author, tags },
 	children,
 }: Props) {
@@ -29,7 +31,7 @@ export default async function PostLayout({
 			</header>
 			<div className="prose dark:prose-invert">{children}</div>
 			<div className="text-indigo-950 dark:text-indigo-400 mt-8">
-				<TagList tags={tags} />
+				<TagList lang={lang} tags={tags} />
 			</div>
 		</article>
 	);

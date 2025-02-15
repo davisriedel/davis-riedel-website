@@ -8,8 +8,6 @@ import {
 import type { ReactNode } from "react";
 import type { PostFrontmatter } from "./post-frontmatter";
 
-const postsDirectory = path.join(process.cwd(), "cms/posts");
-
 export type PostContent = {
 	readonly frontmatter: PostFrontmatter;
 	readonly excerpt: string;
@@ -21,10 +19,12 @@ function truncateWithEllipses(text: string, max: number) {
 	return text.substr(0, max - 1) + (text.length > max ? "&hellip;" : "");
 }
 
-export async function fetchAllPosts(): Promise<PostContent[]> {
+export async function fetchAllPosts(lang: "de" | "en"): Promise<PostContent[]> {
 	"use cache";
 	cacheLife("max"); // next rebuilds and clears all caches when a change in decap cms is committed.
 	cacheTag("cms", "posts");
+
+	const postsDirectory = path.join(process.cwd(), `cms/${lang}/posts`);
 
 	// Get file names under /posts
 	const fileNames = await fs.readdir(postsDirectory);
@@ -72,12 +72,15 @@ export async function fetchAllPosts(): Promise<PostContent[]> {
 	});
 }
 
-export async function countPosts(tag?: string): Promise<number> {
+export async function countPosts(
+	lang: "de" | "en",
+	tag?: string,
+): Promise<number> {
 	"use cache";
 	cacheLife("max"); // next rebuilds and clears all caches when a change in decap cms is committed.
 	cacheTag("cms", "posts");
 
-	const posts = await fetchAllPosts();
+	const posts = await fetchAllPosts(lang);
 	if (tag) {
 		return posts.filter((it) => it.frontmatter.tags?.includes(tag)).length;
 	}
@@ -85,6 +88,7 @@ export async function countPosts(tag?: string): Promise<number> {
 }
 
 export async function listPostContent(
+	lang: "de" | "en",
 	page: number,
 	limit: number,
 	tag?: string,
@@ -93,22 +97,22 @@ export async function listPostContent(
 	cacheLife("max"); // next rebuilds and clears all caches when a change in decap cms is committed.
 	cacheTag("cms", "posts");
 
-	return (await fetchAllPosts())
+	return (await fetchAllPosts(lang))
 		.filter((it) => !tag || it.frontmatter.tags?.includes(tag))
 		.slice((page - 1) * limit, page * limit);
 }
 
-async function generatePostsMap() {
+async function generatePostsMap(lang: "de" | "en") {
 	"use cache";
 	cacheLife("max"); // next rebuilds and clears all caches when a change in decap cms is committed.
 	cacheTag("cms", "posts");
 
 	return Object.fromEntries(
-		(await fetchAllPosts()).map((post) => [post.frontmatter.slug, post]),
+		(await fetchAllPosts(lang)).map((post) => [post.frontmatter.slug, post]),
 	);
 }
 
-export async function getPost(slug: string) {
+export async function getPost(lang: "de" | "en", slug: string) {
 	// fast because posts map is cached
-	return (await generatePostsMap())[slug];
+	return (await generatePostsMap(lang))[slug];
 }

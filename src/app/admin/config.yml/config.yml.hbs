@@ -38,9 +38,27 @@ collections:
             - label: "Introduction"
               name: "introduction"
               widget: "text"
-    - name: "tags"
-      label: "Tags"
-      file: "cms/tags.yml"
+    - name: "tags-en"
+      label: "Tags (EN)"
+      file: "cms/en/tags.yml"
+      description: "List of tags"
+      fields:
+        - name: tags
+          label: Tags
+          label_singular: "Tag"
+          widget: list
+          fields:
+            - label: "Slug"
+              name: "slug"
+              widget: "string"
+              hint: "The part of a URL identifies the tag"
+            - label: "Display Name"
+              name: "name"
+              widget: "string"
+              hint: "Tag name for displaying on the site"
+    - name: "tags-de"
+      label: "Tags (DE)"
+      file: "cms/de/tags.yml"
       description: "List of tags"
       fields:
         - name: tags
@@ -57,9 +75,9 @@ collections:
               widget: "string"
               hint: "Tag name for displaying on the site"
 
-- name: "posts"
-  label: "Posts"
-  folder: "cms/posts/"
+- name: "posts-en"
+  label: "Posts (EN)"
+  folder: "cms/en/posts/"
   extension: "mdx"
   format: "frontmatter"
   create: true
@@ -105,6 +123,72 @@ collections:
         displayFields:
           - "tags.*.name"
         valueField: "tags.*.slug"
+    - label: Alternates
+      label_singular: "Alternate"
+      name: "alternates"
+      widget: object
+      fields:
+        - {label: "English", name: "en-US", widget: "string"}
+        - {label: "Deutsch", name: "de-DE", widget: "string"}
+    - label: "Body"
+      name: "body"
+      widget: "markdown"
+
+- name: "posts-de"
+  label: "Posts (DE)"
+  folder: "cms/de/posts/"
+  extension: "mdx"
+  format: "frontmatter"
+  create: true
+  slug: "{{slug}}"
+  identifier_field: slug
+  summary: "{{title}}"
+  fields:
+    - label: "Slug"
+      name: "slug"
+      widget: "string"
+    - label: "Title"
+      name: "title"
+      widget: "string"
+    - label: "Publish Date"
+      name: "date"
+      widget: "datetime"
+      format: "YYYY-MM-DD"
+      dateFormat: "YYYY-MM-DD"
+      timeFormat: false
+    - label: Author
+      name: "author"
+      widget: relation
+      collection: "meta"
+      file: "authors"
+      searchFields:
+        - "authors.*.name"
+      displayFields:
+        - "authors.*.name"
+      valueField: "authors.*.slug"
+    - label: Tags
+      label_singular: "Tag"
+      name: "tags"
+      widget: list
+      summary: "{{fields.tag}}"
+      field:
+        label: Tag
+        name: tag
+        widget: relation
+        collection: "meta"
+        file: "tags"
+        searchFields:
+          - "tags.*.name"
+        displayFields:
+          - "tags.*.name"
+        valueField: "tags.*.slug"
+    - label: Alternates
+      label_singular: "Alternate"
+      name: "alternates"
+      widget: object
+      fields:
+        - {label: "English", name: "en-US", widget: "string"}
+        - {label: "Deutsch", name: "de-DE", widget: "string"}
     - label: "Body"
       name: "body"
       widget: "markdown"

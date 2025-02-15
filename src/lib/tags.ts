@@ -9,22 +9,22 @@ export type TagContent = {
 	readonly name: string;
 };
 
-const tags = new CmsMetadata<TagContent>("cms/tags.yml", "tags");
-
-export async function getAllTags() {
+export async function getAllTags(lang: "de" | "en") {
 	"use cache";
 	cacheLife("max"); // next rebuilds and clears all caches when a change in decap cms is committed.
 	cacheTag("cms", "tags");
+	const tags = new CmsMetadata<TagContent>(`cms/${lang}/tags.yml`, "tags");
 	return await tags.getAll();
 }
 
-async function getTagMap() {
+async function getTagMap(lang: "de" | "en") {
 	"use cache";
 	cacheLife("max"); // next rebuilds and clears all caches when a change in decap cms is committed.
 	cacheTag("cms", "tags");
+	const tags = new CmsMetadata<TagContent>(`cms/${lang}/tags.yml`, "tags");
 	return await tags.generateMetadataMap();
 }
 
-export async function getTag(slug: string) {
-	return (await getTagMap())[slug];
+export async function getTag(lang: "de" | "en", slug: string) {
+	return (await getTagMap(lang))[slug];
 }

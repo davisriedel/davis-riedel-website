@@ -13,6 +13,13 @@ export function NavBar() {
 				<span> | </span>
 				<AnimatedLink
 					className="text-white after:bg-white dark:text-white dark:after:bg-white"
+					href="/en/blog"
+				>
+					Blog
+				</AnimatedLink>
+				<span> | </span>
+				<AnimatedLink
+					className="text-white after:bg-white dark:text-white dark:after:bg-white"
 					href="/en/contact"
 				>
 					Contact
@@ -21,8 +28,3 @@ export function NavBar() {
 		</nav>
 	);
 }
-
-// <span> | </span>
-// <AnimatedLink className="text-white after:bg-white dark:text-white dark:after:bg-white" href="/en/posts">
-// 	Blog
-// </AnimatedLink>

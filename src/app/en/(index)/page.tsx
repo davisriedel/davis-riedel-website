@@ -19,9 +19,7 @@ export default function Home() {
 	return (
 		<>
 			<section id="developer" className="space-y-4">
-				<h2 className="text-3xl">
-					Open-Source Developer
-				</h2>
+				<h2 className="text-3xl">Open-Source Developer</h2>
 				<Card className="p-4 shadow-md">
 					<h3 className="text-xl">
 						<AnimatedLink href="/en/obsidian-typewriter-mode">
@@ -125,9 +123,10 @@ export default function Home() {
 						(Germany) on June 9, 2024.
 					</p>
 					<p>
-						I am thankful represent the citizens of Eutingen and to bring their
-						concerns to the attention of the city council. You can find out more
-						about the work of our local group on the SPD Pforzheim website:
+						I am thankful to represent the citizens of Eutingen and to bring
+						their concerns to the attention of the city council. You can find
+						out more about the work of our local group on the SPD Pforzheim
+						website:
 					</p>
 					<div className="flex flex-col items-center mt-4">
 						<Button
@@ -242,9 +241,7 @@ export default function Home() {
 			</section>
 
 			<section className="space-y-4">
-				<h2 className="text-3xl">
-					Get to know more about me
-				</h2>
+				<h2 className="text-3xl">Get to know more about me</h2>
 				<p>You can read my resumé here:</p>
 				<div className="flex flex-col items-center ">
 					<Button

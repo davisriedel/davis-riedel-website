@@ -19,9 +19,7 @@ export default function Home() {
 	return (
 		<>
 			<section id="programmierer" className="space-y-4">
-				<h2 className="text-3xl">
-					Open-Source Entwickler
-				</h2>
+				<h2 className="text-3xl">Open-Source Entwickler</h2>
 				<Card className="p-4 shadow-md">
 					<h3 className="text-xl">
 						<AnimatedLink href="/en/obsidian-typewriter-mode">
@@ -247,9 +245,7 @@ export default function Home() {
 			</section>
 
 			<section className="space-y-4">
-				<h2 className="text-3xl">
-					Erfahren Sie mehr über mich
-				</h2>
+				<h2 className="text-3xl">Erfahren Sie mehr über mich</h2>
 				<p>Hier können Sie meinen ausführlichen Lebenslauf lesen:</p>
 				<div className="flex flex-col items-center ">
 					<Button
