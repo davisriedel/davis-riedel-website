@@ -55,7 +55,7 @@ export async function fetchAllPosts(lang: "de" | "en"): Promise<PostContent[]> {
 				// Validate slug string
 				if (data.frontmatter.slug !== slug) {
 					throw new Error(
-						"slug field not match with the path of its content source",
+						"slug field does not match with the path of its content source",
 					);
 				}
 
