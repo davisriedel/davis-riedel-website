@@ -11,7 +11,6 @@ const nextConfig: NextConfig = {
     });
     return cfg;
   },
-  serverExternalPackages: ["handlebars"],
   experimental: {
     ppr: true,
     // dynamicIO: true,
@@ -26,6 +25,9 @@ const nextConfig: NextConfig = {
     },
   },
   transpilePackages: ['next-mdx-remote'],
+  outputFileTracingIncludes: {
+    "/blog/**/*": ["cms/**/*"]
+  }
 };
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
