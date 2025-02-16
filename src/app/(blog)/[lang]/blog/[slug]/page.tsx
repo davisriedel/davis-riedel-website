@@ -1,5 +1,3 @@
-"use cache";
-
 import PostLayout from "@/components/post-layout";
 import { fetchAllPosts, getPost } from "@/lib/posts";
 import { notFound } from "next/navigation";
@@ -7,6 +5,9 @@ import { notFound } from "next/navigation";
 type Props = {
 	params: Promise<{ lang: "de" | "en"; slug: string }>;
 };
+
+export const dynamic = 'force-static';
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
 	return await Promise.all(
@@ -27,11 +28,18 @@ export async function generateMetadata({ params }: Props) {
 	return {
 		title: post.frontmatter.title,
 		description: post.frontmatter.description ?? "",
-    alternates: post.frontmatter.alternates
+    alternates: {
+      languages: {
+        "en-US": `/en/blog/${post.frontmatter.languageAlternates?.["en-US"]}`,
+        "de-DE": `/de/blog/${post.frontmatter.languageAlternates?.["de-DE"]}`
+      },
+    }
 	};
 }
 
 export default async function PostPage({ params }: Props) {
+  "use cache";
+
   const { lang, slug } = await params;
 	const post = await getPost(lang, slug);
 	if (!post) return notFound();

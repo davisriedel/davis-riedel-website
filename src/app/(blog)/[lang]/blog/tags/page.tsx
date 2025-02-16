@@ -1,11 +1,16 @@
-"use cache";
-
 import TagList from "@/components/tag-list";
 import { getAllTags } from "@/lib/tags";
 
 type Props = {
 	params: Promise<{ lang: "de" | "en" }>;
 };
+
+export const dynamic = 'force-static';
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+  return [{ lang: "de" }, { lang: "en" }];
+}
 
 export async function generateMetadata({ params }: Props) {
 	const { lang } = await params;
@@ -31,6 +36,8 @@ export async function generateMetadata({ params }: Props) {
 }
 
 export default async function TagIndexPage({ params }: Props) {
+  "use cache";
+
 	const { lang } = await params;
 
 	const tags = await getAllTags(lang);

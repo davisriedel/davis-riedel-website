@@ -19,7 +19,7 @@ export default function PostList({ lang, posts, tags, pagination }: Props) {
 	return (
 		<div>
 			<div>
-				<ul className="space-y-4 mb-4">
+				<ul className="space-y-8 mb-8">
 					{posts.map((it) => (
 						<li key={it.fullPath}>
 							<PostItem lang={lang} post={it} />

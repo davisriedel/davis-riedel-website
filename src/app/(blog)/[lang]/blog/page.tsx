@@ -1,5 +1,3 @@
-"use cache";
-
 import PostList from "@/components/post-list";
 import { countPosts, listPostContent } from "@/lib/posts";
 import { getAllTags } from "@/lib/tags";
@@ -7,6 +5,13 @@ import { getAllTags } from "@/lib/tags";
 type Props = {
 	params: Promise<{ lang: "de" | "en" }>;
 };
+
+export const dynamic = 'force-static';
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+  return [{ lang: "de" }, { lang: "en" }];
+}
 
 export async function generateMetadata({ params }: Props) {
 	const { lang } = await params;
@@ -32,6 +37,8 @@ export async function generateMetadata({ params }: Props) {
 }
 
 export default async function PostIndexPage({ params }: Props) {
+  "use cache";
+
 	const { lang } = await params;
 
 	const tags = await getAllTags(lang);
@@ -45,7 +52,7 @@ export default async function PostIndexPage({ params }: Props) {
 
 	return (
 		<section className="space-y-4">
-			<h2 className="text-3xl">Blog</h2>
+			<h2 className="text-4xl text-center mb-8">Blog</h2>
 			<PostList lang={lang} posts={posts} tags={tags} pagination={pagination} />
 		</section>
 	);

@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
-import RootLayoutBody from "../../RootLayoutBody";
+import { Footer as EnFooter } from "@/components/en/footer";
+import { Footer as DeFooter } from "@/components/de/footer";
+import { NavBar as EnNavBar } from "@/components/en/navbar";
+import { NavBar as DeNavBar } from "@/components/de/navbar";
+import { Header } from "@/components/header";
+import type { PropsWithChildren } from "react";
 import { countPosts, fetchAllPosts } from "@/lib/posts";
 import { getAllTags } from "@/lib/tags";
-
-export const metadata: Metadata = {
-	title: "Davis Riedel",
-};
 
 export const dynamic = 'force-static';
 export const dynamicParams = false;
@@ -38,20 +38,21 @@ export async function generateStaticParams() {
   )).flat(4);
 }
 
-export default async function RootLayout({
-	children,
-  params
-}: Readonly<{
-	children: React.ReactNode;
-  params: Promise<{ lang: "de" | "en" }>
-}>) {
+// biome-ignore lint/complexity/noBannedTypes: no props to pass
+export default async function SubpageLayout({ children, params }: PropsWithChildren<{ params: Promise<{ lang: "de" | "en" }>}>) {
   "use cache";
 
   const { lang } = await params;
 
 	return (
-		<html lang={lang} suppressHydrationWarning>
-      <RootLayoutBody>{children}</RootLayoutBody>
-		</html>
+		<div>
+			<Header lang={lang} navBar={lang == "en" ? <EnNavBar /> : <DeNavBar />} />
+
+			<main className="max-w-3xl mx-auto px-6 py-12 space-y-16">
+				{children}
+			</main>
+
+      {lang == "en" ? <EnFooter /> : <DeFooter />}
+		</div>
 	);
 }

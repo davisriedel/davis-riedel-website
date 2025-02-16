@@ -1,12 +1,25 @@
-"use cache";
-
 import PostList from "@/components/post-list";
 import { countPosts, listPostContent } from "@/lib/posts";
 import { getAllTags } from "@/lib/tags";
 
 type Props = {
-	params: Promise<{ lang: "de" | "en", page: number[] }>;
+	params: Promise<{ lang: "de" | "en", page: number }>;
 };
+
+export const dynamic = 'force-static';
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+	return await Promise.all(
+		(["de", "en"] as const).map(async (lang) => {
+      const postCount = await countPosts(lang);
+      const pages = Math.ceil(postCount / 10);
+      return Array.from({ length: pages }, (_, index) => {
+        return { lang, page: (index + 1).toString() };
+      });
+		}),
+	);
+}
 
 export async function generateMetadata({ params }: Props) {
 	const { lang } = await params;
@@ -32,21 +45,22 @@ export async function generateMetadata({ params }: Props) {
 }
 
 export default async function PostIndexPage({ params }: Props) {
+  "use cache";
+
 	const { lang, page } = await params;
 
 	const tags = await getAllTags(lang);
-	const currentPage = page.length == 1 ? page[0]! : 1;
 
-	const posts = await listPostContent(lang, currentPage, 10);
+	const posts = await listPostContent(lang, page, 10);
 	const postCount = await countPosts(lang);
 	const pagination = {
-		current: currentPage,
+		current: page,
 		pages: Math.ceil(postCount / 10),
 	};
 
 	return (
 		<section className="space-y-4">
-			<h2 className="text-3xl">Blog</h2>
+			<h2 className="text-5xl text-center">Blog</h2>
 			<PostList lang={lang} posts={posts} tags={tags} pagination={pagination} />
 		</section>
 	);

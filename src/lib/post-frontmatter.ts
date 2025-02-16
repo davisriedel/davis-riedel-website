@@ -5,5 +5,5 @@ export type PostFrontmatter = {
 	tags: string[];
 	author: string;
 	description?: string;
-  alternates?: Record<string, string>;
+  languageAlternates?: Record<"de-DE" | "en-US", string>;
 };

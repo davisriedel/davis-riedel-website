@@ -123,9 +123,9 @@ collections:
         displayFields:
           - "tags.*.name"
         valueField: "tags.*.slug"
-    - label: Alternates
-      label_singular: "Alternate"
-      name: "alternates"
+    - label: Language Alternates
+      label_singular: "Language Alternate"
+      name: "languageAlternates"
       widget: object
       required: false
       fields:
@@ -133,7 +133,7 @@ collections:
           name: "en-US"
           widget: "string"
           required: false
-        - label: "Deutsch"
+        - label: "German"
           name: "de-DE"
           widget: "string"
           required: false
@@ -189,9 +189,9 @@ collections:
         displayFields:
           - "tags.*.name"
         valueField: "tags.*.slug"
-    - label: Alternates
-      label_singular: "Alternate"
-      name: "alternates"
+    - label: Langauge Alternates
+      label_singular: "Language Alternate"
+      name: "languageAlternates"
       required: false
       widget: object
       fields:
@@ -199,7 +199,7 @@ collections:
           name: "en-US"
           widget: "string"
           required: false
-        - label: "Deutsch"
+        - label: "German"
           name: "de-DE"
           widget: "string"
           required: false

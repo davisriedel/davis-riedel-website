@@ -11,6 +11,7 @@ import {
 	DropdownMenuItem,
 	DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { usePathname } from "next/navigation";
 
 interface AlternateMap {
 	en?: string;
@@ -19,8 +20,21 @@ interface AlternateMap {
 
 export function LanguageToggle() {
 	const [alternates, setAlternates] = useState<AlternateMap>({});
+	const [lang, setLang] = useState<"de" | "en" | null>(null);
+
+  const path = usePathname();
 
 	useEffect(() => {
+    // Read lang from path and set to state and html attribute
+    if (path.startsWith("/en")) {
+      // document.documentElement.setAttribute("lang", "en");
+      setLang("en");
+    } else if (path.startsWith("/de")) {
+      // document.documentElement.setAttribute("lang", "de");
+      setLang("de");
+    }
+
+    // Read alternates from html head
 		const alternateMap = Array.from(
 			document.querySelectorAll<HTMLLinkElement>('link[rel="alternate"]'),
 		).reduce(
@@ -36,9 +50,8 @@ export function LanguageToggle() {
 			},
 			{} as { en?: string; de?: string },
 		);
-
 		setAlternates(alternateMap);
-	}, []);
+	}, [path]);
 
 	return (
 		<DropdownMenu>
@@ -51,7 +64,7 @@ export function LanguageToggle() {
 			<DropdownMenuContent align="end">
 				{/* English */}
 				{alternates.en ? (
-					<DropdownMenuItem asChild>
+					<DropdownMenuItem disabled={lang == "en"} asChild>
 						<Link href={alternates.en}>English</Link>
 					</DropdownMenuItem>
 				) : (
@@ -60,7 +73,7 @@ export function LanguageToggle() {
 
 				{/* Deutsch */}
 				{alternates.de ? (
-					<DropdownMenuItem asChild>
+					<DropdownMenuItem disabled={lang == "de"} asChild>
 						<Link href={alternates.de}>Deutsch</Link>
 					</DropdownMenuItem>
 				) : (

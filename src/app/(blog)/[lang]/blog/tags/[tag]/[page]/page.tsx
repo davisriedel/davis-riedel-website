@@ -1,39 +1,35 @@
-"use cache";
-
 import TagPostList from "@/components/tag-post-list";
 import { countPosts, listPostContent } from "@/lib/posts";
 import { getAllTags, getTag } from "@/lib/tags";
 import { notFound } from "next/navigation";
 
 type Props = {
-	params: Promise<{ lang: "de" | "en"; slug: string[] }>;
+	params: Promise<{ lang: "de" | "en"; tag: string, page: number }>;
 };
+
+export const dynamic = 'force-static';
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
 	return await Promise.all(
 		(["de", "en"] as const).map(async (lang) => {
 			const tags = await getAllTags(lang);
-			const paths = await Promise.all(
-				tags.flatMap(async (tag) => {
+			const paths = (await Promise.all(
+				tags.map(async (tag) => {
 					const postCount = await countPosts(lang, tag.slug);
 					const pages = Math.ceil(postCount / 10);
 					return Array.from({ length: pages }, (_, index) => {
-						if (index === 0) {
-							return { lang, slug: [tag.slug] };
-						}
-						return { lang, slug: [tag.slug, (index + 1).toString()] };
+						return { lang, tag: tag.slug, page: (index + 1).toString() };
 					});
 				}),
-			);
+			)).flat();
 			return paths;
 		}),
 	);
 }
 
 export async function generateMetadata({ params }: Props) {
-	const { lang, slug } = await params;
-	const [tagSlug] = slug;
-	if (!tagSlug) return notFound();
+	const { lang, tag: tagSlug } = await params;
 	const tag = await getTag(lang, tagSlug);
 	if (!tag) return notFound();
 
@@ -49,17 +45,16 @@ export async function generateMetadata({ params }: Props) {
 }
 
 export default async function TagIndexPage({ params }: Props) {
-  const {lang, slug} = await params;
-	const [tagSlug, page] = slug;
-	if (!tagSlug) return notFound();
+  "use cache";
+
+  const { lang, tag: tagSlug, page } = await params;
 	const tag = await getTag(lang, tagSlug);
 	if (!tag) return notFound();
-	const currentPage = page ? Number.parseInt(page) : 1;
 
-	const posts = await listPostContent(lang, currentPage, 10, tagSlug);
+	const posts = await listPostContent(lang, page, 10, tagSlug);
 	const postCount = await countPosts(lang, tagSlug);
 	const pagination = {
-		current: currentPage,
+		current: page,
 		pages: Math.ceil(postCount / 10),
 	};
 
