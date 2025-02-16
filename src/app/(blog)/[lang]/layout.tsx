@@ -1,4 +1,5 @@
-import { Footer } from "@/components/en/footer";
+import { Footer as EnFooter } from "@/components/en/footer";
+import { Footer as DeFooter } from "@/components/de/footer";
 import { NavBar as EnNavBar } from "@/components/en/navbar";
 import { NavBar as DeNavBar } from "@/components/de/navbar";
 import { Header } from "@/components/header";
@@ -16,7 +17,7 @@ export default async function SubpageLayout({ children, params }: PropsWithChild
 				{children}
 			</main>
 
-			<Footer />
+      {lang == "en" ? <EnFooter /> : <DeFooter />}
 		</div>
 	);
 }
