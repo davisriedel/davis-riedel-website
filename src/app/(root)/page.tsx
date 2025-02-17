@@ -3,18 +3,25 @@
 import { redirect } from "next/navigation";
 import { useEffect } from "react";
 
-export default function Home() {
+export default function Redirect() {
 	useEffect(() => {
-		// Detect the browser's preferred language
-		const browserLang = navigator.language;
+		// Check for stored language preference in localStorage
+		const storedLang = localStorage.getItem("lang");
 
-		let detectedLocale: string;
-		if (browserLang.startsWith("de")) {
-			detectedLocale = "de";
+		// If no stored preference, fallback to browser's language
+		const browserLang = navigator.language;
+		let detectedLang: string;
+
+		if (storedLang) {
+			detectedLang = storedLang;
+		} else if (browserLang.startsWith("de")) {
+			detectedLang = "de";
 		} else {
-			detectedLocale = "en";
+			detectedLang = "en";
 		}
 
-		redirect(`/${detectedLocale}`);
+		redirect(`/${detectedLang}`);
 	}, []);
+
+	return null; // Ensure the component does not render anything
 }

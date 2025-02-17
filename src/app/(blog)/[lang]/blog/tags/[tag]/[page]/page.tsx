@@ -1,4 +1,4 @@
-import TagPostList from "@/components/tag-post-list";
+import PostList from "@/components/post-list";
 import { countPosts, listPostContent } from "@/lib/posts";
 import { getAllTags, getTag } from "@/lib/tags";
 import { notFound } from "next/navigation";
@@ -33,14 +33,23 @@ export async function generateMetadata({ params }: Props) {
 	const tag = await getTag(lang, tagSlug);
 	if (!tag) return notFound();
 
+  const alternates = tag.languageAlternates ? {
+    languages: {
+      "en-US": `/en/blog/tags/${tag.languageAlternates?.["en-US"]}`,
+      "de-DE": `/de/blog/tags/${tag.languageAlternates?.["de-DE"]}`
+    },
+  } : undefined;
+
 	return lang === "en"
 		? {
 				title: tag.name,
 				description: `Posts tagged with "${tag.name}".`,
+        alternates
 			}
 		: {
 				title: tag.name,
 				description: `Beiträge mit dem Tag "${tag.name}".`,
+        alternates
 			};
 }
 
@@ -56,6 +65,10 @@ export default async function TagIndexPage({ params }: Props) {
 	const pagination = {
 		current: page,
 		pages: Math.ceil(postCount / 10),
+    link: {
+      href: () => "/[lang]/blog/tags/[tag]/[page]",
+      as: (page: number) => `/${lang}/blog/tags/${tagSlug}/${page}`
+    }
 	};
 
 	return (
@@ -64,7 +77,7 @@ export default async function TagIndexPage({ params }: Props) {
 				{lang === "en" ? "All posts with tag:" : "Alle Beiträge mit dem Tag:"}{" "}
 				<i>{tag.name}</i>
 			</h2>
-			<TagPostList lang={lang} posts={posts} tag={tag} pagination={pagination} />
+			<PostList lang={lang} posts={posts} pagination={pagination} />
 		</section>
 	);
 }

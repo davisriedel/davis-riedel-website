@@ -38,6 +38,7 @@ collections:
             - label: "Introduction"
               name: "introduction"
               widget: "text"
+
     - name: "tags-en"
       label: "Tags (EN)"
       file: "cms/en/tags.yml"
@@ -56,6 +57,21 @@ collections:
               name: "name"
               widget: "string"
               hint: "Tag name for displaying on the site"
+            - label: Language Alternates
+              label_singular: "Language Alternate"
+              name: "languageAlternates"
+              widget: object
+              required: false
+              fields:
+                - label: "English"
+                  name: "en-US"
+                  widget: "string"
+                  required: false
+                - label: "German"
+                  name: "de-DE"
+                  widget: "string"
+                  required: false
+
     - name: "tags-de"
       label: "Tags (DE)"
       file: "cms/de/tags.yml"
@@ -74,6 +90,20 @@ collections:
               name: "name"
               widget: "string"
               hint: "Tag name for displaying on the site"
+            - label: Language Alternates
+              label_singular: "Language Alternate"
+              name: "languageAlternates"
+              widget: object
+              required: false
+              fields:
+                - label: "English"
+                  name: "en-US"
+                  widget: "string"
+                  required: false
+                - label: "German"
+                  name: "de-DE"
+                  widget: "string"
+                  required: false
 
 - name: "posts-en"
   label: "Posts (EN)"

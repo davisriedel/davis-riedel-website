@@ -1,5 +1,11 @@
 tags:
   - slug: news
     name: neuigkeiten
-  - slug: study
+    languageAlternates:
+      en-US: news
+      de-DE: news
+  - slug: studium
     name: studium
+    languageAlternates:
+      en-US: study
+      de-DE: study

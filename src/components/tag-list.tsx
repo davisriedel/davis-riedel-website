@@ -14,15 +14,17 @@ export default async function TagList({ lang, tags }: Props) {
 		),
 	);
 	return (
-		<ul>
-			{tagContents.map(
-				(it) =>
-					it && (
-						<li key={it.slug}>
-							<TagLink lang={lang} tag={it} />
-						</li>
-					),
-			)}
-		</ul>
+    <div className="text-indigo-950 dark:text-indigo-400">
+      <ul>
+        {tagContents.map(
+          (it) =>
+            it && (
+              <li key={it.slug}>
+                <TagLink lang={lang} tag={it} />
+              </li>
+            ),
+        )}
+      </ul>
+    </div>
 	);
 }

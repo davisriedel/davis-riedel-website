@@ -25,15 +25,18 @@ export async function generateMetadata({ params }: Props) {
 	const { lang, slug } = await params;
 	const post = await getPost(lang, slug);
 	if (!post) return {};
+
+  const alternates = post.frontmatter.languageAlternates ? {
+    languages: {
+      "en-US": `/en/blog/${post.frontmatter.languageAlternates?.["en-US"]}`,
+      "de-DE": `/de/blog/${post.frontmatter.languageAlternates?.["de-DE"]}`
+    },
+  } : undefined;
+
 	return {
 		title: post.frontmatter.title,
 		description: post.frontmatter.description ?? "",
-    alternates: {
-      languages: {
-        "en-US": `/en/blog/${post.frontmatter.languageAlternates?.["en-US"]}`,
-        "de-DE": `/de/blog/${post.frontmatter.languageAlternates?.["de-DE"]}`
-      },
-    }
+    alternates
 	};
 }
 

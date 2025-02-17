@@ -25,12 +25,12 @@ export function LanguageToggle() {
   const path = usePathname();
 
 	useEffect(() => {
-    // Read lang from path and set to state and html attribute
+    // Read lang from path and set to state and localstorage
     if (path.startsWith("/en")) {
-      // document.documentElement.setAttribute("lang", "en");
+      localStorage.setItem("lang", "en")
       setLang("en");
     } else if (path.startsWith("/de")) {
-      // document.documentElement.setAttribute("lang", "de");
+      localStorage.setItem("lang", "de")
       setLang("de");
     }
 

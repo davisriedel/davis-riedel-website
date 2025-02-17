@@ -32,8 +32,9 @@ export async function generateStaticParams() {
           return { lang, tag: tag.slug, page: (index + 1).toString() };
         });
       }));
+      const tagParamsIndexPage = tags.map((tag) => ({ lang, tag: tag.slug }));
 
-      return [postParams, pageParams, tagParams];
+      return [{ lang }, tagParamsIndexPage, postParams, pageParams, tagParams];
 		}),
   )).flat(4);
 }

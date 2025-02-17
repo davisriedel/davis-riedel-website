@@ -30,7 +30,7 @@ export default async function PostLayout({
 				</div>
 			</header>
 			<div className="prose dark:prose-invert">{children}</div>
-			<div className="text-indigo-950 dark:text-indigo-400 mt-8">
+			<div className="mt-8">
 				<TagList lang={lang} tags={tags} />
 			</div>
 		</article>

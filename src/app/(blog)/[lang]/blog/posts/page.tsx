@@ -11,3 +11,4 @@ export default async function Redirect({ params }: { params: Promise<{ lang: "de
   const { lang } = await params;
   redirect(`/${lang}/blog/posts/1`);
 }
+
