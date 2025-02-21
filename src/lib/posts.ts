@@ -5,14 +5,15 @@ import {
 	unstable_cacheLife as cacheLife,
 	unstable_cacheTag as cacheTag,
 } from "next/cache";
-import type { ReactNode } from "react";
 import type { PostFrontmatter } from "./post-frontmatter";
+import { MdxInstagramPostFallback } from "@/components/mdx-instagram-post";
+import { MdxImageFallback } from "@/components/mdx-image";
 
 export type PostContent = {
+	readonly source: string;
 	readonly frontmatter: PostFrontmatter;
 	readonly excerpt: string;
 	readonly fullPath: string;
-	readonly content: ReactNode;
 };
 
 function truncateWithEllipses(text: string, max: number) {
@@ -39,27 +40,30 @@ export async function fetchAllPosts(lang: "de" | "en"): Promise<PostContent[]> {
 				const { content, frontmatter } = await compileMDX<PostFrontmatter>({
 					source: fileContents,
 					options: { parseFrontmatter: true },
+          // Only render fallbacks for excerpt
+          components: { InstagramPost: MdxInstagramPostFallback, Image: MdxImageFallback }
 				});
 
-				const ReactDOMServer = (await import("react-dom/server")).default;
-				const plainContent = ReactDOMServer.renderToString(content).replace(
-					/\<(?!b|i|strong|em).*?\>/g,
-					"",
-				);
-				const excerpt = truncateWithEllipses(plainContent, 250);
-
-				const data = { frontmatter, content, excerpt, fullPath };
+        let excerpt = frontmatter.description;
+        if (!excerpt) {
+          const ReactDOMServer = (await import("react-dom/server")).default;
+          const plainContent = ReactDOMServer.renderToString(content).replace(
+            /\<(?!b|i|strong|em).*?\>/g,
+            "",
+          );
+          excerpt = truncateWithEllipses(plainContent, 250);
+        }
 
 				const slug = fileName.replace(/\.mdx$/, "");
 
 				// Validate slug string
-				if (data.frontmatter.slug !== slug) {
+				if (frontmatter.slug !== slug) {
 					throw new Error(
 						"slug field does not match with the path of its content source",
 					);
 				}
 
-				return data;
+				return { source: fileContents, frontmatter, excerpt, fullPath };
 			}),
 	);
 

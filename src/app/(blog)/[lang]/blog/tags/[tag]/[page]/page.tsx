@@ -4,7 +4,7 @@ import { getAllTags, getTag } from "@/lib/tags";
 import { notFound } from "next/navigation";
 
 type Props = {
-	params: Promise<{ lang: "de" | "en"; tag: string, page: number }>;
+	params: Promise<{ lang: "de" | "en"; tag: string, page: string }>;
 };
 
 export const dynamic = 'force-static';
@@ -60,10 +60,10 @@ export default async function TagIndexPage({ params }: Props) {
 	const tag = await getTag(lang, tagSlug);
 	if (!tag) return notFound();
 
-	const posts = await listPostContent(lang, page, 10, tagSlug);
+	const posts = await listPostContent(lang, parseInt(page), 10, tagSlug);
 	const postCount = await countPosts(lang, tagSlug);
 	const pagination = {
-		current: page,
+		current: parseInt(page),
 		pages: Math.ceil(postCount / 10),
     link: {
       href: () => "/[lang]/blog/tags/[tag]/[page]",

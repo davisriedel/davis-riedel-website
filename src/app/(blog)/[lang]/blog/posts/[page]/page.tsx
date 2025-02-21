@@ -4,7 +4,7 @@ import { countPosts, listPostContent } from "@/lib/posts";
 import { getAllTags } from "@/lib/tags";
 
 type Props = {
-	params: Promise<{ lang: "de" | "en", page: number }>;
+	params: Promise<{ lang: "de" | "en", page: string }>;
 };
 
 export const dynamic = 'force-static';
@@ -52,10 +52,10 @@ export default async function PostIndexPage({ params }: Props) {
 
 	const tags = await getAllTags(lang);
 
-	const posts = await listPostContent(lang, page, 10);
+	const posts = await listPostContent(lang, parseInt(page), 10);
 	const postCount = await countPosts(lang);
 	const pagination = {
-		current: page,
+		current: parseInt(page),
 		pages: Math.ceil(postCount / 10),
     link: {
       href: () => `/[lang]/blog/posts/[page]`,

@@ -1,5 +1,8 @@
+import { MdxImage } from "@/components/mdx-image";
+import { MdxInstagramPost } from "@/components/mdx-instagram-post";
 import PostLayout from "@/components/post-layout";
 import { fetchAllPosts, getPost } from "@/lib/posts";
+import { MDXRemote } from "next-mdx-remote/rsc";
 import { notFound } from "next/navigation";
 
 type Props = {
@@ -46,6 +49,13 @@ export default async function PostPage({ params }: Props) {
   const { lang, slug } = await params;
 	const post = await getPost(lang, slug);
 	if (!post) return notFound();
-	const { content, frontmatter } = post;
-	return <PostLayout lang={lang} frontmatter={frontmatter}>{content}</PostLayout>;
+	const { source, frontmatter } = post;
+
+	return <PostLayout lang={lang} frontmatter={frontmatter}>
+    <MDXRemote
+      source={source}
+      components={{ InstagramPost: MdxInstagramPost, Image: MdxImage }}
+      options={{ parseFrontmatter: true }}
+    />
+  </PostLayout>;
 }
