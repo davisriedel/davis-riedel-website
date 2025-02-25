@@ -11,3 +11,8 @@ tags:
       de-DE: study
   - slug: eu24
     name: europawahl2024
+  - slug: eutingen
+    name: eutingen
+    languageAlternates:
+      en-US: eutingen
+      de-DE: eutingen
