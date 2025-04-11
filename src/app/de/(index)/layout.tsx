@@ -16,7 +16,7 @@ export default function HomeLayout({ children }: PropsWithChildren<{}>) {
 				lang="de"
 				navBar={
 					<>
-						<p className="mt-1 text-lg">
+						<p className="text-lg -mt-4 lh-8:-mt-2 mx-8">
 							<AnimatedLink
 								className="text-white after:bg-white dark:text-white dark:after:bg-white"
 								href="/de#programmierer"
@@ -45,7 +45,7 @@ export default function HomeLayout({ children }: PropsWithChildren<{}>) {
 								Student
 							</AnimatedLink>
 						</p>
-						<div className="mt-4 text-2xl">
+						<div className="text-2xl lh-6:hidden">
 							<SocialButtons />
 						</div>
 						<NavBar />

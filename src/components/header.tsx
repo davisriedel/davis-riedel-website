@@ -18,15 +18,15 @@ export function Header({ navBar, image, lang }: Props) {
 			)}
 			<div
 				className={cn(
-					"w-full bg-indigo-950 text-white text-center mb-4 z-10 py-12",
+					"w-full bg-indigo-950 text-white text-center z-10 py-12 lh-8:py-8 flex flex-col gap-4 lh-8:gap-2",
 					image && "absolute top-0 left-0 bg-indigo-950/75 backdrop-blur-md",
 				)}
 			>
 				<h1 className="text-4xl">
 					<Link href={`/${lang}`}>Davis Riedel</Link>
 				</h1>
-				<div>{navBar}</div>
-				<div className="mt-4 w-full flex gap-4 justify-center text-indigo-950 dark:text-white">
+				{navBar}
+				<div className="w-full flex gap-4 justify-center text-indigo-950 dark:text-white">
 					<ThemeToggle />
 					<LanguageToggle />
 				</div>

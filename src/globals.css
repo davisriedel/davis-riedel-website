@@ -3,6 +3,9 @@
 @plugin 'tailwindcss-animate';
 @plugin '@tailwindcss/typography';
 
+@custom-variant lh-8 (@media (max-height: 800px));
+@custom-variant lh-6 (@media (max-height: 600px));
+
 @custom-variant dark (&:is(.dark *));
 
 @theme {

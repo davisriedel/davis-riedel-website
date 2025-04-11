@@ -37,6 +37,7 @@ export function Footer() {
 				<AnimatedLink
 					href="https://github.com/davisriedel/davis-riedel-website"
 					target="_blank"
+					className="text-white after:bg-white dark:text-white dark:after:bg-white"
 				>
 					GitHub
 				</AnimatedLink>
