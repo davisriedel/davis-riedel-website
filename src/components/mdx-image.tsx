@@ -2,7 +2,7 @@
 // Needed because dynamic imports are not supported in next/image, see https://github.com/vercel/next.js/discussions/52744
 
 import sizeOf from "image-size";
-import { ISizeCalculationResult } from "image-size/dist/types/interface";
+import { ISizeCalculationResult } from "image-size/types/interface";
 import Image, { ImageProps } from "next/image";
 import { readFile } from "node:fs/promises";
 import { IncomingMessage } from "node:http";
