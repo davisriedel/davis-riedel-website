@@ -6,26 +6,26 @@ import { SocialButtons } from "../social-buttons";
 export function Footer() {
 	return (
 		<footer
-			className={`${headingFont.className} bg-indigo-950 text-white text-center py-4 space-y-2`}
+			className={`${headingFont.className} bg-primary text-primary-foreground text-center py-4 space-y-2`}
 		>
 			<SocialButtons />
 			<p>
 				<AnimatedLink
-					className="text-white after:bg-white dark:text-white dark:after:bg-white"
+          inverted
 					href="/de/kontakt"
 				>
 					Kontakt
 				</AnimatedLink>
 				<span> | </span>
 				<AnimatedLink
-					className="text-white after:bg-white dark:text-white dark:after:bg-white"
+          inverted
 					href="/de/impressum"
 				>
 					Impressum
 				</AnimatedLink>
 				<span> | </span>
 				<AnimatedLink
-					className="text-white after:bg-white dark:text-white dark:after:bg-white"
+          inverted
 					href="/de/datenschutz"
 				>
 					Datenschutz
@@ -35,9 +35,9 @@ export function Footer() {
 			<p className="text-sm">
 				Der Quellcode dieser Website kann auf{" "}
 				<AnimatedLink
+          inverted
 					href="https://github.com/davisriedel/davis-riedel-website"
 					target="_blank"
-					className="text-white after:bg-white dark:text-white dark:after:bg-white"
 				>
 					GitHub
 				</AnimatedLink>{" "}

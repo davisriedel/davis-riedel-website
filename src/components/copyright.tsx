@@ -8,7 +8,7 @@ export async function Copyright({ lang }: { lang: "en" | "de" }) {
 	return (
 		<p>
 			<AnimatedLink
-				className="text-white after:bg-white dark:text-white dark:after:bg-white"
+        inverted
 				href={`/${lang}/copyright`}
 			>
 				&copy; {new Date().getFullYear()} Davis Riedel

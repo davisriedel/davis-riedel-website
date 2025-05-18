@@ -6,13 +6,13 @@ const ResumeTable = () => {
 			<table className="w-full min-w-[600px] border-collapse border border-gray-300">
 				<tbody>
 					{/* Personal Information */}
-					<tr className="border-b border-gray-300">
+					<tr>
 						<th className="p-2 text-left">Geboren</th>
 						<td className="p-2">25.09.2000 in Pforzheim</td>
 					</tr>
 
 					{/* Bildung Section */}
-					<tr className="bg-gray-100 dark:bg-gray-900">
+					<tr>
 						<th colSpan={2} className="p-2 text-left text-lg font-semibold">
 							Bildung
 						</th>
@@ -40,7 +40,7 @@ const ResumeTable = () => {
 					</tr>
 
 					{/* Berufliche Tätigkeiten Section */}
-					<tr className="bg-gray-100 dark:bg-gray-900">
+					<tr>
 						<th colSpan={2} className="p-2 text-left text-lg font-semibold">
 							Berufliche Tätigkeiten
 						</th>
@@ -66,7 +66,7 @@ const ResumeTable = () => {
 					</tr>
 
 					{/* Politisches Engagement Section */}
-					<tr className="bg-gray-100 dark:bg-gray-900">
+					<tr>
 						<th colSpan={2} className="p-2 text-left text-lg font-semibold">
 							Politisches Engagement
 						</th>
@@ -108,7 +108,7 @@ const ResumeTable = () => {
 					</tr>
 
 					{/* Hochschulpolitisches Engagement Section */}
-					<tr className="bg-gray-100 dark:bg-gray-900">
+					<tr>
 						<th colSpan={2} className="p-2 text-left text-lg font-semibold">
 							Hochschulpolitisches Engagement
 						</th>
@@ -152,7 +152,7 @@ const ResumeTable = () => {
 					</tr>
 
 					{/* Auszeichnungen und Förderungen Section */}
-					<tr className="bg-gray-100 dark:bg-gray-900">
+					<tr>
 						<th colSpan={2} className="p-2 text-left text-lg font-semibold">
 							Auszeichnungen und Förderungen
 						</th>
@@ -184,7 +184,7 @@ const ResumeTable = () => {
 					</tr>
 
 					{/* Kenntnisse und Fähigkeiten Section */}
-					<tr className="bg-gray-100 dark:bg-gray-900">
+					<tr>
 						<th colSpan={2} className="p-2 text-left text-lg font-semibold">
 							Kenntnisse und Fähigkeiten
 						</th>

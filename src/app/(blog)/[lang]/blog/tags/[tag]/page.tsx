@@ -1,7 +1,7 @@
 import { getAllTags } from "@/lib/tags";
 import { redirect } from "next/navigation";
 
-export const dynamic = 'force-static';
+export const dynamic = "force-static";
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
@@ -13,7 +13,9 @@ export async function generateStaticParams() {
 	);
 }
 
-export default async function Redirect({ params }: { params: Promise<{ lang: "de" | "en", tag: string }> }) {
-  const { lang, tag } = await params;
-  redirect(`/${lang}/blog/tags/${tag}/1`);
+export default async function Redirect({
+	params,
+}: { params: Promise<{ lang: "de" | "en"; tag: string }> }) {
+	const { lang, tag } = await params;
+	redirect(`/${lang}/blog/tags/${tag}/1`);
 }

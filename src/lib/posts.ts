@@ -1,13 +1,13 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
+import { MdxImageFallback } from "@/components/mdx-image";
+import { MdxInstagramPostFallback } from "@/components/mdx-instagram-post";
 import { compileMDX } from "next-mdx-remote/rsc";
 import {
 	unstable_cacheLife as cacheLife,
 	unstable_cacheTag as cacheTag,
 } from "next/cache";
 import type { PostFrontmatter } from "./post-frontmatter";
-import { MdxInstagramPostFallback } from "@/components/mdx-instagram-post";
-import { MdxImageFallback } from "@/components/mdx-image";
 
 export type PostContent = {
 	readonly source: string;
@@ -40,19 +40,22 @@ export async function fetchAllPosts(lang: "de" | "en"): Promise<PostContent[]> {
 				const { content, frontmatter } = await compileMDX<PostFrontmatter>({
 					source: fileContents,
 					options: { parseFrontmatter: true },
-          // Only render fallbacks for excerpt
-          components: { InstagramPost: MdxInstagramPostFallback, Image: MdxImageFallback }
+					// Only render fallbacks for excerpt
+					components: {
+						InstagramPost: MdxInstagramPostFallback,
+						Image: MdxImageFallback,
+					},
 				});
 
-        let excerpt = frontmatter.description;
-        if (!excerpt) {
-          const ReactDOMServer = (await import("react-dom/server")).default;
-          const plainContent = ReactDOMServer.renderToString(content).replace(
-            /\<(?!b|i|strong|em).*?\>/g,
-            "",
-          );
-          excerpt = truncateWithEllipses(plainContent, 250);
-        }
+				let excerpt = frontmatter.description;
+				if (!excerpt) {
+					const ReactDOMServer = (await import("react-dom/server")).default;
+					const plainContent = ReactDOMServer.renderToString(content).replace(
+						/\<(?!b|i|strong|em).*?\>/g,
+						"",
+					);
+					excerpt = truncateWithEllipses(plainContent, 250);
+				}
 
 				const slug = fileName.replace(/\.mdx$/, "");
 

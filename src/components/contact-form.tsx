@@ -118,8 +118,7 @@ export function ContactForm({ lang }: { lang: "en" | "de" }) {
 
 				<Button
 					type="submit"
-					effect="gooeyLeft"
-					className="w-full bg-indigo-950 hover:bg-indigo-800 dark:bg-indigo-900 dark:hover:bg-indigo-800 text-white"
+					className="w-full"
 				>
 					{lang === "de" ? "Senden" : "Submit"}
 				</Button>

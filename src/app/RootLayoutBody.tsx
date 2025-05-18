@@ -9,21 +9,21 @@ export default function RootLayoutBody({
 	children: React.ReactNode;
 }>) {
 	return (
-    <body
-      className={cn(
-        bodyFont.variable,
-        headingFont.variable,
-        "font-body antialiased",
-      )}
-    >
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="system"
-        enableSystem
-        disableTransitionOnChange
-      >
-        {children}
-      </ThemeProvider>
-    </body>
+		<body
+			className={cn(
+				bodyFont.variable,
+				headingFont.variable,
+				"font-body antialiased",
+			)}
+		>
+			<ThemeProvider
+				attribute="class"
+				defaultTheme="system"
+				enableSystem
+				disableTransitionOnChange
+			>
+				{children}
+			</ThemeProvider>
+		</body>
 	);
 }

@@ -7,7 +7,7 @@ import { CmsMetadata } from "./cms-metadata";
 export type TagContent = {
 	readonly slug: string;
 	readonly name: string;
-  readonly languageAlternates?: Record<"de-DE" | "en-US", string>;
+	readonly languageAlternates?: Record<"de-DE" | "en-US", string>;
 };
 
 export async function getAllTags(lang: "de" | "en") {

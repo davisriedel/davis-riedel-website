@@ -1,9 +1,7 @@
-import { headingFont } from "@/assets/fonts";
 import { AnimatedLink } from "@/components/animated-link";
 import { ObsidianPluginDownloads } from "@/components/obsidian-plugin-downloads";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 export const metadata = {
@@ -94,14 +92,7 @@ export default function Home() {
 						</div>
 					</div>
 					<div className="flex flex-col items-center mt-4">
-						<Button
-							effect="gooeyLeft"
-							className={cn(
-								"bg-indigo-950 hover:bg-indigo-800 text-white text-xl",
-								headingFont.className,
-							)}
-							asChild
-						>
+						<Button asChild>
 							<Link href="/en/obsidian-typewriter-mode">
 								Mehr erfahren (EN)
 							</Link>
@@ -132,14 +123,7 @@ export default function Home() {
 						erfahren:
 					</p>
 					<div className="flex flex-col items-center mt-4">
-						<Button
-							effect="gooeyLeft"
-							className={cn(
-								"bg-indigo-950 hover:bg-indigo-800 text-white text-xl",
-								headingFont.className,
-							)}
-							asChild
-						>
+						<Button asChild>
 							<Link
 								href="https://www.spd-pforzheim.de/eutingen"
 								target="_blank"
@@ -219,14 +203,7 @@ export default function Home() {
 					erfahren:
 				</p>
 				<div className="flex flex-col items-center mt-4">
-					<Button
-						effect="gooeyLeft"
-						className={cn(
-							"bg-indigo-950 hover:bg-indigo-800 text-white text-xl",
-							headingFont.className,
-						)}
-						asChild
-					>
+          <Button asChild>
 						<Link href="/de/studium">Mehr erfahren</Link>
 					</Button>
 				</div>
@@ -248,14 +225,7 @@ export default function Home() {
 				<h2 className="text-3xl">Erfahren Sie mehr über mich</h2>
 				<p>Hier können Sie meinen ausführlichen Lebenslauf lesen:</p>
 				<div className="flex flex-col items-center ">
-					<Button
-						effect="gooeyLeft"
-						className={cn(
-							"bg-indigo-950 hover:bg-indigo-800 text-white text-xl",
-							headingFont.className,
-						)}
-						asChild
-					>
+          <Button asChild>
 						<Link href="/de/lebenslauf">Lebenslauf</Link>
 					</Button>
 				</div>

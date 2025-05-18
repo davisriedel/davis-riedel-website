@@ -12,7 +12,7 @@ type Props = {
 export default async function PostItem({ lang, post }: Props) {
 	return (
 		<div>
-			<div className="text-indigo-950 dark:text-indigo-400 text-sm">
+			<div className="text-secondary-foreground text-sm">
 				<DateComponent lang={lang} date={parseISO(post.frontmatter.date)} />
 			</div>
 			<Link href={`/${lang}/blog/${post.frontmatter.slug}`}>

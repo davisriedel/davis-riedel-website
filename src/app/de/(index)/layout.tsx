@@ -18,28 +18,28 @@ export default function HomeLayout({ children }: PropsWithChildren<{}>) {
 					<>
 						<p className="text-lg -mt-4 lh-8:-mt-2 mx-8">
 							<AnimatedLink
-								className="text-white after:bg-white dark:text-white dark:after:bg-white"
+                inverted
 								href="/de#programmierer"
 							>
 								Programmierer
 							</AnimatedLink>
 							,{" "}
 							<AnimatedLink
-								className="text-white after:bg-white dark:text-white dark:after:bg-white"
+                inverted
 								href="/de#politiker"
 							>
 								Politiker
 							</AnimatedLink>
 							,{" "}
 							<AnimatedLink
-								className="text-white after:bg-white dark:text-white dark:after:bg-white"
+                inverted
 								href="/de#autor"
 							>
 								Schriftsteller
 							</AnimatedLink>{" "}
 							und{" "}
 							<AnimatedLink
-								className="text-white after:bg-white dark:text-white dark:after:bg-white"
+                inverted
 								href="/de#student"
 							>
 								Student

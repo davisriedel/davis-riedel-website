@@ -12,7 +12,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-      <RootLayoutBody>{children}</RootLayoutBody>
+			<RootLayoutBody>{children}</RootLayoutBody>
 		</html>
 	);
 }

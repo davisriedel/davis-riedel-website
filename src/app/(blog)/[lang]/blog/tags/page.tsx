@@ -5,11 +5,11 @@ type Props = {
 	params: Promise<{ lang: "de" | "en" }>;
 };
 
-export const dynamic = 'force-static';
+export const dynamic = "force-static";
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  return [{ lang: "de" }, { lang: "en" }];
+	return [{ lang: "de" }, { lang: "en" }];
 }
 
 export async function generateMetadata({ params }: Props) {
@@ -26,17 +26,17 @@ export async function generateMetadata({ params }: Props) {
 		? {
 				title: "All tags",
 				description: "A list of all tags.",
-        alternates,
+				alternates,
 			}
 		: {
 				title: "Alle Tags",
 				description: "Eine Liste aller Tags.",
-        alternates,
+				alternates,
 			};
 }
 
 export default async function TagIndexPage({ params }: Props) {
-  "use cache";
+	"use cache";
 
 	const { lang } = await params;
 

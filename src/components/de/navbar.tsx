@@ -5,21 +5,21 @@ export function NavBar() {
 		<nav>
 			<p className="text-lg">
 				<AnimatedLink
-					className="text-white after:bg-white dark:text-white dark:after:bg-white"
+          inverted
 					href="/de"
 				>
 					Startseite
 				</AnimatedLink>
 				<span> | </span>
 				<AnimatedLink
-					className="text-white after:bg-white dark:text-white dark:after:bg-white"
+          inverted
 					href="/de/blog"
 				>
 					Blog
 				</AnimatedLink>
 				<span> | </span>
 				<AnimatedLink
-					className="text-white after:bg-white dark:text-white dark:after:bg-white"
+          inverted
 					href="/de/kontakt"
 				>
 					Kontakt

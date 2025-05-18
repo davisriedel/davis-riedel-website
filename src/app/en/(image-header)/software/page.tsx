@@ -65,24 +65,10 @@ export default function Resume() {
 						downloads.
 					</p>
 					<div className="flex flex-row mt-4 gap-4">
-						<Button
-							effect="gooeyLeft"
-							className={cn(
-								"bg-indigo-950 hover:bg-indigo-800 text-white text-xl",
-								headingFont.className,
-							)}
-							asChild
-						>
+						<Button asChild>
 							<Link href="/en/obsidian-typewriter-mode">Learn more</Link>
 						</Button>
-						<Button
-							effect="gooeyLeft"
-							className={cn(
-								"bg-indigo-950 hover:bg-indigo-800 text-white text-xl",
-								headingFont.className,
-							)}
-							asChild
-						>
+						<Button asChild>
 							<Link
 								href="https://github.com/davisriedel/obsidian-typewriter-mode"
 								target="_blank"
@@ -122,14 +108,7 @@ export default function Resume() {
 						</b>
 					</p>
 					<div className="flex flex-row content-center items-center mt-4">
-						<Button
-							effect="gooeyLeft"
-							className={cn(
-								"bg-indigo-950 hover:bg-indigo-800 text-white text-xl",
-								headingFont.className,
-							)}
-							asChild
-						>
+						<Button asChild>
 							<Link
 								href="https://github.com/davisriedel/obsidian-fast-stats"
 								target="_blank"

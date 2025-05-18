@@ -22,19 +22,19 @@ export function LanguageToggle() {
 	const [alternates, setAlternates] = useState<AlternateMap>({});
 	const [lang, setLang] = useState<"de" | "en" | null>(null);
 
-  const path = usePathname();
+	const path = usePathname();
 
 	useEffect(() => {
-    // Read lang from path and set to state and localstorage
-    if (path.startsWith("/en")) {
-      localStorage.setItem("lang", "en")
-      setLang("en");
-    } else if (path.startsWith("/de")) {
-      localStorage.setItem("lang", "de")
-      setLang("de");
-    }
+		// Read lang from path and set to state and localstorage
+		if (path.startsWith("/en")) {
+			localStorage.setItem("lang", "en");
+			setLang("en");
+		} else if (path.startsWith("/de")) {
+			localStorage.setItem("lang", "de");
+			setLang("de");
+		}
 
-    // Read alternates from html head
+		// Read alternates from html head
 		const alternateMap = Array.from(
 			document.querySelectorAll<HTMLLinkElement>('link[rel="alternate"]'),
 		).reduce(
@@ -56,7 +56,7 @@ export function LanguageToggle() {
 	return (
 		<DropdownMenu>
 			<DropdownMenuTrigger asChild>
-				<Button variant="outline" size="icon">
+				<Button variant="secondary" size="icon">
 					<Globe className="h-[1.2rem] w-[1.2rem]" />
 					<span className="sr-only">Toggle language</span>
 				</Button>
@@ -64,7 +64,7 @@ export function LanguageToggle() {
 			<DropdownMenuContent align="end">
 				{/* English */}
 				{alternates.en ? (
-					<DropdownMenuItem disabled={lang == "en"} asChild>
+					<DropdownMenuItem disabled={lang === "en"} asChild>
 						<Link href={alternates.en}>English</Link>
 					</DropdownMenuItem>
 				) : (
@@ -73,7 +73,7 @@ export function LanguageToggle() {
 
 				{/* Deutsch */}
 				{alternates.de ? (
-					<DropdownMenuItem disabled={lang == "de"} asChild>
+					<DropdownMenuItem disabled={lang === "de"} asChild>
 						<Link href={alternates.de}>Deutsch</Link>
 					</DropdownMenuItem>
 				) : (
