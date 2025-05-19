@@ -116,10 +116,7 @@ export function ContactForm({ lang }: { lang: "en" | "de" }) {
 					</label>
 				</div>
 
-				<Button
-					type="submit"
-					className="w-full"
-				>
+				<Button type="submit" className="w-full">
 					{lang === "de" ? "Senden" : "Submit"}
 				</Button>
 			</form>

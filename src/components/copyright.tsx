@@ -7,10 +7,7 @@ export async function Copyright({ lang }: { lang: "en" | "de" }) {
 
 	return (
 		<p>
-			<AnimatedLink
-        inverted
-				href={`/${lang}/copyright`}
-			>
+			<AnimatedLink inverted href={`/${lang}/copyright`}>
 				&copy; {new Date().getFullYear()} Davis Riedel
 			</AnimatedLink>
 		</p>

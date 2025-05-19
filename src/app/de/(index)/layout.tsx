@@ -17,31 +17,19 @@ export default function HomeLayout({ children }: PropsWithChildren<{}>) {
 				navBar={
 					<>
 						<p className="text-lg -mt-4 lh-8:-mt-2 mx-8">
-							<AnimatedLink
-                inverted
-								href="/de#programmierer"
-							>
+							<AnimatedLink inverted href="/de#programmierer">
 								Programmierer
 							</AnimatedLink>
 							,{" "}
-							<AnimatedLink
-                inverted
-								href="/de#politiker"
-							>
+							<AnimatedLink inverted href="/de#politiker">
 								Politiker
 							</AnimatedLink>
 							,{" "}
-							<AnimatedLink
-                inverted
-								href="/de#autor"
-							>
+							<AnimatedLink inverted href="/de#autor">
 								Schriftsteller
 							</AnimatedLink>{" "}
 							und{" "}
-							<AnimatedLink
-                inverted
-								href="/de#student"
-							>
+							<AnimatedLink inverted href="/de#student">
 								Student
 							</AnimatedLink>
 						</p>

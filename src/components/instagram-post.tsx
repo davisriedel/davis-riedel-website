@@ -24,9 +24,7 @@ export function InstagramPost({
 							"Dieser Artikel ist nur als Instagram-Post verfügbar. Um ihn zu lesen stimmen Sie bitte über folgenden Button zu, dass Inhalte von Instagram geladen werden dürfen:"}
 					</i>
 				</p>
-				<Button
-					onClick={() => setIsConsented(true)}
-				>
+				<Button onClick={() => setIsConsented(true)}>
 					Ich stimme zu, den Post-Inhalt von Instagram zu laden
 				</Button>
 			</div>

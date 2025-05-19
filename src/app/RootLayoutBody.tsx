@@ -2,6 +2,7 @@ import "@/globals.css";
 import { bodyFont, headingFont } from "@/assets/fonts";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function RootLayoutBody({
 	children,
@@ -24,6 +25,7 @@ export default function RootLayoutBody({
 			>
 				{children}
 			</ThemeProvider>
+			<Analytics />
 		</body>
 	);
 }

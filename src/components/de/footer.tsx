@@ -10,24 +10,15 @@ export function Footer() {
 		>
 			<SocialButtons />
 			<p>
-				<AnimatedLink
-          inverted
-					href="/de/kontakt"
-				>
+				<AnimatedLink inverted href="/de/kontakt">
 					Kontakt
 				</AnimatedLink>
 				<span> | </span>
-				<AnimatedLink
-          inverted
-					href="/de/impressum"
-				>
+				<AnimatedLink inverted href="/de/impressum">
 					Impressum
 				</AnimatedLink>
 				<span> | </span>
-				<AnimatedLink
-          inverted
-					href="/de/datenschutz"
-				>
+				<AnimatedLink inverted href="/de/datenschutz">
 					Datenschutz
 				</AnimatedLink>
 			</p>
@@ -35,7 +26,7 @@ export function Footer() {
 			<p className="text-sm">
 				Der Quellcode dieser Website kann auf{" "}
 				<AnimatedLink
-          inverted
+					inverted
 					href="https://github.com/davisriedel/davis-riedel-website"
 					target="_blank"
 				>

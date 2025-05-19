@@ -203,7 +203,7 @@ export default function Home() {
 					erfahren:
 				</p>
 				<div className="flex flex-col items-center mt-4">
-          <Button asChild>
+					<Button asChild>
 						<Link href="/de/studium">Mehr erfahren</Link>
 					</Button>
 				</div>
@@ -225,7 +225,7 @@ export default function Home() {
 				<h2 className="text-3xl">Erfahren Sie mehr über mich</h2>
 				<p>Hier können Sie meinen ausführlichen Lebenslauf lesen:</p>
 				<div className="flex flex-col items-center ">
-          <Button asChild>
+					<Button asChild>
 						<Link href="/de/lebenslauf">Lebenslauf</Link>
 					</Button>
 				</div>

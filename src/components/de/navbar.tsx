@@ -4,24 +4,15 @@ export function NavBar() {
 	return (
 		<nav>
 			<p className="text-lg">
-				<AnimatedLink
-          inverted
-					href="/de"
-				>
+				<AnimatedLink inverted href="/de">
 					Startseite
 				</AnimatedLink>
 				<span> | </span>
-				<AnimatedLink
-          inverted
-					href="/de/blog"
-				>
+				<AnimatedLink inverted href="/de/blog">
 					Blog
 				</AnimatedLink>
 				<span> | </span>
-				<AnimatedLink
-          inverted
-					href="/de/kontakt"
-				>
+				<AnimatedLink inverted href="/de/kontakt">
 					Kontakt
 				</AnimatedLink>
 			</p>

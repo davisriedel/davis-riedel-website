@@ -92,7 +92,7 @@ export default function Home() {
 					</div>
 				</Card>
 				<div className="flex flex-col items-center mt-4">
-          <Button asChild>
+					<Button asChild>
 						<Link href="/en/software">Learn more</Link>
 					</Button>
 				</div>
@@ -199,7 +199,7 @@ export default function Home() {
 					<i>(currently only in german)</i>:
 				</p>
 				<div className="flex flex-col items-center mt-4">
-          <Button asChild>
+					<Button asChild>
 						<Link href="/de/studium">Learn more (DE)</Link>
 					</Button>
 				</div>
@@ -221,7 +221,7 @@ export default function Home() {
 				<h2 className="text-3xl">Get to know more about me</h2>
 				<p>You can read my resumé here:</p>
 				<div className="flex flex-col items-center ">
-          <Button asChild>
+					<Button asChild>
 						<Link href="/en/resume">Resumé</Link>
 					</Button>
 				</div>
