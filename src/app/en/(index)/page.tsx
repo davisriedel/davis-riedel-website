@@ -142,8 +142,14 @@ export default function Home() {
 						>
 							Social Democratic Party of Germany (SPD)
 						</AnimatedLink>{" "}
-						since 2016. I ran for the European Parliament in 2024. I am a board
-						member of the district association{" "}
+						since 2016. I ran for the European Parliament in 2024. I am chair of the{" "}
+						<AnimatedLink
+							href="https://www.spd-enz-pf.de"
+							target="_blank"
+							rel="noreferrer"
+						>
+              Jusos Enzkreis/Pforzheim
+            </AnimatedLink>, the local youth organization of my party. I am a board member of the district association{" "}
 						<AnimatedLink
 							href="https://www.spd-enz-pf.de"
 							target="_blank"
@@ -167,17 +173,16 @@ export default function Home() {
 			<section id="student" className="space-y-4">
 				<h2 className="text-3xl">Student</h2>
 				<Card className="p-4 shadow-md">
-					<h3 className="text-xl">Computer Science (B.Sc.)</h3>
+					<h3 className="text-xl">Master of Education Mathematics and Computer Science</h3>
 					<p className="mt-2">
-						I am currently studying Computer Science at the{" "}
+            I am currently studying to become a high school teacher for the subjects mathematics and computer science at the
 						<AnimatedLink
-							href="https://www.kit.edu"
+							href="https://uni-tuebingen.de/"
 							target="_blank"
 							rel="noreferrer"
 						>
-							Karlsruhe Institute of Technology (KIT)
-						</AnimatedLink>{" "}
-						in Germany.
+							University of Tübingen
+						</AnimatedLink>{" "}in Germany.
 					</p>
 				</Card>
 				<Card className="p-4 shadow-md">
@@ -191,7 +196,21 @@ export default function Home() {
 						>
 							Distance-Learning University of Hagen
 						</AnimatedLink>{" "}
-						in Germany, to qualify for admission to the Philosophy M.A. program.
+						in Germany.
+					</p>
+				</Card>
+				<Card className="p-4 shadow-md">
+					<h3 className="text-xl">Computer Science B.Sc.</h3>
+					<p className="mt-2">
+						On September 26, 2025 I obtained my degree Bachelor of Science in Computer Science at the{" "}
+						<AnimatedLink
+							href="https://www.kit.edu"
+							target="_blank"
+							rel="noreferrer"
+						>
+							Karlsruhe Institute of Technology (KIT)
+						</AnimatedLink>{" "}
+						in Germany.
 					</p>
 				</Card>
 				<p>

@@ -18,13 +18,26 @@ const ResumeTable = () => {
 						</th>
 					</tr>
 					<tr className="border-b border-gray-300">
+						<td className="p-2">Seit 10.2025</td>
+						<td className="p-2">
+              Studium M.Ed. Quereinstieg gymnasiales Lehramt Mathematik und Informatik an der Universität Tübingen
+						</td>
+					</tr>
+					<tr className="border-b border-gray-300">
+						<td className="p-2">26.09.2025</td>
+						<td className="p-2">
+							Abschluss Informatik B.Sc. am Karlsruher Institut für Technologie
+							(KIT)
+						</td>
+					</tr>
+					<tr className="border-b border-gray-300">
 						<td className="p-2">Seit 10.2024</td>
 						<td className="p-2">
 							Akademiestudium Philosophie an der Fernuniversität Hagen
 						</td>
 					</tr>
 					<tr className="border-b border-gray-300">
-						<td className="p-2">Seit 10.2019</td>
+						<td className="p-2">10.2019 - 09.2025</td>
 						<td className="p-2">
 							Studium Informatik B.Sc. am Karlsruher Institut für Technologie
 							(KIT)
@@ -72,6 +85,10 @@ const ResumeTable = () => {
 						</th>
 					</tr>
 					<tr className="border-b border-gray-300">
+						<td className="p-2">Seit 07.2025</td>
+						<td className="p-2">Kreisvorsitzender der Jusos Enzkreis/Pforzheim</td>
+					</tr>
+					<tr className="border-b border-gray-300">
 						<td className="p-2">Seit 11.2024</td>
 						<td className="p-2">Stv. Vorsitzender SPD Pforzheim</td>
 					</tr>
@@ -114,7 +131,7 @@ const ResumeTable = () => {
 						</th>
 					</tr>
 					<tr className="border-b border-gray-300">
-						<td className="p-2">Seit 09.2023</td>
+						<td className="p-2">09.2023 - 09.2025</td>
 						<td className="p-2">
 							Referent für Presse und Öffentlichkeitsarbeit der
 							Landesstudierendenvertretung Baden-Württemberg

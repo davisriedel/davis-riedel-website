@@ -145,8 +145,15 @@ export default function Home() {
 						>
 							Sozialdemokratischen Partei Deutschlands (SPD)
 						</AnimatedLink>
-						. 2024 habe ich für das Europäische Parlament kandidiert. Ich bin
-						Beisitzer im Kreisvorstand der{" "}
+						. 2024 habe ich für das Europäische Parlament kandidiert. Ich bin Kreisvorsitzender der{" "}
+						<AnimatedLink
+							href="https://www.jusos-enz-pf.de"
+							target="_blank"
+							rel="noreferrer"
+						>
+              Jusos Enzkreis/Pforzheim
+            </AnimatedLink>
+            , Beisitzer im Kreisvorstand der{" "}
 						<AnimatedLink
 							href="https://www.spd-enz-pf.de"
 							target="_blank"
@@ -170,17 +177,16 @@ export default function Home() {
 			<section id="student" className="space-y-4">
 				<h2 className="text-3xl">Student</h2>
 				<Card className="p-4 shadow-md">
-					<h3 className="text-xl">Informatik (B.Sc.)</h3>
+					<h3 className="text-xl">Lehramt Mathematik & Informatik (M.Ed.)</h3>
 					<p className="mt-2">
-						Ich studiere aktuell Informatik am{" "}
+            Ich studiere aktuell gymnasiales Lehramt für die Fächer Mathematik und Informatik als Quereinstieg an der
 						<AnimatedLink
-							href="https://www.kit.edu"
+							href="https://uni-tuebingen.de/"
 							target="_blank"
 							rel="noreferrer"
 						>
-							Karlsruher Institut für Technologie (KIT)
-						</AnimatedLink>
-						.
+							Universität Tübingen
+						</AnimatedLink>{" "}mit dem Studienziel Master of Education.
 					</p>
 				</Card>
 				<Card className="p-4 shadow-md">
@@ -194,8 +200,20 @@ export default function Home() {
 							rel="noreferrer"
 						>
 							FernUni Hagen
-						</AnimatedLink>
-						, um mich für die Zulassung zum Master Philosophie zu qualifizieren.
+						</AnimatedLink>.
+					</p>
+				</Card>
+				<Card className="p-4 shadow-md">
+					<h3 className="text-xl">Informatik B.Sc.</h3>
+					<p className="mt-2">
+						Am 26.09.2025 habe ich meinen Abschluss Informatik Bachelor of Science am{" "}
+						<AnimatedLink
+							href="https://www.kit.edu"
+							target="_blank"
+							rel="noreferrer"
+						>
+							Karlsruher Institut für Technologie (KIT)
+						</AnimatedLink>{" "}erlangt.
 					</p>
 				</Card>
 				<p>

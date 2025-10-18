@@ -10,21 +10,48 @@ export const metadata = {
 	},
 };
 
-export default function Resume() {
+export default function Studies() {
 	return (
 		<section className="space-y-4">
 			<h2 className="text-3xl">Mein Studium</h2>
+
+			<h3 className="text-3xl">Aktuelle Studiengänge</h3>
+			<p>
+        Ich studiere aktuell <b>gymnasiales Lehramt</b> für die Fächer <b>Mathematik und Informatik</b> als Quereinstieg an der
+        <AnimatedLink
+          href="https://uni-tuebingen.de/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Universität Tübingen
+        </AnimatedLink>{" "}mit dem Studienziel <b>Master of Education</b>.
+			</p>
+			<p>
+				Neben meinem Haupt-Studium belege ich seit dem Wintersemester 2023/2024 <b>Philosophie</b>
+				-Vorlesungen im Rahmen eines{" "}
+				<b>
+					Akademiestudiums an der{" "}
+					<AnimatedLink
+						href="https://www.fernuni-hagen.de/"
+						target="_blank"
+						rel="noreferrer"
+					>
+						FernUni Hagen
+					</AnimatedLink>
+				</b>.
+			</p>
+
+			<h3 className="text-3xl">Abgeschlossenes Studium Informatik B.Sc.</h3>
 			<p>
 				<b>
-					Ich studiere aktuell Informatik am{" "}
+					Am 26.09.2025 habe ich meinen Abschluss Informatik Bachelor of Science am{" "}
 					<AnimatedLink
 						href="https://www.kit.edu"
 						target="_blank"
 						rel="noreferrer"
 					>
 						Karlsruher Institut für Technologie (KIT)
-					</AnimatedLink>
-					.
+					</AnimatedLink>{" "}erlangt.
 				</b>
 			</p>
 			<br />
@@ -55,22 +82,13 @@ export default function Resume() {
 				</AnimatedLink>{" "}
 				<i>(auf englisch)</i>.
 			</p>
-			<br />
-			<p>
-				Neben meinem Informatik-Studium belege ich aktuell <b>Philosophie</b>
-				-Vorlesungen im Rahmen eines{" "}
-				<b>
-					Akademiestudiums an der{" "}
-					<AnimatedLink
-						href="https://www.fernuni-hagen.de/"
-						target="_blank"
-						rel="noreferrer"
-					>
-						FernUni Hagen
-					</AnimatedLink>
-				</b>
-				, um mich für die Zulassung zum Master Philosophie zu qualifizieren.
-			</p>
+      <p>
+        In meiner Bachelorarbeit "3SIM: Blockchain Simulator for Investigating the Blockchain Trilemma"
+        habe ich einen Blockchain Simulator entwickelt und mit dessen Hilfe untersucht, wie konkrete
+        Konfigurationen von Blockchain Systemen die Manifestation des Blockchain Trilemmas beeinflussen.
+        Die Bachelorarbeit habe ich am Institut für Softwaredesign und -Qualität (SDQ) in Kooperation
+        mit dem Institut für Angewandte Informatik und Formale Beschreibungsverfahren (AIFB), absolviert.
+      </p>
 		</section>
 	);
 }
