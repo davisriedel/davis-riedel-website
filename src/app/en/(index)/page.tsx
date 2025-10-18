@@ -175,7 +175,7 @@ export default function Home() {
 				<Card className="p-4 shadow-md">
 					<h3 className="text-xl">Master of Education Mathematics and Computer Science</h3>
 					<p className="mt-2">
-            I am currently studying to become a high school teacher for the subjects mathematics and computer science at the
+            I am currently studying to become a high school teacher for the subjects mathematics and computer science at the{" "}
 						<AnimatedLink
 							href="https://uni-tuebingen.de/"
 							target="_blank"

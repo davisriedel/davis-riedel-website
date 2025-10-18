@@ -179,7 +179,7 @@ export default function Home() {
 				<Card className="p-4 shadow-md">
 					<h3 className="text-xl">Lehramt Mathematik & Informatik (M.Ed.)</h3>
 					<p className="mt-2">
-            Ich studiere aktuell gymnasiales Lehramt für die Fächer Mathematik und Informatik als Quereinstieg an der
+            Ich studiere aktuell gymnasiales Lehramt für die Fächer Mathematik und Informatik als Quereinstieg an der{" "}
 						<AnimatedLink
 							href="https://uni-tuebingen.de/"
 							target="_blank"

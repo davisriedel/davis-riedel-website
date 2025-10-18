@@ -15,46 +15,44 @@ export default function Studies() {
 		<section className="space-y-4">
 			<h2 className="text-3xl">Mein Studium</h2>
 
-			<h3 className="text-3xl">Aktuelle Studiengänge</h3>
+			<h3 className="text-3xl mt-4">Aktuelle Studiengänge</h3>
 			<p>
-        Ich studiere aktuell <b>gymnasiales Lehramt</b> für die Fächer <b>Mathematik und Informatik</b> als Quereinstieg an der
-        <AnimatedLink
+        Ich studiere aktuell <b>gymnasiales Lehramt</b> für die Fächer <b>Mathematik und Informatik</b> als Quereinstieg an der{" "}
+        <b><AnimatedLink
           href="https://uni-tuebingen.de/"
           target="_blank"
           rel="noreferrer"
         >
           Universität Tübingen
-        </AnimatedLink>{" "}mit dem Studienziel <b>Master of Education</b>.
+        </AnimatedLink></b>{" "}mit dem Studienziel <b>Master of Education</b>.
 			</p>
 			<p>
 				Neben meinem Haupt-Studium belege ich seit dem Wintersemester 2023/2024 <b>Philosophie</b>
 				-Vorlesungen im Rahmen eines{" "}
-				<b>
-					Akademiestudiums an der{" "}
-					<AnimatedLink
+				<b>Akademiestudiums</b> an der{" "}
+					<b><AnimatedLink
 						href="https://www.fernuni-hagen.de/"
 						target="_blank"
 						rel="noreferrer"
 					>
 						FernUni Hagen
-					</AnimatedLink>
-				</b>.
+					</AnimatedLink></b>
+          .
 			</p>
 
-			<h3 className="text-3xl">Abgeschlossenes Studium Informatik B.Sc.</h3>
+			<h3 className="text-3xl mt-4">Abgeschlossenes Studium Informatik B.Sc.</h3>
 			<p>
 				<b>
-					Am 26.09.2025 habe ich meinen Abschluss Informatik Bachelor of Science am{" "}
-					<AnimatedLink
+					Am 26.09.2025 habe ich meinen Abschluss <b>Informatik Bachelor of Science</b> am{" "}
+					<b><AnimatedLink
 						href="https://www.kit.edu"
 						target="_blank"
 						rel="noreferrer"
 					>
 						Karlsruher Institut für Technologie (KIT)
-					</AnimatedLink>{" "}erlangt.
+					</AnimatedLink></b>{" "}erlangt.
 				</b>
 			</p>
-			<br />
 			<p>
 				Ich habe zusätzlich zum üblichen Studienumfang weitere
 				Mathematik-Vorlesungen belegt (Analysis, Geometrieverarbeitung).
