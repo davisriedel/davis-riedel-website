@@ -7,9 +7,6 @@ export const metadata: Metadata = {
 	title: "Davis Riedel",
 };
 
-export const dynamic = "force-static";
-export const dynamicParams = false;
-
 export async function generateStaticParams() {
 	return (
 		await Promise.all(
@@ -55,14 +52,14 @@ export default async function RootLayout({
 	params,
 }: Readonly<{
 	children: React.ReactNode;
-	params: Promise<{ lang: "de" | "en" }>;
+	params: Promise<{ lang: string }>;
 }>) {
 	"use cache";
 
 	const { lang } = await params;
 
 	return (
-		<html lang={lang} suppressHydrationWarning>
+		<html lang={lang as "de" | "en" } suppressHydrationWarning>
 			<RootLayoutBody>{children}</RootLayoutBody>
 		</html>
 	);

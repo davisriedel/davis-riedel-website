@@ -7,9 +7,6 @@ type Props = {
 	params: Promise<{ lang: "de" | "en"; tag: string; page: string }>;
 };
 
-export const dynamic = "force-static";
-export const dynamicParams = false;
-
 export async function generateStaticParams() {
 	return await Promise.all(
 		(["de", "en"] as const).map(async (lang) => {

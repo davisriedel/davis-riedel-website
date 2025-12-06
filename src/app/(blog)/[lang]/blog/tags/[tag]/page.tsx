@@ -1,9 +1,6 @@
 import { getAllTags } from "@/lib/tags";
 import { redirect } from "next/navigation";
 
-export const dynamic = "force-static";
-export const dynamicParams = false;
-
 export async function generateStaticParams() {
 	return await Promise.all(
 		(["de", "en"] as const).map(async (lang) => {

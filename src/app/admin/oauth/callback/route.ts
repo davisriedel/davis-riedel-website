@@ -2,8 +2,6 @@ import { type NextRequest, NextResponse } from "next/server";
 
 const { OAUTH_GITHUB_CLIENT_ID, OAUTH_GITHUB_CLIENT_SECRET } = process.env;
 
-export const dynamic = "force-dynamic";
-
 export const GET = async (req: NextRequest) => {
 	const code = req?.nextUrl?.searchParams.get("code");
 

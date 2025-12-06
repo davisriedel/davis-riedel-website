@@ -1,5 +1,5 @@
 import { toHast } from "mdast-util-to-hast";
-import { unstable_cacheLife as cacheLife } from "next/cache";
+import { cacheLife } from "next/cache";
 import { remark } from "remark";
 import remarkGfm from "remark-gfm";
 import html, { type Options } from "remark-html";

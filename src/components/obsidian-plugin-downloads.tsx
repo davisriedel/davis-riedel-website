@@ -1,5 +1,5 @@
 import { getObsidianPluginDownloadsString } from "@/lib/obsidian-plugin-downloads";
-import { unstable_cacheLife as cacheLife } from "next/cache";
+import { cacheLife } from "next/cache";
 
 export async function ObsidianPluginDownloads({
 	pluginId,

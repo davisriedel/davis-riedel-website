@@ -19,12 +19,7 @@ const nextConfig = {
       }
     },
   },
-  experimental: {
-    ppr: true,
-    // dynamicIO: true, // TODO: issue with dynamicIO, see https://github.com/vercel/next.js/issues/75338
-    useCache: true, // NOTE: workaround for the above issue with dynamicIO
-    // useLightningcss: true, // TODO: does not work with postcss plugins, which is required for tailwind v4
-  },
+  cacheComponents: true,
   transpilePackages: ['next-mdx-remote'],
   outputFileTracingIncludes: {
     "/blog/**/*": ["cms/**/*"]

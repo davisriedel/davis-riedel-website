@@ -2,8 +2,6 @@ import { NextResponse } from "next/server";
 
 const { OAUTH_GITHUB_CLIENT_ID } = process.env;
 
-export const dynamic = "force-dynamic";
-
 export const GET = () => {
 	if (!OAUTH_GITHUB_CLIENT_ID) {
 		throw new Error(

@@ -7,9 +7,6 @@ import { countPosts, fetchAllPosts } from "@/lib/posts";
 import { getAllTags } from "@/lib/tags";
 import type { PropsWithChildren } from "react";
 
-export const dynamic = "force-static";
-export const dynamicParams = false;
-
 export async function generateStaticParams() {
 	return (
 		await Promise.all(
@@ -53,7 +50,7 @@ export async function generateStaticParams() {
 export default async function SubpageLayout({
 	children,
 	params,
-}: PropsWithChildren<{ params: Promise<{ lang: "de" | "en" }> }>) {
+}: PropsWithChildren<{ params: Promise<{ lang: string }> }>) {
 	"use cache";
 
 	const { lang } = await params;
@@ -61,7 +58,7 @@ export default async function SubpageLayout({
 	return (
 		<div>
 			<Header
-				lang={lang}
+				lang={lang as "de" | "en"}
 				navBar={lang === "en" ? <EnNavBar /> : <DeNavBar />}
 			/>
 

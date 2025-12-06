@@ -1,4 +1,4 @@
-import { unstable_cacheLife as cacheLife } from "next/cache";
+import { cacheLife } from "next/cache";
 import { AnimatedLink } from "./animated-link";
 
 export async function Copyright({ lang }: { lang: "en" | "de" }) {

@@ -3,10 +3,7 @@ import path from "node:path";
 import { MdxImageFallback } from "@/components/mdx-image";
 import { MdxInstagramPostFallback } from "@/components/mdx-instagram-post";
 import { compileMDX } from "next-mdx-remote/rsc";
-import {
-	unstable_cacheLife as cacheLife,
-	unstable_cacheTag as cacheTag,
-} from "next/cache";
+import { cacheLife, cacheTag } from "next/cache";
 import type { PostFrontmatter } from "./post-frontmatter";
 
 export type PostContent = {
