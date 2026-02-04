@@ -4,38 +4,38 @@ import { Copyright } from "@/components/copyright";
 import { SocialButtons } from "../social-buttons";
 
 export function Footer() {
-	return (
-		<footer
-			className={`${headingFont.className} bg-primary text-primary-foreground text-center py-4 space-y-2`}
-		>
-			<SocialButtons />
-			<p>
-				<AnimatedLink inverted href="/de/kontakt">
-					Kontakt
-				</AnimatedLink>
-				<span> | </span>
-				<AnimatedLink inverted href="/de/impressum">
-					Impressum
-				</AnimatedLink>
-				<span> | </span>
-				<AnimatedLink inverted href="/de/datenschutz">
-					Datenschutz
-				</AnimatedLink>
-			</p>
+  return (
+    <footer
+      className={`${headingFont.className} space-y-2 bg-primary py-4 text-center text-primary-foreground`}
+    >
+      <SocialButtons />
+      <p>
+        <AnimatedLink href="/de/kontakt" inverted>
+          Kontakt
+        </AnimatedLink>
+        <span> | </span>
+        <AnimatedLink href="/de/impressum" inverted>
+          Impressum
+        </AnimatedLink>
+        <span> | </span>
+        <AnimatedLink href="/de/datenschutz" inverted>
+          Datenschutz
+        </AnimatedLink>
+      </p>
 
-			<p className="text-sm">
-				Der Quellcode dieser Website kann auf{" "}
-				<AnimatedLink
-					inverted
-					href="https://github.com/davisriedel/davis-riedel-website"
-					target="_blank"
-				>
-					GitHub
-				</AnimatedLink>{" "}
-				eingesehen werden.
-			</p>
+      <p className="text-sm">
+        Der Quellcode dieser Website kann auf{" "}
+        <AnimatedLink
+          href="https://github.com/davisriedel/davis-riedel-website"
+          inverted
+          target="_blank"
+        >
+          GitHub
+        </AnimatedLink>{" "}
+        eingesehen werden.
+      </p>
 
-			<Copyright lang="de" />
-		</footer>
-	);
+      <Copyright lang="de" />
+    </footer>
+  );
 }

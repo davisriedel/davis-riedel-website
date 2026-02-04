@@ -1,21 +1,21 @@
 import { AnimatedLink } from "@/components/animated-link";
 
 export function NavBar() {
-	return (
-		<nav>
-			<p className="text-lg">
-				<AnimatedLink inverted href="/de">
-					Startseite
-				</AnimatedLink>
-				<span> | </span>
-				<AnimatedLink inverted href="/de/blog">
-					Blog
-				</AnimatedLink>
-				<span> | </span>
-				<AnimatedLink inverted href="/de/kontakt">
-					Kontakt
-				</AnimatedLink>
-			</p>
-		</nav>
-	);
+  return (
+    <nav>
+      <p className="text-lg">
+        <AnimatedLink href="/de" inverted>
+          Startseite
+        </AnimatedLink>
+        <span> | </span>
+        <AnimatedLink href="/de/blog" inverted>
+          Blog
+        </AnimatedLink>
+        <span> | </span>
+        <AnimatedLink href="/de/kontakt" inverted>
+          Kontakt
+        </AnimatedLink>
+      </p>
+    </nav>
+  );
 }

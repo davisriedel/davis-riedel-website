@@ -1,18 +1,18 @@
-import type { TagContent } from "@/lib/tags";
 import Link from "next/link";
+import type { TagContent } from "@/lib/tags";
 
-type Props = {
-	lang: "de" | "en";
-	tag: TagContent;
-};
+interface Props {
+  lang: "de" | "en";
+  tag: TagContent;
+}
 
 export default function Tag({ lang, tag }: Props) {
-	return (
-		<Link
-			href={`/${lang}/blog/tags/[[...slug]]`}
-			as={`/${lang}/blog/tags/${tag.slug}`}
-		>
-			{`#${tag.name}`}
-		</Link>
-	);
+  return (
+    <Link
+      as={`/${lang}/blog/tags/${tag.slug}`}
+      href={`/${lang}/blog/tags/[[...slug]]`}
+    >
+      {`#${tag.name}`}
+    </Link>
+  );
 }

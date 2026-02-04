@@ -3,46 +3,46 @@ import { type NextRequest, NextResponse } from "next/server";
 const { OAUTH_GITHUB_CLIENT_ID, OAUTH_GITHUB_CLIENT_SECRET } = process.env;
 
 export const GET = async (req: NextRequest) => {
-	const code = req?.nextUrl?.searchParams.get("code");
+  const code = req?.nextUrl?.searchParams.get("code");
 
-	if (!code) {
-		return NextResponse.redirect(
-			new URL("/?error=Missing code parameter", req.url),
-		);
-	}
+  if (!code) {
+    return NextResponse.redirect(
+      new URL("/?error=Missing code parameter", req.url)
+    );
+  }
 
-	const data = {
-		code,
-		client_id: OAUTH_GITHUB_CLIENT_ID,
-		client_secret: OAUTH_GITHUB_CLIENT_SECRET,
-	};
+  const data = {
+    code,
+    client_id: OAUTH_GITHUB_CLIENT_ID,
+    client_secret: OAUTH_GITHUB_CLIENT_SECRET,
+  };
 
-	try {
-		const response = await fetch(
-			"https://github.com/login/oauth/access_token",
-			{
-				method: "POST",
-				headers: {
-					Accept: "application/json",
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify(data),
-			},
-		);
+  try {
+    const response = await fetch(
+      "https://github.com/login/oauth/access_token",
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }
+    );
 
-		if (!response.ok) {
-			console.error(response);
-			throw new Error(`HTTP error! status: ${response.status}`);
-		}
+    if (!response.ok) {
+      console.error(response);
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
 
-		const body = await response.json();
+    const body = await response.json();
 
-		const content = {
-			token: body.access_token,
-			provider: "github",
-		};
+    const content = {
+      token: body.access_token,
+      provider: "github",
+    };
 
-		const script = `
+    const script = `
       <script>
         const receiveMessage = (message) => {
           window.opener.postMessage(
@@ -58,11 +58,11 @@ export const GET = async (req: NextRequest) => {
       </script>
     `;
 
-		return new NextResponse(script, {
-			headers: { "Content-Type": "text/html" },
-		});
-	} catch (err) {
-		console.error(err);
-		return NextResponse.redirect(new URL("/?error=Unkown", req.url));
-	}
+    return new NextResponse(script, {
+      headers: { "Content-Type": "text/html" },
+    });
+  } catch (err) {
+    console.error(err);
+    return NextResponse.redirect(new URL("/?error=Unkown", req.url));
+  }
 };

@@ -1,8 +1,8 @@
 import type { AuthorContent } from "@/lib/authors";
 
-type Props = {
-	author: AuthorContent;
-};
+interface Props {
+  author: AuthorContent;
+}
 export default function Author({ author }: Props) {
-	return <span>{author.name}</span>;
+  return <span>{author.name}</span>;
 }
