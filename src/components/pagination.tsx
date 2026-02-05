@@ -17,7 +17,7 @@ interface Props {
   };
 }
 
-export default async function CustomPagination({
+export default function CustomPagination({
   current,
   pages,
   link,
